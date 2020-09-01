@@ -1,0 +1,2838 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="https://www.watsons.com.hk" />
+    <title>Watson One Pass Mobile</title>
+    <meta name="apple-mobile-web-app-title" content=".com.hk" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="ipaddress" content="187" />
+    <meta name="CSRFToken" content="7ea66ffb-c80e-4a2c-9761-24b00a743e9c" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> -->
+    <meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="robots" content="index,follow" />
+    <meta name="apple-itunes-app-temp" content="app-id=479512803" />
+    <meta name="google-play-app" content="app-id=com.ndn.android.watsons" />
+    <meta charset="utf-8" />
+
+    <script type="text/javascript">
+      ;(window.NREUM || (NREUM = {})).loader_config = {
+        xpid: 'UgQBV1dUGwAJVVNSAgU='
+      }
+      window.NREUM || (NREUM = {}),
+        (__nr_require = (function(t, n, e) {
+          function r(e) {
+            if (!n[e]) {
+              var o = (n[e] = { exports: {} })
+              t[e][0].call(
+                o.exports,
+                function(n) {
+                  var o = t[e][1][n]
+                  return r(o || n)
+                },
+                o,
+                o.exports
+              )
+            }
+            return n[e].exports
+          }
+          if ('function' == typeof __nr_require) return __nr_require
+          for (var o = 0; o < e.length; o++) r(e[o])
+          return r
+        })(
+          {
+            1: [
+              function(t, n, e) {
+                function r(t) {
+                  try {
+                    s.console && console.log(t)
+                  } catch (n) {}
+                }
+                var o,
+                  i = t('ee'),
+                  a = t(15),
+                  s = {}
+                try {
+                  ;(o = localStorage.getItem('__nr_flags').split(',')), console && 'function' == typeof console.log && ((s.console = !0), o.indexOf('dev') !== -1 && (s.dev = !0), o.indexOf('nr_dev') !== -1 && (s.nrDev = !0))
+                } catch (c) {}
+                s.nrDev &&
+                  i.on('internal-error', function(t) {
+                    r(t.stack)
+                  }),
+                  s.dev &&
+                    i.on('fn-err', function(t, n, e) {
+                      r(e.stack)
+                    }),
+                  s.dev &&
+                    (r('NR AGENT IN DEVELOPMENT MODE'),
+                    r(
+                      'flags: ' +
+                        a(s, function(t, n) {
+                          return t
+                        }).join(', ')
+                    ))
+              },
+              {}
+            ],
+            2: [
+              function(t, n, e) {
+                function r(t, n, e, r, s) {
+                  try {
+                    p ? (p -= 1) : o(s || new UncaughtException(t, n, e), !0)
+                  } catch (u) {
+                    try {
+                      i('ierr', [u, c.now(), !0])
+                    } catch (d) {}
+                  }
+                  return 'function' == typeof f && f.apply(this, a(arguments))
+                }
+                function UncaughtException(t, n, e) {
+                  ;(this.message = t || 'Uncaught error with no additional information'), (this.sourceURL = n), (this.line = e)
+                }
+                function o(t, n) {
+                  var e = n ? null : c.now()
+                  i('err', [t, e])
+                }
+                var i = t('handle'),
+                  a = t(16),
+                  s = t('ee'),
+                  c = t('loader'),
+                  u = t('gos'),
+                  f = window.onerror,
+                  d = !1,
+                  l = 'nr@seenError',
+                  p = 0
+                ;(c.features.err = !0), t(1), (window.onerror = r)
+                try {
+                  throw new Error()
+                } catch (h) {
+                  'stack' in h && (t(5), t(4), 'addEventListener' in window && t(3), c.xhrWrappable && t(6), (d = !0))
+                }
+                s.on('fn-start', function(t, n, e) {
+                  d && (p += 1)
+                }),
+                  s.on('fn-err', function(t, n, e) {
+                    d &&
+                      !e[l] &&
+                      (u(e, l, function() {
+                        return !0
+                      }),
+                      (this.thrown = !0),
+                      o(e))
+                  }),
+                  s.on('fn-end', function() {
+                    d && !this.thrown && p > 0 && (p -= 1)
+                  }),
+                  s.on('internal-error', function(t) {
+                    i('ierr', [t, c.now(), !0])
+                  })
+              },
+              {}
+            ],
+            3: [
+              function(t, n, e) {
+                function r(t) {
+                  for (var n = t; n && !n.hasOwnProperty(f); ) n = Object.getPrototypeOf(n)
+                  n && o(n)
+                }
+                function o(t) {
+                  s.inPlace(t, [f, d], '-', i)
+                }
+                function i(t, n) {
+                  return t[1]
+                }
+                var a = t('ee').get('events'),
+                  s = t(18)(a, !0),
+                  c = t('gos'),
+                  u = XMLHttpRequest,
+                  f = 'addEventListener',
+                  d = 'removeEventListener'
+                ;(n.exports = a),
+                  'getPrototypeOf' in Object ? (r(document), r(window), r(u.prototype)) : u.prototype.hasOwnProperty(f) && (o(window), o(u.prototype)),
+                  a.on(f + '-start', function(t, n) {
+                    var e = t[1],
+                      r = c(e, 'nr@wrapped', function() {
+                        function t() {
+                          if ('function' == typeof e.handleEvent) return e.handleEvent.apply(e, arguments)
+                        }
+                        var n = { object: t, function: e }[typeof e]
+                        return n ? s(n, 'fn-', null, n.name || 'anonymous') : e
+                      })
+                    this.wrapped = t[1] = r
+                  }),
+                  a.on(d + '-start', function(t) {
+                    t[1] = this.wrapped || t[1]
+                  })
+              },
+              {}
+            ],
+            4: [
+              function(t, n, e) {
+                var r = t('ee').get('raf'),
+                  o = t(18)(r),
+                  i = 'equestAnimationFrame'
+                ;(n.exports = r),
+                  o.inPlace(window, ['r' + i, 'mozR' + i, 'webkitR' + i, 'msR' + i], 'raf-'),
+                  r.on('raf-start', function(t) {
+                    t[0] = o(t[0], 'fn-')
+                  })
+              },
+              {}
+            ],
+            5: [
+              function(t, n, e) {
+                function r(t, n, e) {
+                  t[0] = a(t[0], 'fn-', null, e)
+                }
+                function o(t, n, e) {
+                  ;(this.method = e), (this.timerDuration = isNaN(t[1]) ? 0 : +t[1]), (t[0] = a(t[0], 'fn-', this, e))
+                }
+                var i = t('ee').get('timer'),
+                  a = t(18)(i),
+                  s = 'setTimeout',
+                  c = 'setInterval',
+                  u = 'clearTimeout',
+                  f = '-start',
+                  d = '-'
+                ;(n.exports = i), a.inPlace(window, [s, 'setImmediate'], s + d), a.inPlace(window, [c], c + d), a.inPlace(window, [u, 'clearImmediate'], u + d), i.on(c + f, r), i.on(s + f, o)
+              },
+              {}
+            ],
+            6: [
+              function(t, n, e) {
+                function r(t, n) {
+                  d.inPlace(n, ['onreadystatechange'], 'fn-', s)
+                }
+                function o() {
+                  var t = this,
+                    n = f.context(t)
+                  t.readyState > 3 && !n.resolved && ((n.resolved = !0), f.emit('xhr-resolved', [], t)), d.inPlace(t, x, 'fn-', s)
+                }
+                function i(t) {
+                  g.push(t), h && (b ? b.then(a) : v ? v(a) : ((E = -E), (R.data = E)))
+                }
+                function a() {
+                  for (var t = 0; t < g.length; t++) r([], g[t])
+                  g.length && (g = [])
+                }
+                function s(t, n) {
+                  return n
+                }
+                function c(t, n) {
+                  for (var e in t) n[e] = t[e]
+                  return n
+                }
+                t(3)
+                var u = t('ee'),
+                  f = u.get('xhr'),
+                  d = t(18)(f),
+                  l = NREUM.o,
+                  p = l.XHR,
+                  h = l.MO,
+                  m = l.PR,
+                  v = l.SI,
+                  w = 'readystatechange',
+                  x = ['onload', 'onerror', 'onabort', 'onloadstart', 'onloadend', 'onprogress', 'ontimeout'],
+                  g = []
+                n.exports = f
+                var y = (window.XMLHttpRequest = function(t) {
+                  var n = new p(t)
+                  try {
+                    f.emit('new-xhr', [n], n), n.addEventListener(w, o, !1)
+                  } catch (e) {
+                    try {
+                      f.emit('internal-error', [e])
+                    } catch (r) {}
+                  }
+                  return n
+                })
+                if (
+                  (c(p, y),
+                  (y.prototype = p.prototype),
+                  d.inPlace(y.prototype, ['open', 'send'], '-xhr-', s),
+                  f.on('send-xhr-start', function(t, n) {
+                    r(t, n), i(n)
+                  }),
+                  f.on('open-xhr-start', r),
+                  h)
+                ) {
+                  var b = m && m.resolve()
+                  if (!v && !m) {
+                    var E = 1,
+                      R = document.createTextNode(E)
+                    new h(a).observe(R, { characterData: !0 })
+                  }
+                } else
+                  u.on('fn-end', function(t) {
+                    ;(t[0] && t[0].type === w) || a()
+                  })
+              },
+              {}
+            ],
+            7: [
+              function(t, n, e) {
+                function r() {
+                  var t = window.NREUM,
+                    n = t.info.accountID || null,
+                    e = t.info.agentID || null,
+                    r = t.info.trustKey || null,
+                    i = 'btoa' in window && 'function' == typeof window.btoa
+                  if (!n || !e || !i) return null
+                  var a = {
+                    v: [0, 1],
+                    d: {
+                      ty: 'Browser',
+                      ac: n,
+                      ap: e,
+                      id: o.generateCatId(),
+                      tr: o.generateCatId(),
+                      ti: Date.now()
+                    }
+                  }
+                  return r && n !== r && (a.d.tk = r), btoa(JSON.stringify(a))
+                }
+                var o = t(13)
+                n.exports = { generateTraceHeader: r }
+              },
+              {}
+            ],
+            8: [
+              function(t, n, e) {
+                function r(t) {
+                  var n = this.params,
+                    e = this.metrics
+                  if (!this.ended) {
+                    this.ended = !0
+                    for (var r = 0; r < p; r++) t.removeEventListener(l[r], this.listener, !1)
+                    n.aborted || ((e.duration = s.now() - this.startTime), this.loadCaptureCalled || 4 !== t.readyState ? null == n.status && (n.status = 0) : a(this, t), (e.cbTime = this.cbTime), d.emit('xhr-done', [t], t), c('xhr', [n, e, this.startTime]))
+                  }
+                }
+                function o(t, n) {
+                  var e = t.responseType
+                  if ('json' === e && null !== n) return n
+                  var r = 'arraybuffer' === e || 'blob' === e || 'json' === e ? t.response : t.responseText
+                  return v(r)
+                }
+                function i(t, n) {
+                  var e = u(n),
+                    r = t.params
+                  ;(r.host = e.hostname + ':' + e.port), (r.pathname = e.pathname), (t.sameOrigin = e.sameOrigin)
+                }
+                function a(t, n) {
+                  t.params.status = n.status
+                  var e = o(n, t.lastSize)
+                  if ((e && (t.metrics.rxSize = e), t.sameOrigin)) {
+                    var r = n.getResponseHeader('X-NewRelic-App-Data')
+                    r && (t.params.cat = r.split(', ').pop())
+                  }
+                  t.loadCaptureCalled = !0
+                }
+                var s = t('loader')
+                if (s.xhrWrappable) {
+                  var c = t('handle'),
+                    u = t(9),
+                    f = t(7).generateTraceHeader,
+                    d = t('ee'),
+                    l = ['load', 'error', 'abort', 'timeout'],
+                    p = l.length,
+                    h = t('id'),
+                    m = t(12),
+                    v = t(11),
+                    w = window.XMLHttpRequest
+                  ;(s.features.xhr = !0),
+                    t(6),
+                    d.on('new-xhr', function(t) {
+                      var n = this
+                      ;(n.totalCbs = 0),
+                        (n.called = 0),
+                        (n.cbTime = 0),
+                        (n.end = r),
+                        (n.ended = !1),
+                        (n.xhrGuids = {}),
+                        (n.lastSize = null),
+                        (n.loadCaptureCalled = !1),
+                        t.addEventListener(
+                          'load',
+                          function(e) {
+                            a(n, t)
+                          },
+                          !1
+                        ),
+                        (m && (m > 34 || m < 10)) ||
+                          window.opera ||
+                          t.addEventListener(
+                            'progress',
+                            function(t) {
+                              n.lastSize = t.loaded
+                            },
+                            !1
+                          )
+                    }),
+                    d.on('open-xhr-start', function(t) {
+                      ;(this.params = { method: t[0] }), i(this, t[1]), (this.metrics = {})
+                    }),
+                    d.on('open-xhr-end', function(t, n) {
+                      'loader_config' in NREUM && 'xpid' in NREUM.loader_config && this.sameOrigin && n.setRequestHeader('X-NewRelic-ID', NREUM.loader_config.xpid)
+                      var e = !1
+                      if (('init' in NREUM && 'distributed_tracing' in NREUM.init && (e = !!NREUM.init.distributed_tracing.enabled), e && this.sameOrigin)) {
+                        var r = f()
+                        r && n.setRequestHeader('newrelic', r)
+                      }
+                    }),
+                    d.on('send-xhr-start', function(t, n) {
+                      var e = this.metrics,
+                        r = t[0],
+                        o = this
+                      if (e && r) {
+                        var i = v(r)
+                        i && (e.txSize = i)
+                      }
+                      ;(this.startTime = s.now()),
+                        (this.listener = function(t) {
+                          try {
+                            'abort' !== t.type || o.loadCaptureCalled || (o.params.aborted = !0), ('load' !== t.type || (o.called === o.totalCbs && (o.onloadCalled || 'function' != typeof n.onload))) && o.end(n)
+                          } catch (e) {
+                            try {
+                              d.emit('internal-error', [e])
+                            } catch (r) {}
+                          }
+                        })
+                      for (var a = 0; a < p; a++) n.addEventListener(l[a], this.listener, !1)
+                    }),
+                    d.on('xhr-cb-time', function(t, n, e) {
+                      ;(this.cbTime += t), n ? (this.onloadCalled = !0) : (this.called += 1), this.called !== this.totalCbs || (!this.onloadCalled && 'function' == typeof e.onload) || this.end(e)
+                    }),
+                    d.on('xhr-load-added', function(t, n) {
+                      var e = '' + h(t) + !!n
+                      this.xhrGuids && !this.xhrGuids[e] && ((this.xhrGuids[e] = !0), (this.totalCbs += 1))
+                    }),
+                    d.on('xhr-load-removed', function(t, n) {
+                      var e = '' + h(t) + !!n
+                      this.xhrGuids && this.xhrGuids[e] && (delete this.xhrGuids[e], (this.totalCbs -= 1))
+                    }),
+                    d.on('addEventListener-end', function(t, n) {
+                      n instanceof w && 'load' === t[0] && d.emit('xhr-load-added', [t[1], t[2]], n)
+                    }),
+                    d.on('removeEventListener-end', function(t, n) {
+                      n instanceof w && 'load' === t[0] && d.emit('xhr-load-removed', [t[1], t[2]], n)
+                    }),
+                    d.on('fn-start', function(t, n, e) {
+                      n instanceof w && ('onload' === e && (this.onload = !0), ('load' === (t[0] && t[0].type) || this.onload) && (this.xhrCbStart = s.now()))
+                    }),
+                    d.on('fn-end', function(t, n) {
+                      this.xhrCbStart && d.emit('xhr-cb-time', [s.now() - this.xhrCbStart, this.onload, n], n)
+                    })
+                }
+              },
+              {}
+            ],
+            9: [
+              function(t, n, e) {
+                n.exports = function(t) {
+                  var n = document.createElement('a'),
+                    e = window.location,
+                    r = {}
+                  ;(n.href = t), (r.port = n.port)
+                  var o = n.href.split('://')
+                  !r.port &&
+                    o[1] &&
+                    (r.port = o[1]
+                      .split('/')[0]
+                      .split('@')
+                      .pop()
+                      .split(':')[1]),
+                    (r.port && '0' !== r.port) || (r.port = 'https' === o[0] ? '443' : '80'),
+                    (r.hostname = n.hostname || e.hostname),
+                    (r.pathname = n.pathname),
+                    (r.protocol = o[0]),
+                    '/' !== r.pathname.charAt(0) && (r.pathname = '/' + r.pathname)
+                  var i = !n.protocol || ':' === n.protocol || n.protocol === e.protocol,
+                    a = n.hostname === document.domain && n.port === e.port
+                  return (r.sameOrigin = i && (!n.hostname || a)), r
+                }
+              },
+              {}
+            ],
+            10: [
+              function(t, n, e) {
+                function r() {}
+                function o(t, n, e) {
+                  return function() {
+                    return i(t, [u.now()].concat(s(arguments)), n ? null : this, e), n ? void 0 : this
+                  }
+                }
+                var i = t('handle'),
+                  a = t(15),
+                  s = t(16),
+                  c = t('ee').get('tracer'),
+                  u = t('loader'),
+                  f = NREUM
+                'undefined' == typeof window.newrelic && (newrelic = f)
+                var d = ['setPageViewName', 'setCustomAttribute', 'setErrorHandler', 'finished', 'addToTrace', 'inlineHit', 'addRelease'],
+                  l = 'api-',
+                  p = l + 'ixn-'
+                a(d, function(t, n) {
+                  f[n] = o(l + n, !0, 'api')
+                }),
+                  (f.addPageAction = o(l + 'addPageAction', !0)),
+                  (f.setCurrentRouteName = o(l + 'routeName', !0)),
+                  (n.exports = newrelic),
+                  (f.interaction = function() {
+                    return new r().get()
+                  })
+                var h = (r.prototype = {
+                  createTracer: function(t, n) {
+                    var e = {},
+                      r = this,
+                      o = 'function' == typeof n
+                    return (
+                      i(p + 'tracer', [u.now(), t, e], r),
+                      function() {
+                        if ((c.emit((o ? '' : 'no-') + 'fn-start', [u.now(), r, o], e), o))
+                          try {
+                            return n.apply(this, arguments)
+                          } catch (t) {
+                            throw (c.emit('fn-err', [arguments, this, t], e), t)
+                          } finally {
+                            c.emit('fn-end', [u.now()], e)
+                          }
+                      }
+                    )
+                  }
+                })
+                a('actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get'.split(','), function(t, n) {
+                  h[n] = o(p + n)
+                }),
+                  (newrelic.noticeError = function(t, n) {
+                    'string' == typeof t && (t = new Error(t)), i('err', [t, u.now(), !1, n])
+                  })
+              },
+              {}
+            ],
+            11: [
+              function(t, n, e) {
+                n.exports = function(t) {
+                  if ('string' == typeof t && t.length) return t.length
+                  if ('object' == typeof t) {
+                    if ('undefined' != typeof ArrayBuffer && t instanceof ArrayBuffer && t.byteLength) return t.byteLength
+                    if ('undefined' != typeof Blob && t instanceof Blob && t.size) return t.size
+                    if (!('undefined' != typeof FormData && t instanceof FormData))
+                      try {
+                        return JSON.stringify(t).length
+                      } catch (n) {
+                        return
+                      }
+                  }
+                }
+              },
+              {}
+            ],
+            12: [
+              function(t, n, e) {
+                var r = 0,
+                  o = navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/)
+                o && (r = +o[1]), (n.exports = r)
+              },
+              {}
+            ],
+            13: [
+              function(t, n, e) {
+                function r() {
+                  function t() {
+                    return n ? 15 & n[e++] : (16 * Math.random()) | 0
+                  }
+                  var n = null,
+                    e = 0,
+                    r = window.crypto || window.msCrypto
+                  r && r.getRandomValues && (n = r.getRandomValues(new Uint8Array(31)))
+                  for (var o, i = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx', a = '', s = 0; s < i.length; s++) (o = i[s]), 'x' === o ? (a += t().toString(16)) : 'y' === o ? ((o = (3 & t()) | 8), (a += o.toString(16))) : (a += o)
+                  return a
+                }
+                function o() {
+                  function t() {
+                    return n ? 15 & n[e++] : (16 * Math.random()) | 0
+                  }
+                  var n = null,
+                    e = 0,
+                    r = window.crypto || window.msCrypto
+                  r && r.getRandomValues && Uint8Array && (n = r.getRandomValues(new Uint8Array(31)))
+                  for (var o = [], i = 0; i < 16; i++) o.push(t().toString(16))
+                  return o.join('')
+                }
+                n.exports = { generateUuid: r, generateCatId: o }
+              },
+              {}
+            ],
+            14: [
+              function(t, n, e) {
+                function r(t, n) {
+                  if (!o) return !1
+                  if (t !== o) return !1
+                  if (!n) return !0
+                  if (!i) return !1
+                  for (var e = i.split('.'), r = n.split('.'), a = 0; a < r.length; a++) if (r[a] !== e[a]) return !1
+                  return !0
+                }
+                var o = null,
+                  i = null,
+                  a = /Version\/(\S+)\s+Safari/
+                if (navigator.userAgent) {
+                  var s = navigator.userAgent,
+                    c = s.match(a)
+                  c && s.indexOf('Chrome') === -1 && s.indexOf('Chromium') === -1 && ((o = 'Safari'), (i = c[1]))
+                }
+                n.exports = { agent: o, version: i, match: r }
+              },
+              {}
+            ],
+            15: [
+              function(t, n, e) {
+                function r(t, n) {
+                  var e = [],
+                    r = '',
+                    i = 0
+                  for (r in t) o.call(t, r) && ((e[i] = n(r, t[r])), (i += 1))
+                  return e
+                }
+                var o = Object.prototype.hasOwnProperty
+                n.exports = r
+              },
+              {}
+            ],
+            16: [
+              function(t, n, e) {
+                function r(t, n, e) {
+                  n || (n = 0), 'undefined' == typeof e && (e = t ? t.length : 0)
+                  for (var r = -1, o = e - n || 0, i = Array(o < 0 ? 0 : o); ++r < o; ) i[r] = t[n + r]
+                  return i
+                }
+                n.exports = r
+              },
+              {}
+            ],
+            17: [
+              function(t, n, e) {
+                n.exports = {
+                  exists: 'undefined' != typeof window.performance && window.performance.timing && 'undefined' != typeof window.performance.timing.navigationStart
+                }
+              },
+              {}
+            ],
+            18: [
+              function(t, n, e) {
+                function r(t) {
+                  return !(t && t instanceof Function && t.apply && !t[a])
+                }
+                var o = t('ee'),
+                  i = t(16),
+                  a = 'nr@original',
+                  s = Object.prototype.hasOwnProperty,
+                  c = !1
+                n.exports = function(t, n) {
+                  function e(t, n, e, o) {
+                    function nrWrapper() {
+                      var r, a, s, c
+                      try {
+                        ;(a = this), (r = i(arguments)), (s = 'function' == typeof e ? e(r, a) : e || {})
+                      } catch (u) {
+                        l([u, '', [r, a, o], s])
+                      }
+                      f(n + 'start', [r, a, o], s)
+                      try {
+                        return (c = t.apply(a, r))
+                      } catch (d) {
+                        throw (f(n + 'err', [r, a, d], s), d)
+                      } finally {
+                        f(n + 'end', [r, a, c], s)
+                      }
+                    }
+                    return r(t) ? t : (n || (n = ''), (nrWrapper[a] = t), d(t, nrWrapper), nrWrapper)
+                  }
+                  function u(t, n, o, i) {
+                    o || (o = '')
+                    var a,
+                      s,
+                      c,
+                      u = '-' === o.charAt(0)
+                    for (c = 0; c < n.length; c++) (s = n[c]), (a = t[s]), r(a) || (t[s] = e(a, u ? s + o : o, i, s))
+                  }
+                  function f(e, r, o) {
+                    if (!c || n) {
+                      var i = c
+                      c = !0
+                      try {
+                        t.emit(e, r, o, n)
+                      } catch (a) {
+                        l([a, e, r, o])
+                      }
+                      c = i
+                    }
+                  }
+                  function d(t, n) {
+                    if (Object.defineProperty && Object.keys)
+                      try {
+                        var e = Object.keys(t)
+                        return (
+                          e.forEach(function(e) {
+                            Object.defineProperty(n, e, {
+                              get: function() {
+                                return t[e]
+                              },
+                              set: function(n) {
+                                return (t[e] = n), n
+                              }
+                            })
+                          }),
+                          n
+                        )
+                      } catch (r) {
+                        l([r])
+                      }
+                    for (var o in t) s.call(t, o) && (n[o] = t[o])
+                    return n
+                  }
+                  function l(n) {
+                    try {
+                      t.emit('internal-error', n)
+                    } catch (e) {}
+                  }
+                  return t || (t = o), (e.inPlace = u), (e.flag = a), e
+                }
+              },
+              {}
+            ],
+            ee: [
+              function(t, n, e) {
+                function r() {}
+                function o(t) {
+                  function n(t) {
+                    return t && t instanceof r ? t : t ? c(t, s, i) : i()
+                  }
+                  function e(e, r, o, i) {
+                    if (!l.aborted || i) {
+                      t && t(e, r, o)
+                      for (var a = n(o), s = m(e), c = s.length, u = 0; u < c; u++) s[u].apply(a, r)
+                      var d = f[g[e]]
+                      return d && d.push([y, e, r, a]), a
+                    }
+                  }
+                  function p(t, n) {
+                    x[t] = m(t).concat(n)
+                  }
+                  function h(t, n) {
+                    var e = x[t]
+                    if (e) for (var r = 0; r < e.length; r++) e[r] === n && e.splice(r, 1)
+                  }
+                  function m(t) {
+                    return x[t] || []
+                  }
+                  function v(t) {
+                    return (d[t] = d[t] || o(e))
+                  }
+                  function w(t, n) {
+                    u(t, function(t, e) {
+                      ;(n = n || 'feature'), (g[e] = n), n in f || (f[n] = [])
+                    })
+                  }
+                  var x = {},
+                    g = {},
+                    y = {
+                      on: p,
+                      addEventListener: p,
+                      removeEventListener: h,
+                      emit: e,
+                      get: v,
+                      listeners: m,
+                      context: n,
+                      buffer: w,
+                      abort: a,
+                      aborted: !1
+                    }
+                  return y
+                }
+                function i() {
+                  return new r()
+                }
+                function a() {
+                  ;(f.api || f.feature) && ((l.aborted = !0), (f = l.backlog = {}))
+                }
+                var s = 'nr@context',
+                  c = t('gos'),
+                  u = t(15),
+                  f = {},
+                  d = {},
+                  l = (n.exports = o())
+                l.backlog = f
+              },
+              {}
+            ],
+            gos: [
+              function(t, n, e) {
+                function r(t, n, e) {
+                  if (o.call(t, n)) return t[n]
+                  var r = e()
+                  if (Object.defineProperty && Object.keys)
+                    try {
+                      return (
+                        Object.defineProperty(t, n, {
+                          value: r,
+                          writable: !0,
+                          enumerable: !1
+                        }),
+                        r
+                      )
+                    } catch (i) {}
+                  return (t[n] = r), r
+                }
+                var o = Object.prototype.hasOwnProperty
+                n.exports = r
+              },
+              {}
+            ],
+            handle: [
+              function(t, n, e) {
+                function r(t, n, e, r) {
+                  o.buffer([t], r), o.emit(t, n, e)
+                }
+                var o = t('ee').get('handle')
+                ;(n.exports = r), (r.ee = o)
+              },
+              {}
+            ],
+            id: [
+              function(t, n, e) {
+                function r(t) {
+                  var n = typeof t
+                  return !t || ('object' !== n && 'function' !== n)
+                    ? -1
+                    : t === window
+                    ? 0
+                    : a(t, i, function() {
+                        return o++
+                      })
+                }
+                var o = 1,
+                  i = 'nr@id',
+                  a = t('gos')
+                n.exports = r
+              },
+              {}
+            ],
+            loader: [
+              function(t, n, e) {
+                function r() {
+                  if (!E++) {
+                    var t = (b.info = NREUM.info),
+                      n = p.getElementsByTagName('script')[0]
+                    if ((setTimeout(f.abort, 3e4), !(t && t.licenseKey && t.applicationID && n))) return f.abort()
+                    u(g, function(n, e) {
+                      t[n] || (t[n] = e)
+                    }),
+                      c('mark', ['onload', a() + b.offset], null, 'api')
+                    var e = p.createElement('script')
+                    ;(e.src = 'https://' + t.agent), n.parentNode.insertBefore(e, n)
+                  }
+                }
+                function o() {
+                  'complete' === p.readyState && i()
+                }
+                function i() {
+                  c('mark', ['domContent', a() + b.offset], null, 'api')
+                }
+                function a() {
+                  return R.exists && performance.now ? Math.round(performance.now()) : (s = Math.max(new Date().getTime(), s)) - b.offset
+                }
+                var s = new Date().getTime(),
+                  c = t('handle'),
+                  u = t(15),
+                  f = t('ee'),
+                  d = t(14),
+                  l = window,
+                  p = l.document,
+                  h = 'addEventListener',
+                  m = 'attachEvent',
+                  v = l.XMLHttpRequest,
+                  w = v && v.prototype
+                NREUM.o = {
+                  ST: setTimeout,
+                  SI: l.setImmediate,
+                  CT: clearTimeout,
+                  XHR: v,
+                  REQ: l.Request,
+                  EV: l.Event,
+                  PR: l.Promise,
+                  MO: l.MutationObserver
+                }
+                var x = '' + location,
+                  g = {
+                    beacon: 'bam.nr-data.net',
+                    errorBeacon: 'bam.nr-data.net',
+                    agent: 'js-agent.newrelic.com/nr-1123.min.js'
+                  },
+                  y = v && w && w[h] && !/CriOS/.test(navigator.userAgent),
+                  b = (n.exports = {
+                    offset: s,
+                    now: a,
+                    origin: x,
+                    features: {},
+                    xhrWrappable: y,
+                    userAgent: d
+                  })
+                t(10), p[h] ? (p[h]('DOMContentLoaded', i, !1), l[h]('load', r, !1)) : (p[m]('onreadystatechange', o), l[m]('onload', r)), c('mark', ['firstbyte', s], null, 'api')
+                var E = 0,
+                  R = t(17)
+              },
+              {}
+            ]
+          },
+          {},
+          ['loader', 2, 8]
+        ))
+    </script>
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="shortcut icon" href="/_ui/desktop/theme-igc/img/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/_ui/mobile/theme-igc/touch-icon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/_ui/mobile/theme-igc/touch-icon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/_ui/mobile/theme-igc/touch-icon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" href="/_ui/mobile/theme-igc/touch-icon/apple-touch-icon-57x57.png" />
+    <!-- LIBS -->
+    <link rel="stylesheet" href="/_ui/mobile/common/css/bootstrap.css?v=2019042503" />
+    <!-- Mobile Block 1 to 3 css -->
+    <link rel="stylesheet" href="/_ui/mobile/theme-igc/css/jquery.fancybox.css?v=2019042503" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/_ui/mobile/theme-igc/css/reset.css?v=2019042503" />
+    <link rel="stylesheet" href="/_ui/mobile/theme-igc/css/style.css?v=2019042503" />
+    <link rel="stylesheet" href="/_ui/mobile/theme-igc/css/product.css?v=2019042503" />
+    <link rel="stylesheet" href="/_ui/mobile/theme-igc/css/flexslider.css?v=2019042503" />
+    <link rel="stylesheet" href="/_ui/mobile/theme-igc/css/asia.css?v=2019042503" />
+    <link rel="stylesheet" href="/_ui/mobile/theme-igc/css/wtchk.css?v=2019042503" />
+    <link rel="stylesheet" href="/_ui/mobile/theme-igc/css/global.css?v=2019042503" media="screen" type="text/css" />
+    <link type="text/css" rel="stylesheet" href="/_ui/mobile/theme-igc/css/asiaTemplate.css?v=2019042503" />
+
+    <link rel="stylesheet" href="/_ui/mobile/theme-igc/css/slick.css?v=2019042503" />
+  </head>
+
+  <body class="language-en" style="null">
+    <!-- LIBS -->
+    <script src="/_ui/mobile/theme-igc/js/vendor/modernizr-2.6.1.min.js?v=2019042503"></script>
+    <script src="/_ui/mobile/theme-igc/js/vendor/jquery-1.8.1.js?v=2019042503"></script>
+    <script src="/_ui/mobile/theme-igc/js/vendor/jquery-ui-1.8.23.custom.min.js?v=2019042503"></script>
+
+    <script src="/_ui/mobile/theme-igc/js/vendor/jquery.validate.min.js?v=2019042503"></script>
+    <script src="/_ui/mobile/theme-igc/js/vendor/jquery.ui.selectmenu.js?v=2019042503"></script>
+    <script src="/_ui/mobile/theme-igc/js/vendor/jquery.cookie.js?v=2019042503"></script>
+    <script src="/_ui/mobile/theme-igc/js/vendor/jquery.ui.selectmenu.js?v=2019042503"></script>
+    <script src="/_ui/mobile/theme-igc/js/vendor/jquery.ui.touch-punch.min.js?v=2019042503"></script>
+    <script type="text/javascript" src="/_ui/mobile/theme-igc/js/vendor/jquery.tooltip.min.js?v=2019042503"></script>
+    <script type="text/javascript" src="/_ui/mobile/theme-igc/js/bundle.js?v=2019042503"></script>
+    <script type="text/javascript" src="/_ui/mobile/common/js/vendor/jquery.raty.min.js?v=2019042503"></script>
+    <script type="text/javascript" src="/_ui/mobile/theme-igc/js/vendor/jquery.flexslider.js?v=2019042503"></script>
+    <script type="text/javascript" src="/_ui/mobile/theme-igc/js/vendor/jquery.fancybox.js?v=2019042503"></script>
+    <script type="text/javascript" src="/_ui/mobile/theme-igc/js/vendor/jquery.blockUI.js?v=2019042503"></script>
+    <script type="text/javascript" src="/_ui/mobile/common/js/vendor/yqlgeo.js?v=2019042503"></script>
+
+    <!-- DEVE ESSERE SOSTITUITA ALLA PRIMA CON LA CORRETTA API KEY
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&sensor=false&language=zh-TW"></script> -->
+    <!-- <script type="text/javascript" src="js/vendor/gmap3.min.js"></script> -->
+
+    <!-- /LIBS -->
+    <script src="/_ui/mobile/common/js/main.js?v=2019042503"></script>
+    <script src="/_ui/mobile/theme-igc/js/main.js?v=2019042503"></script>
+    <script src="/_ui/mobile/common/js/igcmain.js?v=2019042503"></script>
+
+    <script type="text/javascript" src="/_ui/mobile/common/js/vendor/jquery.cycle2.min.js?v=2019042503"></script>
+    <script type="text/javascript" src="/_ui/mobile/common/js/vendor/jquery.cycle2.carousel.min.js?v=2019042503"></script>
+
+    <script type="text/javascript" src="/_ui/mobile/common/js/vendor/mejs/mediaelement-and-player.min.js?v=2019042503"></script>
+
+    <script src="/_ui/mobile/common/js/jquery.tmpl-1.0.0pre.min.js?v=2019042503"></script>
+
+    <script type="text/javascript" src="/_ui/mobile/theme-igc/js/vendor/jquery.textareaCounter.plugin.js?v=2019042503"></script>
+
+    <script type="text/javascript" src="/_ui/mobile/theme-igc/js/vendor/iscroll.js?v=2019042503"></script>
+
+    <script type="text/javascript" src="/_ui/mobile/theme-igc/js/vendor/jquery.scrollTo.min.js?v=2019042503"></script>
+
+    <script type="text/javascript" src="/_ui/mobile/theme-igc/js/vendor/jquery.isloading.min.js?v=2019042503"></script>
+    <script src="/_ui/mobile/theme-igc/js/data.js?v=2019042503"></script>
+    <script src="/_ui/mobile/theme-igc/js/gtm.fn.js?v=2019042503"></script>
+
+    <script type="text/javascript" src="/_ui/mobile/theme-igc/js/global.js?v=2019042503"></script>
+    <script type="text/javascript" src="/_ui/mobile/theme-igc/js/powerlistmenu.js?v=2019042503"></script>
+    <script type="text/javascript" src="/_ui/mobile/theme-igc/js/slick.min.js?v=2019042503"></script>
+    <script type="text/javascript" src="/_ui/mobile/theme-igc/js/masonry.pkgd.min.js?v=2019042503"></script>
+    <script type="text/javascript" src="/_ui/mobile/theme-igc/js/jquery.panzoom.min.js?v=2019042503"></script>
+    <script type="text/javascript" src="/_ui/mobile/theme-igc/js/custom/product/jquery.freegift.js?v=2019042503"></script>
+    <script type="text/javascript" src="/_ui/mobile/theme-igc/js/custom/product/jquery.product.js?v=2019042503"></script>
+
+    <script type="text/javascript">
+      /**
+       * Execute an ajax call to the url with the specified data.
+       *
+       * @param url: the url for the ajax call.
+       * @param form_data: the data to send to the url.
+       * @param successFunction: the success function, call it with successFunction(responseData).
+       * @param errorFunction: the error function, call it with errorFunction(xhr, ajaxOptions, thrownError).
+       */
+      /* function doGet(url, form_data, successFunction, errorFunction) {
+				responseData = null;
+				
+				$.ajax({
+					type: "GET",
+					url: url,
+					data: form_data,
+					cache: false,
+					success: function(responseData) {
+						successFunction(responseData);
+					},
+					error: function(xhr, ajaxOptions, thrownError) {
+						errorFunction(xhr, ajaxOptions, thrownError);
+					}
+				});
+			
+				return false;
+			} */
+      function showLoadingDiv() {
+        $.isLoading({
+          text: '',
+          tpl: '<span style="display: block;margin-top:300px;">%text%<img src="/_ui/mobile/theme-igc/img/loader.gif" /></span>'
+        })
+      }
+
+      function closeLoadingDiv() {
+        $.isLoading('hide')
+        $('.isloading-overlay').hide()
+      }
+      function callback(data, currentMessage) {
+        if (data > 0) {
+          openFreeItemsPopup(data, currentMessage)
+        } else {
+          updateAndShowMiniCart(data)
+        }
+      }
+
+      function cdoGet(form_data, url, myCallback, methodType, dataType, errorCallBack) {
+        showLoadingDiv()
+        responseData = null
+        if (methodType == undefined || methodType == null) methodType = 'get'
+        if (dataType == undefined || dataType == null) dataType = 'html'
+        $.ajax({
+          type: methodType,
+          url: url,
+          data: form_data,
+          cache: false,
+          dataType: dataType,
+          success: function(responseData) {
+            var hasError = isErrorPopup(responseData)
+            if (hasError) {
+              openContentPopup(responseData)
+              closeLoadingDiv()
+            } else {
+              if (errorCallBack != undefined && errorCallBack != null && typeof errorCallBack == 'function' && $(responseData).find("input[name='errors']").length > 0) {
+                errorCallBack.call(this, responseData)
+              } else {
+                if (myCallback != undefined && myCallback != null && typeof myCallback == 'function') {
+                  myCallback.call(this, responseData)
+                } else callback(responseData, 0)
+              }
+              closeLoadingDiv()
+            }
+            try {
+              $('.branchBankCodeSelectId-menu')
+                .show()
+                .css({ 'z-index': '-1' })
+              $('.branchBankCodeSelectId-menu').mCustomScrollbar('update')
+            } catch (e) {}
+          },
+          error: function(responseData) {
+            //alert("error:"+responseData.status);
+          }
+        })
+        return false
+      }
+      function doGet(form_data, url, myCallback, methodType, dataType, errorCallBack) {
+        responseData = null
+        if (methodType == undefined || methodType == null) methodType = 'get'
+        if (dataType == undefined || dataType == null) dataType = 'html'
+        $.ajax({
+          type: methodType,
+          url: url,
+          data: form_data,
+          cache: false,
+          dataType: dataType,
+          success: function(responseData) {
+            // alert("success:"+responseData.status);
+            var hasError = isErrorPopup(responseData)
+            if (hasError) {
+              openContentPopup(responseData)
+            } else {
+              if (errorCallBack != undefined && errorCallBack != null && typeof errorCallBack == 'function' && $(responseData).find("input[name='errors']").length > 0) {
+                errorCallBack.call(this, responseData)
+              } else {
+                if (myCallback != undefined && myCallback != null && typeof myCallback == 'function') {
+                  myCallback.call(this, responseData)
+                } else callback(responseData, 0)
+              }
+            }
+          },
+          error: function(responseData) {
+            // alert("error:"+responseData.status);
+            return false
+          }
+        })
+        return false
+      }
+      /**
+       * Check if the data is an error popup or not.
+       *
+       * @param responseData - the response data of the ajax call.
+       *
+       * @return: true if is an error popup, false otherwise.
+       */
+      function isErrorPopup(responseData) {
+        var openErrorPopup = $(responseData)
+          .andSelf()
+          .find('#serviceUnavailable')
+        var minicartShippableToPRCErrorPopup = $(responseData).find('#minicartShippableToPRCErrorPopup')
+
+        var hasError = $(openErrorPopup).size() > 0
+        var hasMinicartError = $(minicartShippableToPRCErrorPopup).size() > 0
+
+        var errorFlag = false
+        if (hasError || hasMinicartError) {
+          errorFlag = true
+        }
+        return errorFlag
+      }
+
+      function changeRegion(code, subSelectId, url) {
+        var id = '#' + subSelectId
+        // alert(id);
+        var success = function(list) {
+          // alert(list);
+          $(id).selectmenu('disable')
+          $(id).html('')
+          $("<option value=''>Please select</option>").appendTo($(id))
+          for (var i = 0; i < list.length; i++) {
+            $('<option>')
+              .val(list[i]['code'])
+              .text(list[i]['name'] + ' ' + list[i]['code'])
+              .appendTo($(id))
+          }
+          // $(id).selectmenu("destory").selectmenu();
+          $(id).selectmenu('open')
+        }
+        if ($.trim(code) == '') {
+          success.call(this, new Array())
+          return
+        }
+        doGet(null, url, success, 'get', 'json')
+      }
+
+      function showAndHide(ele, delayTime) {
+        $(ele).show()
+        if (delayTime == undefined || !$.isNumeric(delayTime)) delayTime = 5000
+        setTimeout(function() {
+          $(ele).hide()
+        }, delayTime)
+      }
+
+      function changeRegion(code, subSelectId, url, successCall) {
+        var id = '#' + subSelectId
+        // alert(id);
+        var success = function(list) {
+          // alert(list);
+          $(id).selectmenu('disable')
+          $(id).html('')
+          $("<option value=''>Please select</option>").appendTo($(id))
+          for (var i = 0; i < list.length; i++) {
+            $('<option>')
+              .val(list[i]['code'])
+              .text(list[i]['name'] + ' ' + list[i]['code'])
+              .appendTo($(id))
+          }
+          // $(id).selectmenu("destory").selectmenu();
+          $(id).selectmenu('open')
+
+          successCall()
+        }
+        if ($.trim(code) == '') {
+          success.call(this, new Array())
+          return
+        }
+        doGet(null, url, success, 'get', 'json')
+      }
+
+      function changeRegionOpen(code, subSelectId, url, isAsync, districtCode) {
+        // return;
+        var id = '#' + subSelectId
+        var success = function(list) {
+          // alert(list);
+          // $(id).selectmenu("disable");
+          $(id).html('')
+          $("<option value=''>Please select</option>").appendTo($(id))
+          for (var i = 0; i < list.length; i++) {
+            $('<option>')
+              .val(list[i]['code'])
+              .text(list[i]['name'] + ' ' + list[i]['code'])
+              .appendTo($(id))
+          }
+          // $(id).selectmenu("destory").selectmenu();
+          $(id).val(districtCode)
+          // $(id).selectmenu("value",districtCode);
+        }
+        if ($.trim(code) == '') {
+          success.call(this, new Array())
+          return
+        }
+        doGetAsync(null, url, success, 'get', 'json', null, false)
+      }
+      function doGetAsync(form_data, url, myCallback, methodType, dataType, errorCallBack, isAsync) {
+        responseData = null
+        if (methodType == undefined || methodType == null) methodType = 'get'
+        if (dataType == undefined || dataType == null) dataType = 'html'
+        $.ajax({
+          type: methodType,
+          url: url,
+          data: form_data,
+          cache: false,
+          async: isAsync,
+          dataType: dataType,
+          success: function(responseData) {
+            var hasError = isErrorPopup(responseData)
+            if (hasError) {
+              openContentPopup(responseData)
+            } else {
+              if (errorCallBack != undefined && errorCallBack != null && typeof errorCallBack == 'function' && $(responseData).find("input[name='errors']").length > 0) {
+                errorCallBack.call(this, responseData)
+              } else {
+                if (myCallback != undefined && myCallback != null && typeof myCallback == 'function') {
+                  myCallback.call(this, responseData)
+                } else callback(responseData, 0)
+              }
+            }
+          },
+          error: function(responseData) {
+            //alert("error:"+responseData.status);
+          }
+        })
+        return false
+      }
+      function changeRegionOriginal(code, selectId, url, districtCode) {
+        var selectObj = $(selectId)
+        var success = function(list) {
+          $(selectObj).html('')
+          $("<option value=''>Please select</option>").appendTo($(selectObj))
+          for (var i = 0; i < list.length; i++) {
+            $('<option>')
+              .val(list[i]['code'])
+              .text(list[i]['name'])
+              .appendTo($(selectObj))
+          }
+          $(selectObj).val(districtCode)
+        }
+        if ($.trim(code) == '') {
+          success.call(this, new Array())
+          return
+        }
+        return doGet(null, url, success, 'get', 'json')
+      }
+    </script>
+
+    <!-- Mobile Block 1 to 3 javascript -->
+    <script type="text/javascript" src="/_ui/mobile/theme-igc/js/quickViewPopup.js?v=2019042503"></script>
+    <body>
+      <div id="globalWrapper">
+        <div id="mainContent">
+          <input type="hidden" id="homeUrl" value="/" />
+
+          <input type="hidden" id="refresh" value="0" />
+
+          <!--Header message start-->
+          <div id="header-message" class="">
+            <p>
+              <a href="/" title="Free HK Delivery‧Click & Collect at 200 Stores">
+                Free HK Delivery‧Click & Collect at 200 Stores
+              </a>
+            </p>
+          </div>
+
+          <div id="crossbroderpopDiv">
+            <div id="selectYourRegion" class="selectYourRegion popUp clearFix popUpCrossBorder" style=" display:none;" onmouseout="setIsOutPop('Yes')" onmouseover="setIsOutPop('No')">
+              <div class="popClose clearFix">
+                <h3 style="margin: 10px 0 0 10px; float: left;">
+                  Please select your region/language
+                </h3>
+                <span class="btn_close_selectYourRegion" onclick="closeCrossborderLocatePop();">
+                  close
+                </span>
+              </div>
+              <div class="popContent">
+                <div class="" style="background: #fff; padding: 6px 20px 0 20px;">
+                  <div class="clearFix">
+                    <div class="crossBorderPopup1">
+                      With a simple click,
+                      <br />
+                      Watsons helps you select
+                      <br />
+                      the
+                      <span>BEST</span>
+                      and
+                      <span>SPECIAL OFFERS</span>
+                      for you!
+                    </div>
+
+                    <div class="crossBorderPopup2">
+                      We would like to set your Shopping Preferences for you:
+                    </div>
+
+                    <div class="crossBorderPopup3 clearFix">
+                      <span style="dispaly: block; float: left; margin: 7px 10px 2px 0; color: #00a0a0;">
+                        Shipping Region |
+                      </span>
+                      <div class="selectBox" style="width: 180px; float: left;">
+                        <div class="selectVal">Hong Kong</div>
+                        <em class="selectNav">down</em>
+                        <ul class="selectList">
+                          <li class="dotBot" onclick="setDeliveryRegion('hk')">
+                            Hong Kong
+                          </li>
+                          <li onclick="setDeliveryRegion('cn')">China</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <input type="hidden" id="deliveryRegionCode" name="deliveryRegionCode" value="hk" />
+                    <div class="crossBorderPopup4">
+                      * Please notice that every time you change your shipping region, your shopping cart will be updated.
+                    </div>
+                    <div class="crossBorderPopup4 clearFix">
+                      <span style="display: block; float: left; margin: 7px 10px 2px 0; color: #00a0a0;">
+                        Select Language |
+                      </span>
+                      <div class="selectBox" style="width: 180px; float: left;">
+                        <div class="selectVal">EN</div>
+                        <em class="selectNav">down</em>
+                        <ul class="selectList">
+                          <li class="dotBot" onclick="setLanguage('zt')">
+                            繁體
+                          </li>
+                          <li class="dotBot" onclick="setLanguage('zh')">
+                            简体
+                          </li>
+                          <li onclick="setLanguage('en')">EN</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="btnLink mt10 mb10 fr  clearFix">
+                  <a href="#" class="fr crossBorderOkBtn" onclick="changeDeliveryRegion()">
+                    OK
+                  </a>
+                </div>
+                <div style="display:none">
+                  <script type="text/javascript">
+                    /*         */
+                    $(document).ready(function() {
+                      var Cookie = {
+                        set: function(name, value, days) {
+                          var d = new Date()
+                          d.setTime(d.getTime() + days * 24 * 3600 * 1000)
+                          var expires = 'expires=' + d.toUTCString()
+                          document.cookie = name + '=' + value + ';' + expires + '; path=/'
+                        },
+                        get: function(name) {
+                          var arr,
+                            reg = new RegExp('(^| )' + name + '=([^;]*)(;|$)')
+                          if ((arr = document.cookie.match(reg))) {
+                            return unescape(arr[2])
+                          }
+                          return null
+                        }
+                      }
+
+                      $('#langSelector').change(function() {
+                        var lang = $('#langSelector').val()
+                        Cookie.set('lang', lang, 10 * 365)
+                        location.reload()
+                        //$('#lang-form').submit();
+                      })
+                    })
+                    /*   */
+                  </script>
+                  <li>
+                    <form id="lang-form" action="/_s/language" method="post">
+                      <select id="langSelector" name="code" class="lang-selector select-header">
+                        <option value="en" selected="selected" lang="en">
+                          ENG
+                        </option>
+                        <option value="zh" lang="zh">
+                          简体中
+                        </option>
+                        <option value="zt" lang="zt">
+                          繁體中
+                        </option>
+                      </select>
+                      <input type="hidden" name="CSRFToken" value="7ea66ffb-c80e-4a2c-9761-24b00a743e9c" />
+                    </form>
+                  </li>
+
+                  <li></li>
+                  <li class="nav-fixed-divider">|</li>
+                </div>
+              </div>
+            </div>
+            <script type="text/javascript">
+              var isOutDiv = 'No'
+              var crossborderLocated = 'false'
+              if (crossborderLocated == 'true') {
+                showCrossborderLocatePop()
+              }
+              function showCrossborderLocatePop() {
+                $('#selectYourRegion').show()
+              }
+              function setLanguage(code) {
+                $('#langSelector').val(code)
+              }
+              function changeDeliveryRegion() {
+                var deliveryRegionCode = $('#deliveryRegionCode').val()
+                if (deliveryRegionCode == '') {
+                  $('#selectYourRegion').hide()
+                  return
+                }
+                var param = new Object()
+                param.deliveryRegionCode = deliveryRegionCode
+                $.post('/crossBorder', param, function(obj) {
+                  $('#langSelector').change()
+                })
+              }
+              function setDeliveryRegion(code) {
+                $('#deliveryRegionCode').val(code)
+              }
+              function setIsOutPop(isoutOrNot) {
+                isOutDiv = isoutOrNot
+              }
+              function closeCrossborderLocatePop() {
+                $('#selectYourRegion').hide()
+                /* Add By Harlan King for WTCHK-444*/
+                if (false) {
+                  location.reload()
+                  return
+                }
+                /* End Add */
+                var cookieRegion = 'hk'
+                if (cookieRegion != '') {
+                  return
+                }
+                var param = new Object()
+                param.deliveryRegionCode = 'hk'
+                $.post('/crossBorder', param, function(obj) {
+                  location.reload()
+                })
+              }
+              document.onmousedown = function() {
+                var genPopUpMessageboxDisplay = document.getElementById('selectYourRegion').style.display
+                if (genPopUpMessageboxDisplay != 'none') {
+                  if (isOutDiv == 'Yes') {
+                    closeCrossborderLocatePop()
+                  }
+                }
+              }
+            </script>
+          </div>
+
+          <div id="watsonsGoPopupOuterDiv" class="hidden">
+            <div id="watsonsGoPopupDiv" style="text-align:center;">
+              <div class="popupContainer" style="top:3px;">
+                <p style="font-size:17px;font-weight:600;">
+                  Try Watsons GO now!
+                </p>
+
+                <p style="padding-top:20px;color:#E600A0;">
+                  Available for deliver to specific district
+                </p>
+                <a style="color:#E600A0;text-decoration:underline;" href="/watsonsgo">
+                  Know more
+                </a>
+
+                <p style="font-size:8pt;line-height: 1.5;margin-top: 18px;">
+                  *By switching to Watsons GO, your selected products will be updated by the system.
+                </p>
+                <div style="text-align:center;">
+                  <a class="watsonsGoButton" onclick="changeShoppingMode()">
+                    GO!
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <script>
+              function changeShoppingMode() {
+                if ('hk' == 'wg') {
+                  setDeliveryRegion('hk')
+                } else {
+                  setDeliveryRegion('wg')
+                }
+                changeDeliveryRegion()
+              }
+            </script>
+          </div>
+          <!--Header message end-->
+
+          <!--Main Menu start-->
+
+          <div class="my-fav-panel-container"></div>
+
+          <div class="mainmenu-container">
+            <!--Function Menu start-->
+            <div id="mainmenu" class="clearfix">
+              <div id="menuBtn">
+                <img src="/_ui/mobile/theme-igc/img/logo/Ico01Hamburger.png" class="img-responsive menuOpen" />
+                <img src="/_ui/mobile/theme-igc/img/logo/MenuClose.png" class="img-responsive menuClose hidden" />
+              </div>
+              <div class="watons_logo">
+                <a href="/">
+                  <img title="" src="/medias/sys_master/h1b/hcb/8845041434654/mobileSiteLogo.png" alt="" />
+                </a>
+              </div>
+              <div class="cartBtn">
+                <a href="javascript:void(0)" id="myBasketImg" onclick="goToMyBasket()">
+                  <img src="/_ui/mobile/theme-igc/img/logo/Ico03Basket.png" class="img-responsive" />
+                  <span id="basketTotalCounts">0</span>
+                </a>
+              </div>
+              <div class="gpsBtn">
+                <a href="/storeLocator">
+                  <img src="/_ui/mobile/theme-igc/img/logo/Ico02Locator.png" class="img-responsive" />
+                </a>
+              </div>
+              <div class="settingBtn">
+                <a href="#" onclick="showCrossborderLocatePop()">
+                  <img src="/_ui/mobile/theme-igc/img/logo/icon-shipto.png" class="img-responsive" style="width:20px;" />
+                  <span class="settingText">
+                    HK
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            <div class="notify-me-message-container" style="display: none;">
+              <div class="notify-me-message">
+                <p class="p_major marginBTM20">popup.message.info</p>
+              </div>
+            </div>
+
+            <div class="item-added-message-container" style="display: none;">
+              <div class="item-added-message">
+                <p class="p_major marginBTM20">
+                  mobile.basket.addToCart.sucMsg
+                </p>
+                <a href="/checkoutstepone" class="halfwidthBtn-big">Checkout</a>
+              </div>
+            </div>
+
+            <div class="wishlist-item-added-message-container" style="display: none;">
+              <div class="item-added-message">
+                <p class="p_major marginBTM20">
+                  mobile.basket.addToWishlist.sucMsg
+                </p>
+                <a href="/my-account/shoppingList" class="halfwidthBtn-big">
+                  button.wishlist
+                </a>
+              </div>
+            </div>
+            <!--Function Menu end-->
+
+            <!--Search container start-->
+            <div id="searchBarDiv" class="search-container-wrapper container">
+              <form name="search_form" id="search_form1" method="get" action="/search">
+                <fieldset class="clearfix search-container">
+                  <button class="iconSearchHeader" type="submit"></button>
+                  <!-- <input type="submit" value=" " src="" alt="" /> -->
+                  <input id="search" type="text" name="text" value="" maxlength="100" placeholder="Search" />
+                  <div class="search-clear hidden">
+                    <a href="#">
+                      <img src="/_ui/mobile/theme-igc/img/logo/B34CrossGray.png" class="img-responsive" alt="" />
+                    </a>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+
+            <div id="watsonsGoSwitchDiv" class="hidden">
+              <img class="fl" style="margin-top:-5px;" src="/_ui/mobile/theme-igc/img/logo/go-delivery.png" />
+              <p class="fl" style="margin-left:10px;">Watsons GO</p>
+              <div id="watsonsGoSwitchBar" class="fr watsonsGoSwitchBarOff" onclick="showWatsonsGoPopup()">
+                <div id="watsonsGoSwitchButton" class="watsonsGoSwitchButtonOff"></div>
+              </div>
+            </div>
+            <div class="search-suggestion-wrapper">
+              <div class="search-suggestion-container">
+                <div class="search-suggestion-scroll"></div>
+                <a href="#" id="searchViewAll" class="btn_view_all_suggestion">
+                  View All
+                </a>
+              </div>
+            </div>
+            <!--Search container end-->
+
+            <!--Site Menu start-->
+            <div class="powerlistmenuWrapper">
+              <nav id="powermenu1" class="powerlistmenu">
+                <div class="drawer">
+                  <ul id="selected">
+                    <li class="menuDown">
+                      <a href="#" onclick="showCrossborderLocatePop()" class="crossborder">
+                        <span class="menu_icon">
+                          <img src="/_ui/mobile/theme-igc/img/logo/setting.png" class="img-responsive menuIcon" />
+                        </span>
+                        Setting
+                      </a>
+                    </li>
+
+                    <li class="menuDown">
+                      <a href="javascript:;">
+                        <span class="menu_icon">
+                          <img src="/medias/sys_master/h3b/hcb/8845042483230.png" class="img-responsive" />
+                        </span>
+                        Mother's Day
+                        <span class="right navArrowDown"></span>
+                      </a>
+                      <nav class="submenu" style="display:none;">
+                        <li>
+                          <a href="https://www.watsons.com.hk/promotion/watsonsgo" target="" id="8797043557436" title="Watsons GO">
+                            Watsons GO
+                          </a>
+                        </li>
+                      </nav>
+                      <nav class="submenu" style="display:none;">
+                        <li>
+                          <a href="https://www.watsons.com.hk/subscription" target="" id="8797043524668" title="Subscription">
+                            Subscription
+                          </a>
+                        </li>
+                      </nav>
+                      <nav class="submenu" style="display:none;">
+                        <li>
+                          <a href="https://www.watsons.com.hk/caseoffer" target="" id="8797043622972" title="Case Offer">
+                            Case Offer
+                          </a>
+                        </li>
+                      </nav>
+                      <nav class="submenu" style="display:none;"></nav>
+                      <nav class="submenu" style="display:none;">
+                        <li>
+                          <a href="/obcouponpromotion" target="" id="8797203137596" title="Bird's Nest by Watsons">
+                            Bird's Nest by Watsons
+                          </a>
+                        </li>
+                      </nav>
+                      <nav class="submenu" style="display:none;">
+                        <li>
+                          <a href="https://www.watsons.com.hk/bbpedia" target="" id="8797043491900" title="Baby-Pedia">
+                            Baby-Pedia
+                          </a>
+                        </li>
+                      </nav>
+                    </li>
+
+                    <li class="menuDown">
+                      <a href="javascript:;">
+                        <span class="menu_icon">
+                          <img src="/medias/sys_master/h4f/hcb/8845043138590.png" class="img-responsive" />
+                        </span>
+                        Product Categories
+                        <span class="right navArrowDown"></span>
+                      </a>
+                      <nav class="submenu" style="display:none;">
+                        <li class="header">
+                          <a href="javascript:;" target="" id="" title="HEALTH">
+                            HEALTH
+                            <span class="right navArrowRight"></span>
+                          </a>
+                          <div class="drawer submenu">
+                            <div class="breadcrumb">
+                              <span class="navArrowLeft"></span>
+                              HEALTH
+                            </div>
+                            <ul>
+                              <li>
+                                <a href="/Products/Health/c/040000" target="" id="" title="HEALTH">
+                                  All&nbsp;HEALTH
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Health-foods-and-Vitamins/c/040300" target="" id="" title="Health foods and Vitamins">
+                                  Health foods and Vitamins
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Beauty-Supplements/c/040200" target="" id="" title="Beauty Supplements">
+                                  Beauty Supplements
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Slimming/c/040100" target="" id="" title="Slimming">
+                                  Slimming
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Eyes/c/040400" target="" id="" title="Eyes">
+                                  Eyes
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Family-planning/c/040500" target="" id="" title="Family planning">
+                                  Family planning
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Adult-Delight/c/040600" target="" id="" title="Adult Delight">
+                                  Adult Delight
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Sport-%26-Health/c/040700" target="" id="" title="Sport & Health">
+                                  Sport & Health
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                      </nav>
+                      <nav class="submenu" style="display:none;">
+                        <li class="header">
+                          <a href="javascript:;" target="" id="" title="MEDICINE">
+                            MEDICINE
+                            <span class="right navArrowRight"></span>
+                          </a>
+                          <div class="drawer submenu">
+                            <div class="breadcrumb">
+                              <span class="navArrowLeft"></span>
+                              MEDICINE
+                            </div>
+                            <ul>
+                              <li>
+                                <a href="/Products/Medicine/c/050000" target="" id="" title="MEDICINE">
+                                  All&nbsp;MEDICINE
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Western-Medicine/c/050100" target="" id="" title="Western Medicine">
+                                  Western Medicine
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Chinese-Medicine/c/050200" target="" id="" title="Chinese Medicine">
+                                  Chinese Medicine
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/First-aid/c/050300" target="" id="" title="First aid">
+                                  First aid
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                      </nav>
+                      <nav class="submenu" style="display:none;">
+                        <li class="header">
+                          <a href="javascript:;" target="" id="" title="SKINCARE">
+                            SKINCARE
+                            <span class="right navArrowRight"></span>
+                          </a>
+                          <div class="drawer submenu">
+                            <div class="breadcrumb">
+                              <span class="navArrowLeft"></span>
+                              SKINCARE
+                            </div>
+                            <ul>
+                              <li>
+                                <a href="/Products/Skincare/c/010000" target="" id="" title="SKINCARE">
+                                  All&nbsp;SKINCARE
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/K-Beauty-Academy/c/011000" target="" id="" title="K Beauty Academy">
+                                  K Beauty Academy
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Cleansing/c/010100" target="" id="" title="Cleansing">
+                                  Cleansing
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Face-Treatment/c/010200" target="" id="" title="Face Treatment">
+                                  Face Treatment
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Special-Treatment/c/010300" target="" id="" title="Special Treatment">
+                                  Special Treatment
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Derma-Cosmetics/c/010400" target="" id="" title="Derma Cosmetics">
+                                  Derma Cosmetics
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Natural-%26-Organic/c/010500" target="" id="" title="Natural & Organic">
+                                  Natural & Organic
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Beauty-Device/c/010700" target="" id="" title="Beauty Device">
+                                  Beauty Device
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Gift-Set/c/010800" target="" id="" title="Gift Set">
+                                  Gift Set
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Tools-%26-Accessories/c/010900" target="" id="" title="Tools & Accessories">
+                                  Tools & Accessories
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Men%27s/c/012000" target="" id="" title="Men's">
+                                  Men's
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                      </nav>
+                      <nav class="submenu" style="display:none;">
+                        <li class="header">
+                          <a href="javascript:;" target="" id="" title="MAKEUP">
+                            MAKEUP
+                            <span class="right navArrowRight"></span>
+                          </a>
+                          <div class="drawer submenu">
+                            <div class="breadcrumb">
+                              <span class="navArrowLeft"></span>
+                              MAKEUP
+                            </div>
+                            <ul>
+                              <li>
+                                <a href="/Products/Makeup/c/020000" target="" id="" title="MAKEUP">
+                                  All&nbsp;MAKEUP
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Face/c/020100" target="" id="" title="Face">
+                                  Face
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Eyes/c/020200" target="" id="" title="Eyes">
+                                  Eyes
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Lips/c/020300" target="" id="" title="Lips">
+                                  Lips
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Nails/c/020400" target="" id="" title="Nails">
+                                  Nails
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Gift-Set/c/020500" target="" id="" title="Gift Set">
+                                  Gift Set
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Tools-%26-Accessories/c/020600" target="" id="" title="Tools & Accessories">
+                                  Tools & Accessories
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                      </nav>
+                      <nav class="submenu" style="display:none;">
+                        <li class="header">
+                          <a href="javascript:;" target="" id="" title="PERSONAL CARE">
+                            PERSONAL CARE
+                            <span class="right navArrowRight"></span>
+                          </a>
+                          <div class="drawer submenu">
+                            <div class="breadcrumb">
+                              <span class="navArrowLeft"></span>
+                              PERSONAL CARE
+                            </div>
+                            <ul>
+                              <li>
+                                <a href="/Products/Personal-Care/c/030000" target="" id="" title="PERSONAL CARE">
+                                  All&nbsp;PERSONAL CARE
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Body/c/030100" target="" id="" title="Body">
+                                  Body
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Hair/c/030200" target="" id="" title="Hair">
+                                  Hair
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Hands/c/030300" target="" id="" title="Hands">
+                                  Hands
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Foot/c/030400" target="" id="" title="Foot">
+                                  Foot
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Oral-Care/c/030500" target="" id="" title="Oral Care">
+                                  Oral Care
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Men-Shaving-Product/c/030600" target="" id="" title="Men Shaving Product">
+                                  Men Shaving Product
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Female-Product/c/030700" target="" id="" title="Female Product">
+                                  Female Product
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Others/c/030800" target="" id="" title="Others">
+                                  Others
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                      </nav>
+                      <nav class="submenu" style="display:none;">
+                        <li class="header">
+                          <a href="javascript:;" target="" id="" title="BABY">
+                            BABY
+                            <span class="right navArrowRight"></span>
+                          </a>
+                          <div class="drawer submenu">
+                            <div class="breadcrumb">
+                              <span class="navArrowLeft"></span>
+                              BABY
+                            </div>
+                            <ul>
+                              <li>
+                                <a href="/Products/Baby/c/060000" target="" id="" title="BABY">
+                                  All&nbsp;BABY
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Baby-Milk-Powder/c/060100" target="" id="" title="Baby Milk Powder">
+                                  Baby Milk Powder
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Baby-Cereal/c/060200" target="" id="" title="Baby Cereal">
+                                  Baby Cereal
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Baby-Food/c/060300" target="" id="" title="Baby Food">
+                                  Baby Food
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Diapers/c/060400" target="" id="" title="Diapers">
+                                  Diapers
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Baby-Wipes/c/060500" target="" id="" title="Baby Wipes">
+                                  Baby Wipes
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Baby-Toiletries/c/060600" target="" id="" title="Baby Toiletries">
+                                  Baby Toiletries
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Others/c/060700" target="" id="" title="Others">
+                                  Others
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                      </nav>
+                      <nav class="submenu" style="display:none;">
+                        <li class="header">
+                          <a href="javascript:;" target="" id="" title="LIFESTYLE">
+                            LIFESTYLE
+                            <span class="right navArrowRight"></span>
+                          </a>
+                          <div class="drawer submenu">
+                            <div class="breadcrumb">
+                              <span class="navArrowLeft"></span>
+                              LIFESTYLE
+                            </div>
+                            <ul>
+                              <li>
+                                <a href="/Products/Lifestyle/c/080000" target="" id="" title="LIFESTYLE">
+                                  All&nbsp;LIFESTYLE
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Travel-Essential/c/080100" target="" id="" title="Travel Essential">
+                                  Travel Essential
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Household/c/080200" target="" id="" title="Household">
+                                  Household
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Food-%26-Confectionary/c/080400" target="" id="" title="Food & Confectionary">
+                                  Food & Confectionary
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Household-%26-Beauty-Electronic-Devices/c/080500" target="" id="" title="Household & Beauty Electronic Devices">
+                                  Household & Beauty Electronic Devices
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                      </nav>
+                      <nav class="submenu" style="display:none;">
+                        <li class="header">
+                          <a href="javascript:;" target="" id="" title="FRAGRANCE">
+                            FRAGRANCE
+                            <span class="right navArrowRight"></span>
+                          </a>
+                          <div class="drawer submenu">
+                            <div class="breadcrumb">
+                              <span class="navArrowLeft"></span>
+                              FRAGRANCE
+                            </div>
+                            <ul>
+                              <li>
+                                <a href="/Products/Fragrance/c/090000" target="" id="" title="FRAGRANCE">
+                                  All&nbsp;FRAGRANCE
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Women%E2%80%99s-Fragrance/c/090100" target="" id="" title="Women’s Fragrance">
+                                  Women’s Fragrance
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Men%E2%80%99s-Fragrance/c/090200" target="" id="" title="Men’s Fragrance">
+                                  Men’s Fragrance
+                                </a>
+                              </li>
+
+                              <li>
+                                <a href="/Products/Unisex-Fragrance/c/090300" target="" id="" title="Unisex Fragrance">
+                                  Unisex Fragrance
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                      </nav>
+                    </li>
+
+                    <li class="menuDown">
+                      <a href="javascript:;">
+                        <span class="menu_icon">
+                          <img src="/medias/sys_master/h3e/hcb/8845042581534/Brands.png" class="img-responsive" />
+                        </span>
+                        Brands
+                        <span class="right navArrowDown"></span>
+                      </a>
+                      <nav class="submenu" style="display:none;">
+                        <li>
+                          <a href="/BrandList" target="" id="8796172485692" title="See complete list">
+                            See complete list
+                          </a>
+                        </li>
+                      </nav>
+                    </li>
+
+                    <li class="menuDown">
+                      <a href="javascript:;">
+                        <span class="menu_icon">
+                          <img src="/medias/sys_master/h49/hcb/8845042941982/Services.png" class="img-responsive" />
+                        </span>
+                        Services
+                        <span class="right navArrowDown"></span>
+                      </a>
+                      <nav class="submenu" style="display:none;">
+                        <li>
+                          <a href="/HEHAService" target="" id="8796119893052" title="Health Assessment">
+                            Health Assessment
+                          </a>
+                        </li>
+                      </nav>
+                      <nav class="submenu" style="display:none;">
+                        <li>
+                          <a href="http://www.watsons.com.hk/DualHealthService" target="" id="8796602008636" title="Dual Health Service">
+                            Dual Health Service
+                          </a>
+                        </li>
+                      </nav>
+                      <nav class="submenu" style="display:none;">
+                        <li>
+                          <a href="/DietitiansService" target="" id="8796119860284" title="Nutrition & Dietary Advisory Service">
+                            Nutrition & Dietary Advisory Service
+                          </a>
+                        </li>
+                      </nav>
+                      <nav class="submenu" style="display:none;">
+                        <li>
+                          <a href="/chinesemed" target="" id="8796120843324" title="Chinese Medicine Service">
+                            Chinese Medicine Service
+                          </a>
+                        </li>
+                      </nav>
+                      <nav class="submenu" style="display:none;">
+                        <li>
+                          <a href="/FMBA" target="" id="8796120024124" title="Mother & Baby Care<br>&nbsp;Consultation">
+                            Mother & Baby Care
+                            <br />
+                            &nbsp;Consultation
+                          </a>
+                        </li>
+                      </nav>
+                    </li>
+
+                    <li>
+                      <a href="/login">
+                        <span class="menu_icon">
+                          <img src="/_ui/mobile/theme-igc/img/logo/icon_menu_account.png" class="img-responsive menuIcon" />
+                        </span>
+                        Hi, login to your account
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/register/moneyBackMember/check">
+                        <span class="menu_icon">
+                          <img src="/_ui/mobile/theme-igc/img/logo/icon_menu_card.png" class="img-responsive menuIcon" />
+                        </span>
+                        Sign up
+                      </a>
+                    </li>
+                    <li class="menuDown">
+                      <a href="javascript:;">
+                        <span class="menu_icon">
+                          <img src="/_ui/mobile/theme-igc/img/logo/icon_menu_customerservices.png" class="img-responsive menuIcon" />
+                        </span>
+                        Customer Service
+                        <span class="right navArrowDown"></span>
+                      </a>
+                      <nav class="submenu" style="display:none;">
+                        <li>
+                          <a href="/terms-conditions">Privacy Policy</a>
+                        </li>
+                        <li>
+                          <a href="/help-faq">FAQ</a>
+                        </li>
+                        <li>
+                          <a href="/contactUs">Contact Us</a>
+                        </li>
+                      </nav>
+                    </li>
+
+                    <li>
+                      <a href="/login">
+                        <span class="menu_icon">
+                          <img src="/_ui/mobile/theme-igc/img/logo/icon_menu_wishlist.png" class="img-responsive" />
+                        </span>
+                        My Favourite
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <!--Site Menu end-->
+
+            <!-- search suggestion alpha background start -->
+            <div class="search-suggestion-bg"></div>
+            <!-- search suggestion alpha background end -->
+          </div>
+          <!--Main Menu end-->
+
+          <div class="quickview-input-overlay"></div>
+          <script>
+            var autoComplUrl = '/search/autocompleteSecure'
+            var isMember = false
+          </script>
+
+          <script>
+            var userNotLogged = true
+            $(document).ready(function() {
+              if ($('#menuBtn').is(':visible')) {
+                $('#selected')
+                  .parents('.drawer')
+                  .css({ zIndex: 1002, left: 0 })
+                $('.header').each(function(i) {
+                  $(this).addClass('header' + i)
+                  $(this)
+                    .find('.drawer')
+                    .addClass('submenu' + i)
+                  $(this)
+                    .find('.drawer')
+                    .css({ zIndex: 1001, left: '100%' })
+                  $(this)
+                    .find('.drawer')
+                    .clone()
+                    .appendTo($('#powermenu1'))
+                  $(this)
+                    .find('.drawer')
+                    .remove()
+                  $(this).on('click.showsubmenu', function(e) {
+                    // when user clicks on header
+                    $(this)
+                      .parents('div.drawer:eq(0)')
+                      .css({ zIndex: 1001 })
+                      .animate({ left: '-100%' }, 300, 'easeInOutCirc')
+                    $('.submenu' + i)
+                      .css({ zIndex: 1002, left: '100%' })
+                      .animate(
+                        { left: 0 },
+                        300,
+                        'easeInOutCirc',
+                        $('.menuDown')
+                          .children('.submenu')
+                          .hide()
+                      )
+                    e.preventDefault()
+                  })
+                  $('.submenu' + i)
+                    .find('.breadcrumb')
+                    .on('click', function(e) {
+                      // when user clicks on brumcrumb div at the top of each sub UL DIV
+                      $('#selected')
+                        .parents('div.drawer:eq(0)')
+                        .css({ zIndex: 1001, left: '-100%' })
+                        .animate({ left: 0 }, 300, 'easeInOutCirc')
+                      $('.submenu' + i).animate({ left: '100%' }, 300, 'easeInOutCirc')
+                    })
+                })
+              }
+
+              $('.powerlistmenu').css({ height: screen.height - 220 + 'px' })
+
+              $('#refresh').val() == '1' ? location.reload(true) : $('#refresh').val('1')
+
+              if ('hk' == 'wg') {
+                $('#watsonsGoToggle').prop('checked', true)
+              }
+            })
+
+            function searchSubmit() {
+              $('#search_form1').submit()
+            }
+
+            $('#searchViewAll').click(function() {
+              searchSubmit()
+            })
+
+            $('#search').blur(function() {
+              hideSuggestionPanel()
+            })
+
+            function showWatsonsGoPopup() {
+              openContentPopup($('#watsonsGoPopupOuterDiv').html())
+            }
+          </script>
+          <div data-role="content" data-theme="d" data-content-theme="d" id="skip-to-content">
+            <div id="breadcrumb" class="breadcrumb">
+              <div id="crumbs" style="overflow:hidden;">
+                <a href="/">Home</a>
+                &gt;
+                <a itemprop="url" href="#" onclick="return false">
+                  <h2>屈臣氏-卡隨享會員計劃</h2>
+                </a>
+              </div>
+            </div>
+            <div class="dotTop titlePle">
+              <b>
+                屈臣氏-卡隨享會員計劃
+              </b>
+            </div>
+            <div class="actModule dotTop">
+              <div class="aboutuslink2 clearfix"></div>
+            </div>
+            <div class="span-24 section2">
+              <div class="span-4 zone_a advert"></div>
+              <div class="span-20 zone_b last">
+                <div id="cmsparagraphContent" class="content">
+                  <!-- content start -->
+                  <!-- content start -->
+                  <!-- content start -->
+                  <!-- content start -->
+                  <!-- content start -->
+                  <link rel="stylesheet" href="http://127.0.0.1:5500/assets/css/Watsons-One-Pass-Program-Mobile.css" />
+                  <div class="one-pass">
+                    <div class="container">
+                      <div class="top-banner">
+                        <img src="http://127.0.0.1:5500/assets/img/one-pass-banner.png" />
+                      </div>
+                      <div class="tree-cards">
+                        <img class="tree-cards-img" src="http://127.0.0.1:5500/assets/img/3card.png" />
+                        <div class="right-region">
+                          <div class="download-app-text">
+                            立即下載易賞錢手機應用程式體驗
+                            <div>One Pass帶給你的海外禮遇</div>
+                          </div>
+                          <div class="download-app-btn">
+                            <a href="#">
+                              <img class="btn-ios" src="http://127.0.0.1:5500/assets/img/apple_download.png" />
+                            </a>
+                            <a href="#">
+                              <img class="btn-google" src="http://127.0.0.1:5500/assets/img/google_download.png" />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="how-to">
+                        <div class="hd-title">如何體驗</div>
+                        <img class="three-steps-img" src="http://127.0.0.1:5500/assets/img/step_flow.png" />
+                        <div class="three-steps-text">
+                          <div class="text-reg">
+                            隨身攜帶易賞錢 手機應用程式或 易賞錢會員卡
+                          </div>
+                          <div class="text-reg">
+                            到海外屈臣氏店鋪購物
+                          </div>
+                          <div class="text-reg">
+                            出示易賞錢手機 應用程式QR Code 或易賞錢會員卡 賺易賞錢積分及專享當地會員優惠
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="watson-offer">
+                      <div class="container">
+                        <div class="hd-title">
+                          帶上一張會員卡,
+                          <div>海外精彩優惠通通给你!</div>
+                        </div>
+                        <div class="text-line">
+                          現在你的易賞錢手機應用程式QR Code或易賞錢會員卡已適用於海外屈臣氏店舖
+                        </div>
+                        <div class="sep"><span></span></div>
+                        <div class="text-line-02">
+                          適用地區
+                        </div>
+                        <ul class="country-icons">
+                          <li>
+                            <img src="http://127.0.0.1:5500/assets/img/location-icon-cn.png" />
+                            <div class="text">China</div>
+                          </li>
+                          <li>
+                            <img src="http://127.0.0.1:5500/assets/img/location-icon-hk.png" />
+                            <div class="text">Hong Kong</div>
+                          </li>
+                          <li>
+                            <img src="http://127.0.0.1:5500/assets/img/location-icon-mo.png" />
+                            <div class="text">Macao</div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="container">
+                      <div class="rate">
+                        <div class="sub-title">兌換率</div>
+                        <div class="sub-box">
+                          <div class="sub-header">
+                            消費滿下列金額可賺
+                            <img class="money-back-logo" src="http://127.0.0.1:5500/assets/img/money_back_logo.png" />
+                            <!-- <span>MoneyBack</span> -->
+                            1易賞錢積分
+                          </div>
+                          <div class="sub-content">
+                            <ul class="country-icons">
+                              <li>
+                                <img src="http://127.0.0.1:5500/assets/img/coin_watsons.png" />
+                                <div class="c-left">
+                                  <div class="c-name">中國</div>
+                                  <div class="c-rate">$10人民幣</div>
+                                </div>
+                              </li>
+                              <li>
+                                <img src="http://127.0.0.1:5500/assets/img/coin_watsons.png" />
+                                <div class="c-left">
+                                  <div class="c-name">香港</div>
+                                  <div class="c-rate">$10港幣</div>
+                                </div>
+                              </li>
+                              <li>
+                                <img src="http://127.0.0.1:5500/assets/img/coin_moneyback.png" />
+                                <div class="c-left">
+                                  <div class="c-name">澳門</div>
+                                  <div class="c-rate">$10澳門幣</div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="terms"><a href="#">條款及細則</a></div>
+                      <!-- <div class="bottom-btn hidden-lg hidden-md hidden-sm">
+                <div class="right-btn">
+                  <div class="green-btn width">
+                    <a id="next-step">我的易賞錢QR CODE</a>
+                  </div>
+                </div>
+              </div> -->
+                    </div>
+                  </div>
+                </div>
+                <!-- Start of GTM elements -->
+                <input type="hidden" value="prod" id="gtmItemEnvDomain" />
+                <input type="hidden" value="desktop" id="gtmItemEnvType" />
+                <input type="hidden" value="static page" id="gtmItemPageType" />
+                <input type="hidden" value="static" id="gtmItemPageSection" />
+                <input type="hidden" value="/Case Offer" id="gtmItemPageCategory" />
+                <input type="hidden" value="en" id="gtmItemPageLanguage" />
+                <input type="hidden" value="anonymous" id="gtmItemCustomerLoginStatus" />
+                <input type="hidden" value="" id="gtmItemCustomerId" />
+                <input type="hidden" value="anonymous" id="gtmItemCustomerMemberType" />
+                <input type="hidden" value="" id="gtmItemEmailMD5" />
+                <input type="hidden" value="" id="gtmItemEmailSHA" />
+                <input type="hidden" value="0" id="gtmItemBasketNbrProducts" />
+                <input type="hidden" value="0.00" id="gtmItemBasketValue" />
+                <input type="hidden" value="0.00" id="gtmItemBasketDiscount" />
+                <!-- End of GTM elements -->
+              </div>
+            </div>
+
+            <div class="span-24 section3 advert"></div>
+            <div class="span-24 section5 advert"></div>
+            <!-- 	<div class="actModule dotTop clearfix" style="padding-right:47.016px;"> -->
+            <!-- 	</div> -->
+            <div class="actModule clearfix dotTop">
+              <input type="button" value="Back to Home" class="btnStyle01 floatR" onclick='location.href="./"' />
+            </div>
+          </div>
+
+          <div id="footer">
+            <div id="toTopBtn">
+              <a href="#">
+                <img src="/_ui/mobile/theme-igc/img/logo/B20.png" alt="toTopBtn" class="img-responsive" />
+              </a>
+            </div>
+            <!-- Lang select start -->
+            <div align="center" class="footerCenterDiv">
+              <div class="rrp-note-container">
+                <span class="rrp">RRP</span>
+                <span class="rrp-price">
+                  stands for Recommended Retail Price.
+                </span>
+              </div>
+            </div>
+            <div class="socialIMG_no1">
+              <div class="social-btn-container marginBTM30">
+                <a href="http://www.facebook.com/watsonshongkong" target="">
+                  <img alt="Visit us on Facebook" src="/medias/sys_master/h72/hcb/8845044285470/Facebook.png" class="shareList-img" />
+                </a>
+                <a href="http://www.youtube.com/#/user/watsonshongkong" target="">
+                  <img alt="Visit us on YouTube" src="/medias/sys_master/h75/hcb/8845044383774/Youtube.png" class="shareList-img" />
+                </a>
+                <a href="http://www.watsons.com.hk/wechatwatsonshongkong" target="">
+                  <img alt="Visit us on WeChat" src="/medias/sys_master/h78/hcb/8845044482078/WeChat.png" class="shareList-img" />
+                </a>
+                <a href="http://weibo.com/watsonshk" target="">
+                  <img alt="Visit us on Weibo" src="/medias/sys_master/h7b/hcb/8845044580382/Weibo.png" class="shareList-img" />
+                </a>
+                <a href="http://www.watsons.com.hk/GetiWatsonsApp" target="">
+                  <img alt="Visit us on WatsonApp" src="/medias/sys_master/h7e/hcb/8845044678686/Watsonsapp.png" class="shareList-img" />
+                </a>
+              </div>
+
+              <div class="" style="margin: 0 10px 5px 10px; display:table;">
+                <div class="no1IMGSection" style="text-align:center">
+                  <img title="" src="/medias/sys_master/hb9/h7e/8908825198622/Asia_no1_icon_EN.png" alt="" />
+                </div>
+
+                <div style="/* line-height:1.2; */ display: table-cell; /* font-family: serif; */ vertical-align: middle; width:70%; color:#9e9e9e; padding: 0 0 0 5px">
+                  Campaign Asia-Pacific / Nielsen Asia's Top 1000 Brands online study of over 8000 respondents across 14 markets in Asia Pacific region
+                </div>
+              </div>
+
+              <div class="quality" style="margin-bottom:10px;text-align:center;">
+                <a href="https://www.hkrma.org/b5/retail_membership/recognized_qeshops.php" target="_blank" rel="noopener noreferrer">
+                  <img title="" src="/medias/sys_master/hb7/h7e/8908825133086/WARS_logo_Jan2019.jpg" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="footer-link-container">
+              <div class="tnc-container marginBTM30">
+                <br />
+                <a href="/aboutus-mobile" id="8796095906876" title="About Us">
+                  About Us
+                </a>
+                <span class="sep"></span>
+                <a href="watsonsestore" id="8796358870076" title="eStore">
+                  eStore
+                </a>
+                <span class="sep"></span>
+                <a href="http://www.watsons.com.hk/services-mobile" id="8796596732988" title="Prestige Services&lt;br/&gt;">
+                  Prestige Services
+                  <br />
+                </a>
+                <br />
+                <a href="http://www.watsons.com.hk/customerservicesmobile" id="8796358804540" title="Customer Services">
+                  Customer Services
+                </a>
+                <span class="sep"></span>
+                <a href="/legal-mobile" id="8796108096572" title="Legal">
+                  Legal
+                </a>
+              </div>
+              <a href="?uiel=Desktop" class="icon_desktop">Desktop Version</a>
+            </div>
+            <div class="social-btn-container marginBTM30"></div>
+
+            <div class="footer-copyright clearfix">
+              <div class="copyrightText fl" style="margin-bottom: 20px;">
+                <div class="content">
+                  <div id="cmsparagraphContent" class="content">
+                    ©Watsons. All Rights Reserved.
+                  </div>
+
+                  <!-- Start of GTM elements -->
+                  <input type="hidden" value="prod" id="gtmItemEnvDomain" />
+                  <input type="hidden" value="desktop" id="gtmItemEnvType" />
+                  <input type="hidden" value="static page" id="gtmItemPageType" />
+                  <input type="hidden" value="static" id="gtmItemPageSection" />
+                  <input type="hidden" value="/Case Offer" id="gtmItemPageCategory" />
+                  <input type="hidden" value="en" id="gtmItemPageLanguage" />
+                  <input type="hidden" value="anonymous" id="gtmItemCustomerLoginStatus" />
+                  <input type="hidden" value="" id="gtmItemCustomerId" />
+                  <input type="hidden" value="anonymous" id="gtmItemCustomerMemberType" />
+                  <input type="hidden" value="" id="gtmItemEmailMD5" />
+                  <input type="hidden" value="" id="gtmItemEmailSHA" />
+                  <input type="hidden" value="0" id="gtmItemBasketNbrProducts" />
+                  <input type="hidden" value="0.00" id="gtmItemBasketValue" />
+                  <input type="hidden" value="0.00" id="gtmItemBasketDiscount" />
+                  <!-- End of GTM elements -->
+                  <table>
+                    <tr>
+                      <td style="margin: 25px 0 0 0px;" class="fooGroup fl" title="">
+                        <img title="" src="/medias/sys_master/h1f/h18/8847834972190/KH_logo_en.png" alt="" />
+                      </td>
+                      <td class="fooGroup" title="175th"></td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Google Tag Manager -->
+          <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-W46ZLS" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+          </noscript>
+          <script>
+            ;(function(w, d, s, l, i) {
+              w[l] = w[l] || []
+              w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' })
+              var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : ''
+              j.async = true
+              j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl
+              f.parentNode.insertBefore(j, f)
+            })(window, document, 'script', 'dataLayer', 'GTM-W46ZLS')
+          </script>
+          <!-- End Google Tag Manager -->
+          <!-- Bing Ad Tracking Code -->
+          <script>
+            ;(function(w, d, t, r, u) {
+              var f, n, i
+              ;(w[u] = w[u] || []),
+                (f = function() {
+                  var o = { ti: '5104918' }
+                  ;(o.q = w[u]), (w[u] = new UET(o)), w[u].push('pageLoad')
+                }),
+                (n = d.createElement(t)),
+                (n.src = r),
+                (n.async = 1),
+                (n.onload = n.onreadystatechange = function() {
+                  var s = this.readyState
+                  ;(s && s !== 'loaded' && s !== 'complete') || (f(), (n.onload = n.onreadystatechange = null))
+                }),
+                (i = d.getElementsByTagName(t)[0]),
+                i.parentNode.insertBefore(n, i)
+            })(window, document, 'script', '//bat.bing.com/bat.js', 'uetq')
+          </script>
+          <noscript>
+            <img src="//bat.bing.com/action/0?ti=5104918&Ver=2" height="0" width="0" style="display:none; visibility: hidden;" />
+          </noscript>
+          <!-- End Bing Ad Tracking Code -->
+        </div>
+      </div>
+    </body>
+    <input type="hidden" value="203.184.220.101, 23.55.46.126" id="clientIpAddress" />
+    <input type="hidden" value="" id="ipStackAccessKey" />
+    <script type="text/javascript">
+      function googleAnalytics() {
+        ;(function(i, s, o, g, r, a, m) {
+          i['GoogleAnalyticsObject'] = r
+          ;(i[r] =
+            i[r] ||
+            function() {
+              ;(i[r].q = i[r].q || []).push(arguments)
+            }),
+            (i[r].l = 1 * new Date())
+          ;(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0])
+          a.async = 1
+          a.src = g
+          m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga')
+
+        ga('create', 'UA-80574172-4', 'auto')
+        //ga('create', 'UA-80574172-4', 'none');
+
+        ga('require', 'ec')
+        ga('require', 'displayfeatures')
+        ga('send', 'pageview')
+
+        $(function() {
+          // top navigation bar
+
+          // categories left menu in catalogue listing page and PDP
+          $('.menuDown .item p > b').click(function() {
+            //04.menu tracking a.set events for the top menu
+            ga('send', 'event', 'Top Menu', 'click', $.trim($(this).text()), 1)
+          })
+
+          // navigation bar sub-menu
+          $('.menuDown ul > li > a').click(function() {
+            //04.menu tracking a.set events for the top menu
+            ga('send', 'event', 'Top Menu', 'click', $.trim($(this).text()), 2)
+          })
+        })
+
+        var addItemSuccess = function(data) {
+          try {
+            var gaData = $(data)
+              .find('#gaCartPopUpData')
+              .val()
+            var gaProductDataObj = jQuery.parseJSON(gaData)
+
+            ga('ec:addProduct', {
+              id: gaProductDataObj['id'], // Product ID.
+              name: gaProductDataObj['name'], // Product name.
+              category: gaProductDataObj['category'], // Product category.
+              brand: gaProductDataObj['brand'], // Product brand.
+              variant: gaProductDataObj['variant'], // Product variant.
+              price: gaProductDataObj['price'], // Product price.
+              coupon: gaProductDataObj['coupon'], // Make use of coupon field to
+              quantity: gaProductDataObj['quantity'] // Product quantity.
+            })
+
+            ga('ec:setAction', 'add')
+            ga('send', 'event', 'UX', 'click', 'Add to Cart')
+          } catch (e) {
+            // do nth here.
+          }
+        }
+
+        // Store Locator
+        function gaSearchStore(query) {
+          ga('send', 'event', 'Store', 'search', query)
+        }
+
+        // add to Wish list
+        function addToWishList(id, name, category, brand, variant, popupUrl) {
+          try {
+            ga('ec:addProduct', {
+              id: id, // Product ID.
+              name: name, // Product name.
+              category: category, // Product category.
+              brand: brand, // Product brand.
+              variant: variant // Product variant.
+            })
+
+            ga('ec:setAction', 'click', {
+              list: 'Add to Wishlist'
+            })
+
+            ga('send', 'event', 'UX', 'click', 'Add to Wishlist')
+          } catch (e) {
+            // ignore error
+          }
+          openPopOver(popupUrl)
+        }
+
+        //social media share
+        function socialMediaShare(shareTo) {
+          try {
+            ga('ec:addProduct', {
+              id: '', // Product ID.
+              name: '', // Product name.
+              category: '', // Product category.
+              brand: '', // Product brand.
+              variant: '' // Product variant.
+            })
+            ga('ec:setAction', 'click', {
+              list: shareTo // Specify where the product is shared.
+            })
+            ga('send', 'event', 'UX', 'click', shareTo)
+          } catch (e) {
+            // ignore the error
+          }
+        }
+        // Execute the product list GA
+        $(document).ready(function() {
+          $('.gaScript').each(function() {
+            try {
+              eval($(this).html())
+            } catch (e) {
+              // ignore the error
+            }
+          })
+        })
+      }
+      var IP = $('#clientIpAddress').val()
+      var YOUR_ACCESS_KEY = $('#ipStackAccessKey').val()
+      $.ajax({
+        url: '//api.ipstack.com/' + IP + '?access_key=' + YOUR_ACCESS_KEY + '&output=json&legacy=1',
+        error: function() {
+          // will fire when timeout is reached
+          googleAnalytics()
+        },
+        success: function(response) {
+          if (response.country_code != 'CN') {
+            // do something here
+            googleAnalytics()
+          }
+        },
+        timeout: 3000
+      })
+      function addToWishList(id, name, category, brand, variant, popupUrl) {
+        try {
+          ga('ec:addProduct', {
+            id: id, // Product ID.
+            name: name, // Product name.
+            category: category, // Product category.
+            brand: brand, // Product brand.
+            variant: variant // Product variant.
+          })
+
+          ga('ec:setAction', 'click', {
+            list: 'Add to Wishlist'
+          })
+
+          ga('send', 'event', 'UX', 'click', 'Add to Wishlist')
+        } catch (e) {
+          // ignore error
+        }
+        openPopOver(popupUrl)
+      }
+
+      //social media share
+      function socialMediaShare(shareTo) {
+        try {
+          ga('ec:addProduct', {
+            id: '', // Product ID.
+            name: '', // Product name.
+            category: '', // Product category.
+            brand: '', // Product brand.
+            variant: '' // Product variant.
+          })
+          ga('ec:setAction', 'click', {
+            list: shareTo // Specify where the product is shared.
+          })
+          ga('send', 'event', 'UX', 'click', shareTo)
+        } catch (e) {
+          // ignore the error
+        }
+      }
+    </script>
+  </body>
+
+  <script type="text/javascript">
+    window.NREUM || (NREUM = {})
+    NREUM.info = {
+      applicationID: '3912054',
+      applicationTime: 95,
+      beacon: 'bam.nr-data.net',
+      queueTime: 0,
+      licenseKey: 'fe2d9d0472',
+      transactionName: 'Y1dRNUBYXBICBhFcDFodYBFAUFwGIAoLQRFbXl8EQBZ2BAUEEFkXZFNUBHFWXBURCglZBkYdVARG',
+      agent: '',
+      errorBeacon: 'bam.nr-data.net'
+    }
+  </script>
+</html>
+<div id="connect-popup" data-role="content" class="top-nav-bar-layer accmob-hotlineBox menu-container" style="display: none;" data-theme="f" data-content-theme="f" data-options='{"mode":"blank","headerText":"with","headerClose":true,"blankContent":true,"themeDialog":"f"}'>
+  <ul data-role="listview" data-inset="true"></ul>
+</div>

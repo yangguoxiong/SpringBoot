@@ -1,0 +1,99 @@
+body {
+	background: #f2f2f2;
+}
+.home {
+	float: left;
+	margin: 0;
+	width: 20%;
+	text-align: center;
+	line-height: 150%;
+}
+.home a{
+	height: 80px;
+}
+.home_logo {
+	height: 50px;
+	width: 50%;
+}
+.top_nav {
+	float: left;
+	padding: 0;
+	margin: 0;
+	width: 80%;
+}
+.top_nav li {
+	height: 80px;
+	width: 16.7%;
+	margin: 0 auto;
+	line-height: 80px;
+	list-style: none;
+	text-align: center;
+}
+.top_nav .top_nav_item {
+	position: relative;
+	float: left;
+}
+.top_nav .top-right {
+	position: relative;
+	float: right;
+	width: 8%;
+}
+.top_nav .nav_register {
+	right: 10px;
+}
+.top_nav .nav_login {
+}
+.top_nav .media img {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	vertical-align: middle;
+	display: inline-block;
+	border-color: #4d5559;
+}
+.top_nav .media:hover .personal_info {
+	visibility: visible;
+}
+.top_nav .personal_info {
+	visibility: hidden;
+	position: absolute;
+	right: 0;
+	top: 100%;
+	z-index: 1000;
+	width: 306px;
+	padding: 24px;
+	background-color: #fff;
+	box-shadow: 0 8px 16px 0 rgba(7, 17, 27, 0.2);
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+	box-sizing: border-box;
+}
+.swiper-container {
+	width: 100%;
+	height: 100%;
+}
+#main-banner-container img {
+	width: 100%;
+	height: 100%;
+}
+.footer-bg .company_info {
+	margin: 16px 40px;
+}
+.footer-bg .copyright {
+	margin: 16px 26px 50px;
+}
+.footer-bg .company_link,.copyright{
+	position: relative;
+	margin-right: 14px;
+	color: #9a9a9a;
+	font-size: 12px;
+}
+.footer-bg .company_link:not(first-child):before {
+	content: "|";
+	position: absolute;
+	left: -11.4px;
+	vertical-align: middle;
+	font-size: .8em;
+	top: 44%;
+	margin-top: -0.8em;
+}

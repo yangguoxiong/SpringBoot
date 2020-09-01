@@ -1,0 +1,3227 @@
+/*Updated CSS for edit_eshopper tel no*/
+@media (min-width:980px){
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .provide .width .width2{
+        width:100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width:979px) and (min-width:768px){
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .provide .width .width2{
+        width:100%;
+        margin-left:0;
+    }
+}
+
+@media (max-width:767px){
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .provide .width .width2{
+        width:100%;
+        margin-left: 0;
+    }
+}
+
+
+/*Updated CSS for edit_eshopper address*/
+@media (min-width:980px){
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .provide .width.width100{
+        width:13%;
+        display:inline-block;
+        margin-right:6px;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .provide .width.width100.last{
+        margin-left:none;
+    }
+    .addressType span.gray.h1.bold{
+        margin-left:5px;  
+    }
+    
+}
+
+@media (max-width:979px) and (min-width:768px){
+    
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .provide .width.width100.last{
+        margin-left:none;
+    }
+    .addressType span.gray.h1.bold{
+        margin-left:5px;  
+    }  
+}
+
+@media (max-width:767px){
+
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .provide .width.width100.last{
+        margin-left:none;
+    }
+    .addressType span.gray.h1.bold{
+        margin-left:5px;
+        display:inline-block;
+    }
+}
+
+
+
+/* 
+ * 20171218 - VIP Member MyAccount Page Updates
+ */
+.colorBlack {
+    color: #4a4a4a;
+}
+
+/* Elite Theme */
+.globalWrapper.show-menu-account .headerLogoBar .myAccount #signInItem.elite .card-point .point-progress1 .progress1,
+.myAccountAddressBook_Page.elite .addressBookLeftRightBox .addressBookRightBox .myaccount_landing_eshopper .members-card .point-progress1 .progress1,
+.myAccountAddressBook_Page.elite .addressBookLeftRightBox .addressBookRightBox .myaccount_points_summary .points_summary .word .point-progress1 .progress1 {
+    background: #c6bd92;
+}
+.globalWrapper.show-menu-account .headerLogoBar .myAccount #signInItem.elite .card-point .point-progress1 .progress1 span,
+.myAccountAddressBook_Page.elite .addressBookLeftRightBox .addressBookRightBox .myaccount_landing_eshopper .members-card .point-progress1 .progress1 span,
+.myAccountAddressBook_Page.elite .addressBookLeftRightBox .addressBookRightBox .myaccount_points_summary .points_summary .word .point-progress1 .progress1 span {
+    background: -webkit-linear-gradient(left, #070300, #a28714);
+    background: -o-linear-gradient(left, #070300, #a28714);
+    background: -moz-linear-gradient(left, #070300, #a28714);
+    background: linear-gradient(left, #070300, #a28714);
+}
+.globalWrapper.show-menu-account .headerLogoBar .myAccount #signInItem.elite .card-point .point .h2,
+.globalWrapper.show-menu-account .headerLogoBar .myAccount #signInItem.elite .card-point .point-progress-intro,
+.myAccountAddressBook_Page.elite .addressBookLeftRightBox .addressBookRightBox .myaccount_landing_eshopper .members-card .card-detail .detail .num, 
+.myAccountAddressBook_Page.elite .addressBookLeftRightBox .addressBookRightBox .myaccount_landing_eshopper .members-card .card-detail .point-progress-intro,
+.myAccountAddressBook_Page.elite .addressBookLeftRightBox .addressBookRightBox .myaccount_points_summary .points_summary .word .top p,
+.myAccountAddressBook_Page.elite .addressBookLeftRightBox .addressBookRightBox .myaccount_points_summary .points_summary .word .top span,
+.myAccountAddressBook_Page.elite .addressBookLeftRightBox .addressBookRightBox .myaccount_points_summary .points_summary .word .point-progress-intro,
+.myAccountAddressBook_Page.elite .addressBookLeftRightBox .addressBookRightBox .myaccount_points_summary .points_summary-table .tr .td:nth-of-type(4) span:last-child {
+    color: #A28443;
+}
+.globalWrapper.show-menu-account .headerLogoBar .myAccount #signInItem.elite .card-point .point-progress-intro span,
+.myAccountAddressBook_Page.elite .addressBookLeftRightBox .addressBookRightBox .myaccount_landing_eshopper .members-card .card-detail .point-progress-intro span,
+.myAccountAddressBook_Page.elite .addressBookLeftRightBox .addressBookRightBox .myaccount_points_summary .points_summary .word .point-progress-intro span {
+    color: #660F1C;
+}
+.globalWrapper.show-menu-account .headerLogoBar .myAccount #signInItem.elite .card-point .point-progress-intro p,
+.myAccountAddressBook_Page.elite .addressBookLeftRightBox .addressBookRightBox .myaccount_landing_eshopper .members-card .card-detail .point-progress-intro p,
+.myAccountAddressBook_Page.elite .addressBookLeftRightBox .addressBookRightBox .myaccount_points_summary .points_summary .word .point-progress-intro .date,
+.myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_points_summary .points_summary .word span.date {
+    color: #4a4a4a;
+}
+.globalWrapper.show-menu-account .headerLogoBar .myAccount #signInItem.elite .members-point .swiper-container .swiper-slide p,
+.myAccountAddressBook_Page.elite .addressBookLeftRightBox .addressBookRightBox .myaccount_landing_eshopper .members-point .swiper-container .swiper-slide p {
+    color: #a18643;
+}
+.myAccountAddressBook_Page.elite .addressBookLeftRightBox .addressBookRightBox .myaccount_points_summary .points_summary {
+    background-image: url("../img/elite_bg.png");
+}
+.myAccountAddressBook_Page.elite .addressBookLeftRightBox .addressBookRightBox .myaccount_points_summary .points_summary img.main-bg {
+    display: none;
+}
+/* END of Elite Theme */
+
+/* 20171218 - MyAccount Card for Member & Elite */
+.myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_points_summary .points_summary .word .top p {
+    color: #009AA9;
+}
+.globalWrapper.show-menu-account .headerLogoBar .myAccount #signInItem .members-point .swiper-container .swiper-slide span {
+    color: #9A9B9C;
+}
+.globalWrapper.show-menu-account .headerLogoBar .myAccount #signInItem .card-point .point-progress1 img.logo,
+.myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_landing_eshopper .members-card .point-progress1 img.logo {
+    position: absolute;
+    top: -8px;
+    right: 0;
+    width: 22px;
+    height: auto;
+    min-width: 22px;
+}
+.myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_points_summary .points_summary .word span.date {
+    font-weight: 400;
+}
+.globalWrapper.show-menu-account .headerLogoBar .myAccount #signInItem .card-point .point-progress-intro span,
+.myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_landing_eshopper .members-card .card-detail .point-progress-intro span {
+    font-weight: 500;
+}
+@media (min-width: 980px) {
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_landing_eshopper .members-card .card-detail {
+        max-width: 538px;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_landing_eshopper .members-card .card-detail .img {
+        width: 216px;
+        margin-left: 0;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_landing_eshopper .members-card .card-detail .detail,
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_landing_eshopper .members-card .card-detail .point-progress1,
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_landing_eshopper .members-card .card-detail .point-progress-intro {
+        margin-left: 227px;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_landing_eshopper .members-card .card-detail .detail .num {
+        line-height: 36px;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_landing_eshopper .members-card .card-detail .point-progress-intro {
+        font-size: 13px;
+        margin-top: 4px;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_landing_eshopper .members-card .card-detail .point-progress1 {
+        margin-top: 6px;
+        margin-left: 226px;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_landing_eshopper .members-card .card-detail .point-progress1 .progress1 {
+        margin-right: 28px;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_landing_eshopper .members-point .swiper-container .swiper-slide {
+        padding: 23px 0;
+    }
+}
+@media (max-width: 767px) {
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_landing_eshopper .members-card .card-detail .detail {
+        margin-left: 127px;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_landing_eshopper .members-card .card-detail .detail p {
+        line-height: 12px;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_landing_eshopper .members-card .card-detail .detail .num {
+        line-height: 35px;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_landing_eshopper .members-card .card-detail .point-progress-intro {
+        font-size: 14px;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_landing_eshopper .members-card .card-detail .detail span {
+        font-size: 11.5px;
+        line-height: 14px;
+    }
+    .globalWrapper.show-menu-account .headerLogoBar .myAccount #signInItem .card-point .point-progress1 {
+        margin-top: 15px;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_landing_eshopper .members-card .card-detail .point-progress-intro{
+        font-size: 13.5px;
+        line-height: 20px;
+    }
+    .globalWrapper.show-menu-account .headerLogoBar .myAccount #signInItem .card-point .point-progress-intro p {
+        margin-bottom: 0;
+    }
+    .globalWrapper.show-menu-account .headerLogoBar .myAccount #signInItem .members-point .swiper-container .swiper-slide:before {
+        top: 15px;
+        bottom: 15px;
+    }
+}
+
+/* MyAccount Points Summary for Member & Elite */
+
+.myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_points_summary .points_summary .word .point-progress1 {
+    max-width: 305px;
+}
+.myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_points_summary .points_summary .word p {
+    max-width: 305px;
+    margin: auto;
+    line-height: 16px;
+    font-weight: 400;
+}
+.myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_points_summary .points_summary .word .top p {
+    font-size: 14px;
+}
+.myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_points_summary .points_summary .word .point-progress1 img.logo {
+    position: absolute;
+    top: -8px;
+    right: 0;
+    width: 22px;
+    height: auto;
+    min-width: 22px;
+}
+.myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_points_summary .points_summary .word .point-progress-intro span b {
+    font-weight: 500;
+}
+
+@media (min-width: 980px) {
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_points_summary .points_summary {
+        height: 170px;
+        overflow: hidden;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_points_summary .points_summary-table .th .td {
+        font-weight: 500;
+    }
+}
+@media (min-width: 768px) {
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_points_summary .points_summary .word {
+        text-align: center;
+        position: absolute;
+        left: 0;
+        top: 10px;
+        margin-top: 0; 
+        width: 100%;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_points_summary .points_summary .word .top span {
+        font-weight: 500;
+        line-height: 40px;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_points_summary .points_summary .word .point-progress1 {
+        margin-top: 6px;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_points_summary .points_summary .word .point-progress-intro {
+        margin-top: 10px;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_points_summary .points_summary-table .td:nth-child(2) {
+        padding-left: 13px;
+        text-align: left;
+    }
+}
+@media (max-width: 767px) {
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_points_summary .points_summary {
+        background-color: #ffffff;
+    }
+    .myAccountAddressBook_Page.elite .addressBookLeftRightBox .addressBookRightBox .myaccount_points_summary .points_summary {
+        background-image: url("../img/elite_bg.png");
+    }
+    .myAccountAddressBook_Page.elite .addressBookLeftRightBox .addressBookRightBox .myaccount_points_summary .points_summary img.main-bg {
+        display: none;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_points_summary .points_summary img {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: auto;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_points_summary .points_summary img.main-bg {
+        height: 152px;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_points_summary .points_summary img.sub-bg {
+        right: 0;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_points_summary .points_summary .word {
+        position: relative;
+        margin-top: 0;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        padding-right: 45px;
+        width: 295px;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_points_summary .points_summary .word .top span {
+        font-size: 45px;
+        line-height: 45px;
+        font-weight: 500;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_points_summary .points_summary .word .point-progress1 {
+        position: relative;
+        width: 342px;
+        max-width: 400px;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_points_summary .points_summary .word .point-progress-intro {
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 10px;
+    }
+/* 
+ * END of 20171218 - VIP Member Account Page Updates
+ */
+
+}
+
+
+/* Start of order_history_Online2.css*/
+.highlight-green {
+    color: #009AA9;
+}
+
+.myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .order-tracking {
+    display: table;
+    width: 100%;
+    border-bottom: 1px solid #DFDFDF;
+    margin-bottom: 20px;
+}
+.myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .order-tracking tr th {
+    background: #009AA9;
+    color: #ffffff;
+    text-align: center;
+    padding: 8px 15px;
+}
+.myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .order-tracking tr td {
+    text-align: center;
+    padding: 15px 15px;
+}
+.myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .row2 .green-btn {
+    height: 50px;
+}
+.myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .row2 .green-btn a {
+    float: right;
+}
+
+@media (min-width: 768px) {
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table {
+        margin-top: 15px;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .th {
+        background: #F6F6F6;
+        overflow: hidden;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .th .td {
+        font-weight: 300;
+        font-size: 14px;
+        color: #4A4A4A;
+        line-height: 30px;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr {
+        cursor: pointer;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .row1 {
+        border-bottom: 1px solid #DFDFDF;
+        height: 60px;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .row1:hover {
+        background: -webkit-linear-gradient(top, rgba(0, 154, 169, 0) 0%, rgba(0, 154, 169, 0) 10%, rgba(0, 154, 169, 0.06) 10%, rgba(0, 154, 169, 0.06) 90%, rgba(0, 154, 169, 0) 90%, rgba(0, 154, 169, 0) 100%);
+        background: -o-linear-gradient(top, rgba(0, 154, 169, 0) 0%, rgba(0, 154, 169, 0) 10%, rgba(0, 154, 169, 0.06) 10%, rgba(0, 154, 169, 0.06) 90%, rgba(0, 154, 169, 0) 90%, rgba(0, 154, 169, 0) 100%);
+        background: -moz-linear-gradient(top, rgba(0, 154, 169, 0) 0%, rgba(0, 154, 169, 0) 10%, rgba(0, 154, 169, 0.06) 10%, rgba(0, 154, 169, 0.06) 90%, rgba(0, 154, 169, 0) 90%, rgba(0, 154, 169, 0) 100%);
+        background: linear-gradient(top, rgba(0, 154, 169, 0) 0%, rgba(0, 154, 169, 0) 10%, rgba(0, 154, 169, 0.06) 10%, rgba(0, 154, 169, 0.06) 90%, rgba(0, 154, 169, 0) 90%, rgba(0, 154, 169, 0) 100%);
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .row2 {
+        border-bottom: 1px solid #4A4A4A;
+        padding: 9px 13px;
+        display: none;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .row2 p {
+        overflow: hidden;
+        margin: 0;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .row2 p span {
+        font-weight: 300;
+        font-size: 14px;
+        color: #4A4A4A;
+        line-height: 27px;
+        float: left;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .row2 p span:last-child {
+        float: right;
+        padding-right: 29px;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td {
+        font-weight: 400;
+        font-size: 14px;
+        color: #4A4A4A;
+        line-height: 20px;
+        padding: 20px 0;
+        vertical-align: middle;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td .span:first-child,
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td span:first-child {
+        display: none;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .td {
+        float: left;
+        text-align: center;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .td:first-child {
+        padding-left: 13px;
+        text-align: left;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .td:nth-of-type(1) {
+        width: 10%;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .td:nth-of-type(2) {
+        width: 16%;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .td:nth-of-type(3) {
+        width: 10%;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .td:nth-of-type(4) {
+        width: 12%;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .td:nth-of-type(5) {
+        width: 16%;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .td:nth-of-type(6) {
+        width: 16%;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .td:nth-of-type(7) {
+        width: 10%;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .td:nth-of-type(8) {
+        width: 10%;
+        padding-right: 13px;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td a,
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td .show-btn {
+        color: #009AA9;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td a:hover,
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td .show-btn:hover {
+        color: #4cbcbc;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td a,
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td span {
+        font-size: 14px;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td a i.icon-faq {
+        color: #9A9B9C;
+        font-size: 20px;
+        opacity: 0.5;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td a .icon-faq:hover {
+        opacity: 1;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td .remind {
+        position: relative;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td .remind .remind-box {
+        position: absolute;
+        right: 10px;
+        top: 30px;
+        background: #FFFFFF;
+        border: 1px solid #DFDFDF;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+        font-weight: 300;
+        font-size: 12px;
+        color: #9A9B9C;
+        letter-spacing: 0;
+        line-height: 18px;
+        padding: 5px 10px;
+        display: none;
+        z-index: 1;
+        text-align: left;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td .remind .remind-box a,
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td .remind .remind-box a {
+        color: #009AA9;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td .remind .remind-box span,
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td .remind .remind-box span {
+        display: block;
+        white-space: nowrap;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td .remind .remind-box ul,
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td .remind .remind-box ul {
+        margin-bottom: 0;
+        padding-left: 15px;
+        min-width: 300px;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td .remind .remind-box,
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td .remind .remind-box {
+        right: auto;
+        left: 0;
+        top: 17px;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td .remind .remind-box,
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td .remind .remind-box {
+        padding: 8px 10px;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td .remind .remind-box span,
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td .remind .remind-box span {
+        font-size: 14px;
+        color: #4B4B4B;
+        line-height: 21px;
+        font-weight: 300;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .order-tracking {
+        display: table;
+        width: 100%;
+        border-bottom: 1px solid #DFDFDF;
+        margin-bottom: 20px;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .order-tracking tr th {
+        background: #009AA9;
+        color: #ffffff;
+        text-align: center;
+        padding: 8px 15px;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .order-tracking tr td {
+        text-align: center;
+        padding: 15px 15px;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .row2 .green-btn {
+        height: 50px;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .row2 .green-btn a {
+        float: right;
+    }
+}
+
+@media (max-width: 767px) {
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table {
+        border-top: 1px solid #DFDFDF;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .th {
+        display: none;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr {
+        background: #fff;
+        margin-bottom: 14px;
+        padding-top: 5px;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr.active .row1 .td span i {
+        -webkit-transform: rotate(0deg) scale(0.5);
+        -moz-transform: rotate(0deg) scale(0.5);
+        -ms-transform: rotate(0deg) scale(0.5);
+        transform: rotate(0deg) scale(0.5);
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .row1 {
+        overflow: hidden;
+        position: relative;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .row2 {
+        padding: 9px 15px;
+        padding-top: 0;
+        display: none;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .row2 p {
+        overflow: hidden;
+        margin: 0;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .row2 p span {
+        font-weight: 300;
+        font-size: 14px;
+        color: #4A4A4A;
+        line-height: 27px;
+        float: left;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .row2 p span:last-child {
+        float: right;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td {
+        font-weight: 400;
+        font-size: 14px;
+        color: #4A4A4A;
+        line-height: 20px;
+        padding: 5px 15px;
+        vertical-align: middle;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td .span:first-child,
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td span:first-child {
+        min-width: 83px;
+        float: left;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td .span:last-child,
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td span:last-child {
+        display: block;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td .span.show-btn,
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td span.show-btn {
+        margin: 0;
+        float: none;
+        min-width: auto;
+        position: relative;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td a,
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td .show-btn {
+        color: #009AA9;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td a:hover,
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td .show-btn:hover {
+        color: #4cbcbc;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td a,
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td span {
+        font-size: 14px;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td a i.icon-faq {
+        color: #9A9B9C;
+        font-size: 25px;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td a .icon-faq:hover {
+        opacity: 1;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td .remind {
+        position: relative;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td .remind i {
+        color: #009AA9;
+        font-size: 15px;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td .remind .remind-box {
+        position: absolute;
+        right: 10px;
+        top: 30px;
+        background: #FFFFFF;
+        border: 1px solid #DFDFDF;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+        font-weight: 300;
+        font-size: 12px;
+        color: #9A9B9C;
+        letter-spacing: 0;
+        line-height: 18px;
+        padding: 5px 10px;
+        display: none;
+        z-index: 1;
+        text-align: left;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td .remind .remind-box span {
+        display: block;
+        white-space: nowrap;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td .remind .remind-box ul {
+        margin-bottom: 0;
+        padding-left: 15px;
+        min-width: 284px;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td .remind .remind-box {
+        padding: 8px 10px;
+        left: 56px;
+        right: auto;
+        top: 17px;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td .remind .remind-box span {
+        font-size: 14px;
+        color: #4B4B4B;
+        line-height: 21px;
+        font-weight: 300;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td:nth-of-type(5) i {
+        font-size: 12px;
+        margin-left: 18px;
+        display: inline-block;
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+        vertical-align: bottom;
+        color: #9A9B9C;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td:nth-of-type(8) {
+        color: #4C4C4C;
+        font-size: 25px;
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
+        padding: 0;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td:nth-of-type(8) span:first-child {
+        display: none;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .td span i.icon-icon_arrow {
+        font-size: 12px;
+        margin-left: 5px;
+        display: inline-block;
+        -webkit-transform: rotate(180deg) scale(0.5);
+        -moz-transform: rotate(180deg) scale(0.5);
+        -ms-transform: rotate(180deg) scale(0.5);
+        transform: rotate(180deg) scale(0.5);
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        transition: 0.3s;
+        vertical-align: bottom;
+        color: #9A9B9C;
+        position: absolute;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr.active .td span i.icon-icon_arrow {
+        -webkit-transform: rotate(0deg) scale(0.5);
+        -moz-transform: rotate(0deg) scale(0.5);
+        -ms-transform: rotate(0deg) scale(0.5);
+        transform: rotate(0deg) scale(0.5);
+    }
+
+}
+
+/* End of order_history_Online2.css */
+
+/* Start of th_signup_form.css*/
+
+.th_signup_form .input-label {
+    font-weight: 300;
+    font-size: 14px;
+    color: #4A4A4A;
+    letter-spacing: 0;
+    line-height: 20px;
+    padding-left: 5px;
+    /*margin-top: 20px;*/
+}
+.th_signup_form .form .input {
+    position: relative;
+    margin-top: 12px;
+}
+.th_signup_form .form .input input {
+    border: 1px solid #DFDFDF;
+    border-radius: 4px;
+    height: 40px;
+    padding: 0 13px;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    outline: none;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    transition: 0.3s;
+}
+.th_signup_form .form .remember-forget {
+    text-align: right;
+    margin-top: 12px;
+}
+.th_signup_form .form .remember-forget a{
+    color: #009AA9;
+    text-decoration: underline;
+}
+.th_signup_form .login_link_FB_tips {
+    padding: 10px 0;
+}
+.th_signup_form .login_link_FB_tips p {
+    font-weight: 400;
+    font-size: 12px;
+    color: #999999;
+    line-height: 20px;
+    overflow: hidden;
+    padding: 1px 0;
+    margin: 0;
+}
+.th_signup_form .login_link_FB_tips p i {
+    float: left;
+}
+.th_signup_form .login_link_FB_tips p span {
+    margin-left: 20px;
+    display: block;
+}
+@media (min-width: 980px) {
+    .th_signup_form {
+        margin: 0;
+        padding-top: 25px;
+        max-width: 820px;
+    }
+    .th_signup_form .form {
+        min-height: 163px;
+        overflow: hidden;
+        width: 344px;
+        margin-bottom: 40px;
+    }
+    
+    .th_signup_form .form-btns {
+        /*width: 100%;*/
+        overflow: hidden;
+        padding-top: 15px;
+        border-top: 1px solid #DFDFDF;
+    }
+    .th_signup_form .form-btns .right {
+        float: right;
+    }
+    .th_signup_form .form-btns .left {
+        float: left;
+        font-weight: 400;
+        font-size: 14px;
+        color: #43484D;
+        line-height: 20px;
+    }
+    .green-btn.fullWidthBtn,
+    .green-btn.fullWidthBtn a {
+        width: 344px;
+        max-width: 300px;
+        margin-bottom: 15px;
+        display: inline-block;
+    }
+    .th_signup_form .form-btns .green-btn.fullWidthBtn.disabled {
+        float: left;
+    }
+}
+@media (max-width: 979px) {
+    .th_signup_form {
+        position: relative;
+        height: 80vh;
+        min-height: 280px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        padding-top: 25px;
+        max-width: 355px;
+    }
+    .th_signup_form .form .input-label {
+        font-weight: 300;
+        font-size: 14px;
+        color: #4A4A4A;
+        letter-spacing: 0;
+        line-height: 20px;
+        margin-bottom: 15px;
+    }
+    .th_signup_form .bottom-md {
+        left: 0;
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+    }
+    .green-btn.fullWidthBtn,
+    .green-btn.fullWidthBtn a {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .globalWrapper.show-mobile-menu-3 .mobile-menu-3 .i2,
+    .globalWrapper.show-mobile-menu-3 .mobile-menu-3 .i3,
+    .globalWrapper.show-mobile-menu-3 .mobile-menu-3 .i4,
+    .globalWrapper.show-mobile-menu-3 .mobile-menu-3 .i5 {
+        display: none;
+    }
+}
+
+/* End of th_signup_form.css*/
+
+/* Start of th_login_link_fb.css */
+
+.th_login_link_FB_form .input-label {
+    font-weight: 300;
+    font-size: 14px;
+    color: #4A4A4A;
+    letter-spacing: 0;
+    line-height: 20px;
+    padding-left: 5px;
+    /*margin-top: 20px;*/
+}
+.th_login_link_FB_form .form .input {
+    position: relative;
+    margin-top: 12px;
+}
+.th_login_link_FB_form .form .input input {
+    border: 1px solid #DFDFDF;
+    border-radius: 4px;
+    height: 40px;
+    padding: 0 13px;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    outline: none;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    transition: 0.3s;
+}
+.th_login_link_FB_form .form .remember-forget {
+    text-align: right;
+    margin-top: 12px;
+}
+.th_login_link_FB_form .form .remember-forget a,
+.th_login_link_FB_form .bottom-md .left a {
+    color: #009AA9;
+}
+.th_login_link_FB_form .form .remember-forget a {
+    text-decoration: underline;
+}
+.th_login_link_FB_form .login_link_FB_tips {
+    padding: 10px 0;
+}
+.th_login_link_FB_form .login_link_FB_tips p {
+    font-weight: 400;
+    font-size: 12px;
+    color: #999999;
+    line-height: 20px;
+    overflow: hidden;
+    padding: 1px 0;
+    margin: 0;
+}
+.th_login_link_FB_form .login_link_FB_tips p i {
+    float: left;
+}
+.th_login_link_FB_form .login_link_FB_tips p span {
+    margin-left: 20px;
+    display: block;
+}
+@media (min-width: 980px) {
+    .th_login_link_FB_form {
+        margin: 0;
+        padding-top: 25px;
+        max-width: 820px;
+    }
+    .th_login_link_FB_form .form {
+        min-height: 163px;
+        overflow: hidden;
+        width: 344px;
+        margin-bottom: 40px;
+    }
+    
+    .th_login_link_FB_form .form-btns {
+        /*width: 100%;*/
+        overflow: hidden;
+        padding-top: 15px;
+        border-top: 1px solid #DFDFDF;
+    }
+    .th_login_link_FB_form .form-btns .right {
+        float: right;
+    }
+    .th_login_link_FB_form .form-btns .left {
+        float: left;
+        font-weight: 400;
+        font-size: 14px;
+        color: #43484D;
+        line-height: 20px;
+    }
+    .green-btn.fullWidthBtn,
+    .green-btn.fullWidthBtn a {
+        width: 344px;
+        max-width: 300px;
+        margin-bottom: 15px;
+        display: inline-block;
+    }
+    .th_login_link_FB_form .form-btns .green-btn.fullWidthBtn.disabled {
+        float: left;
+    }
+}
+@media (max-width: 979px) {
+    .login_link_FB {
+        padding-top: 0;
+        margin-top: 90px;
+        padding-top: 10px;
+    }
+    .th_login_link_FB_form {
+        position: relative;
+        height: 80vh;
+        min-height: 280px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        padding-top: 25px;
+        max-width: 355px;
+    }
+    .th_login_link_FB_form .form .input-label {
+        font-weight: 300;
+        font-size: 14px;
+        color: #4A4A4A;
+        letter-spacing: 0;
+        line-height: 20px;
+        margin-bottom: 15px;
+    }
+    .th_login_link_FB_form .bottom-md {
+        left: 0;
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+    }
+    .green-btn.fullWidthBtn,
+    .green-btn.fullWidthBtn a {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .globalWrapper.show-mobile-menu-3 .mobile-menu-3 .i2,
+    .globalWrapper.show-mobile-menu-3 .mobile-menu-3 .i3,
+    .globalWrapper.show-mobile-menu-3 .mobile-menu-3 .i4,
+    .globalWrapper.show-mobile-menu-3 .mobile-menu-3 .i5 {
+        display: none;
+    }
+}
+
+/* End of th_login_link_fb.css */
+
+/* Start of th_custom.css */
+
+/* General */
+.highlight-green {
+    color: #009AA9 !important;
+}
+
+/* Add Contact Info */
+.myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .part-add-address {
+    padding: 20px 15px 0;
+}
+.th-add-contact-info {
+    position: relative;
+}
+.th-add-contact-info .checkbox-text {
+    margin-left: 30px;
+    margin-right: -10px;
+    margin-bottom: 25px;
+}
+.th-add-contact-info .checkbox-text .checkbox-title {
+    vertical-align: super;
+    display: inline-block;
+    line-height: 20px;
+    font-size: 14px;
+}
+.th-add-contact-info .checkbox-text .checkbox-desc {
+    font-size: 12px;
+    color: #9A9B9C;
+}
+.th-add-contact-info .add-contact-info-form {
+    margin-bottom: 30px;
+}
+.show-part-add-address .part-add-address {
+    display: block
+}
+
+
+/* End of th_custom.css */
+
+/* 20171222 - Change of Delivery Options Spacing */
+@media (min-width: 980px){
+    .PDP .PDPLeftRightBox .PDPLeftBox .seize_box .Delivery_Options .Options.first{
+        margin-top:10px !important;
+    }
+    .PDP .PDPLeftRightBox .PDPLeftBox .seize_box .Delivery_Options .Options{
+        margin-top: 25px;
+    }
+    .PDP .PDPLeftRightBox .PDPLeftBox .seize_box .Delivery_Options .Options .divh1 span{
+        color: #9B9B9B;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 979px) and (min-width: 768px){
+    .PDP .PDPLeftRightBox .PDPLeftBox .seize_box .Delivery_Options .Options.first{
+        margin-top:10px !important;
+    }
+    .PDP .PDPLeftRightBox .PDPLeftBox .seize_box .Delivery_Options .Options{
+        margin-top: 25px;
+    }
+    .PDP .PDPLeftRightBox .PDPLeftBox .seize_box .Delivery_Options .Options .divh1 span{
+        color: #9B9B9B;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 767px){
+    .PDP .PDPLeftRightBox .PDPLeftBox .seize_box .Delivery_Options .Options.first{
+        margin-top:10px !important;
+    }
+    .PDP .PDPLeftRightBox .PDPLeftBox .seize_box .Delivery_Options .Options{
+        margin-top: 25px;
+    }
+    .PDP .PDPLeftRightBox .PDPLeftBox .seize_box .Delivery_Options .Options .divh1 span{
+        color: #9B9B9B;
+        line-height: 20px;
+    }
+}
+/* End of 20171222 - Change of Delivery Options Spacing */
+
+/* 20171229 - Order History Overlap Fixing*/
+@media (min-width: 768px){
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr{
+        cursor:pointer;
+        height:60px;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .row1{
+        width:100%;
+        float:left;
+        margin:0;
+        /*margin-top:-20px;*/
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .row2{
+        border-bottom: none !important;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .row2 .green-btn{
+        border-bottom:1px solid #4A4A4A;
+        width:100%;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .row2{
+        padding: 0 !important;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .td:nth-of-type(2){
+        padding-top:10px;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .th .td:nth-of-type(2){
+        padding-top:0;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .tr .row2.show{
+        display:block;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 979px){
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .td:nth-of-type(2){
+        padding-top:20px;
+        padding:10px 10px;
+    }
+    .myAccountAddressBook_Page .addressBookLeftRightBox .contentLeft{
+        width:100%;
+    }
+    .myAccountAddressBook_Page{
+        background-color:transparent;
+    }
+}
+
+@media (min-width: 1280px){
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .order_history_Online .order_history_Online2-table .td:nth-of-type(2){
+        padding-top:20px;
+    }
+}
+/* End of 20171229 - Order History Overlap Fixing*/
+
+/* TH UI Issue - WAT-4225, WAT-4227, WAT-4229, WAT-4230 */
+@media screen and (max-width: 767px) {
+    /* homepage-popupboxnotify-ui */
+    .homepage .homepage_content .ProductSales .bottomProductSales .productItemContainer .productNameInfo .notify .ADD_TO_BAG-popup {
+        left: -50px;
+    }
+    .homepage .homepage_content .ProductSales .bottomProductSales .productItemContainer .productNameInfo .notify .ADD_TO_BAG-popup:before {
+        left: 88%;
+    }
+    .homepage .homepage_content .ProductSales .bottomProductSales .productItemContainer .productNameInfo .notify .ADD_TO_BAG-popup:after {
+        left: 88%;
+    }
+    /* myacc-notifyme-ui */
+    .globalWrapper .mobile-menu-3 span{
+        margin-right: 90px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width:60%;
+    }
+    /* wishlist-ui */
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_notify > ul li .intro .h1 {
+        padding-right: 36px;
+    }
+}
+
+/* Store Locator Map UI Issue */
+@media screen and (min-width: 768px) {
+    .checkout_store .checkout_store_content .part-choseStore .store-map .map .google-map .address-box {
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .storeLocator_map .checkout_store_content .transparent .address-box .img,
+    .storeLocator_map .checkout_store_content .transparent .address-box .address-details {
+        display: inline-block;
+        float: none;
+    }
+    .storeLocator_map .checkout_store_content .transparent .address-box .img {
+        vertical-align: top;
+    }
+    .storeLocator_map .checkout_store_content .transparent .address-box .address-details {
+        margin-left: 10px;
+        white-space: normal;
+        width: 80%;
+    }
+    .storeLocator_map .checkout_store_content .transparent .address-box .h1, .storeLocator_map .checkout_store_content .transparent .address-box .h2, .storeLocator_map .checkout_store_content .transparent .address-box .img-icon-list {
+        margin-left: 0;
+    }
+}
+/* End of 20171229 - Order History Overlap Fixing*/
+
+/* 20180119 - Homepage 5 secs timeout slider */
+
+@media (min-width: 1280px){
+    .homepage .timeout_slider{
+        width:100%;
+        max-width:1250px !important;
+        margin:0 auto;
+    }
+    .homepage .timeout_slider p{
+        max-width: 1250px !important;
+    }
+}
+@media (min-width: 980px){
+    .homepage .timeout_slider{
+        height:40px;
+        width:100%;
+        max-width:960px;
+        margin:0 auto;
+
+    }
+    .homepage .timeout_slider p{
+        font-size:12px;
+        line-height:40px;
+        vertical-align: middle;
+        background-color:red;
+        height:40px;
+        text-align: center;
+        max-width: 960px;
+        color:#fff;
+    }
+}
+@media (min-width: 768px) and (max-width: 979px){
+    .homepage .timeout_slider{
+        height:35px;
+        width:100%;
+    }
+    .homepage .timeout_slider p{
+        font-size:12px;
+        line-height:35px;
+        vertical-align:middle;
+        background-color:red;
+        height:35px;
+        text-align:center;
+        color:#fff;
+        max-width:896px;
+        margin:0 auto;
+    }
+}
+@media (max-width:767px){
+    .homepage .timeout_slider{
+        height:35px;
+        width:100%;
+    }
+    .homepage .timeout_slider p{
+        font-size:12px;
+        line-height:35px;
+        vertical-align:middle;
+        background-color:red;
+        height:35px;
+        text-align:center;
+        color:#fff;
+    }
+
+}
+
+/* End of 20180119 - Homepage 5 secs timeout slider */
+
+/* 20180123 - Change checkout buttons color */
+.checkout_homeD .checkout_homeD_content .tool-box .green-btn a,
+.checkout_payment .checkout_payment_part2 .total-box .green-btn a,
+.shop_bag .shopBagContentbLeftBottomBox .paymentContent .paymentContentTopBottomBox .check_out-btn a,
+.shop_bag .shopBagContentRightTopBox .check_out-btn a
+{
+    background-color: #E600A0;
+    border:1px solid #E600A0;
+    line-height: 38px;
+}
+.checkout_homeD .checkout_homeD_content .tool-box .green-btn a:hover,
+.checkout_payment .checkout_payment_part2 .total-box .green-btn a:hover,
+.shop_bag .shopBagContentbLeftBottomBox .paymentContent .paymentContentTopBottomBox .check_out-btn a:hover,
+.shop_bag .shopBagContentRightTopBox .check_out-btn a:hover
+{
+    opacity:.8;
+}
+
+/* End of 20180123 - Change checkout buttons color */
+
+/* 20180124 - Card loss new layout */
+
+.myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_card_loss .message p{
+    font-weight: 500;
+    font-size:14px;
+    color:#4A4A4A;
+}
+.myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_card_loss .message p span{
+    color:#009AA9;
+}
+.myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_card_loss .important-message .message-bold, .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_card_loss .important-message .message{
+    margin-left:0 !important;
+}
+.myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_card_loss .important-message{
+    margin-top:20px;
+    padding-bottom:5px !important;
+    min-height:100px !important;
+
+}
+@media (min-width:769px) and (max-width:979px){
+    .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_card_loss .important-message{
+        margin-top:10px !important;
+    }
+  .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_card_loss{
+        padding: 10px 0 !important;
+        min-height:300px;
+        margin-top:5px !important;
+  }  
+  .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_card_loss .message p{
+        padding-left:15px;
+  }
+  .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_card_loss .important-message .message p{
+        padding-left:0 !important;
+  }
+}
+@media (max-width:768px){
+   .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_card_loss{
+        min-height:300px;
+  } 
+  .myAccountAddressBook_Page .addressBookLeftRightBox .addressBookRightBox .myaccount_card_loss .important-message .message-bold{
+        min-height:18px !important;
+        font-weight:bold !important;
+  }
+
+}
+/* End of 20180124 - Card loss new layout */
+
+/* 20180126 - General Style Fix */
+html, body {
+    overflow-x: visible;
+}
+.container {
+    max-width: 100%;
+}
+
+.bgPink {
+    background-color: #e600a0;
+}
+.cPink {
+    color: #e600a0;
+}
+
+/* Homepage */
+.homepage .pop-up {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    min-height: 71px;
+}
+.homepage .pop-up .wrapper {
+    position: relative;
+    height: 100%;
+}
+.homepage .pop-up .wrapper .text-box {
+    position: absolute;
+    max-width: 385px;
+    padding: 12px 6% 5px 2%;
+    background-color: white;
+    box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.3);
+    line-height: 22px;
+    right: 0;
+}
+@media (min-width: 980px) {
+    .homepage .pop-up .wrapper {
+        max-width: 960px;
+        min-width: 358px;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 1280px) {
+    .homepage .pop-up .wrapper {
+        max-width: 1250px;
+    }
+}
+@media (max-width: 768px) {
+    .homepage .pop-up {
+        position: fixed;
+        bottom: 61px;
+        min-height: unset;
+        z-index: 114;
+    }
+    .homepage .pop-up .wrapper {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .homepage .pop-up .wrapper .text-box {
+        padding: 12px 16% 5px 4%;
+        width: 100%;
+        max-width: 100%;
+        position: relative;
+    }
+}
+
+.homepage .pop-up .wrapper .text-box a {
+    color: #009AA9;
+    text-decoration: underline;
+}
+.homepage .pop-up .wrapper .close-btn {
+    position: absolute;
+    right: 18px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.brand-logo-slider {
+    position: relative;
+}
+.homepage .brand-logo-slider .swiper-slide .img {
+    width: 80px;
+    margin: 0 auto;
+    line-height: 50px;
+}
+.homepage .brand-logo-slider .swiper-slide .img img {
+    max-width: 100px;
+    max-height: 50px;
+    margin: 0 auto;
+}
+.brand-logo-slider .swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.brand-logo-slider .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+#brand-logo-container .swiper-button-next, #brand-logo-container .swiper-button-prev {
+    right: 0;
+    color: gray;
+    font-size: 32px;
+    background: #fff;
+    width: 20px
+}
+#brand-logo-container .swiper-button-next:hover, #brand-logo-container .swiper-button-prev:hover {
+    opacity: 1;
+}
+#brand-logo-container .swiper-button-prev {
+    left: 0;
+}
+#brand-logo-container .swiper-button-next {
+    text-align: right;
+}
+
+/*Start of mobile search menu*/
+@media screen and (min-width:980px){
+    .mSearchMenu{
+        display:none !important;
+    }
+}
+@media screen and (max-width:979px){
+    .mSearchMenu{
+        display:none;
+        background-color:white;
+        width:100vw;
+        height:100vh;
+    }
+    /*hide*/
+    .mobile-searching .headerMessage, .mobile-searching .headerLogoBar,
+    .mobile-searching main, .mobile-searching footer, .mobile-searching .mobile-menu{
+        display:none;
+    }
+    .mSearchMenu .searchbox {
+        width:100%;
+        height:60px;
+        background:#fff;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+    }
+    .mSearchMenu .searchbox .search-field{
+        padding:15px 20px;
+        vertical-align:middle;
+        position:relative;
+        width:90%;
+        display:inline-block;
+    }
+    .mSearchMenu .searchbox .search-field input{
+        padding: 0;
+        border: 1px #DFDFDF solid;
+        padding-left: 20px;
+        padding-right: 40px;
+        border-radius: 14px;
+        width: 100%;
+        color: #424242;
+        outline: 0;
+        height: 30px;
+        display: block;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        transition: 0.4s;
+        display:inline-block;  
+    }
+    .mSearchMenu .searchbox .search-field input.active{
+        border: 1px #009AA9 solid; 
+    }
+    .mSearchMenu .searchbox .search-field .icon-search{
+        height: 30px;
+        width: 30px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 18px;
+        color: #9a9b9c;
+        display: inline-block;
+        position:absolute;
+        right:25px;
+        top:15px;
+    }
+    .mSearchMenu .searchbox .search-field.show-delete .icon-search{
+        display: none;
+    }
+    .mSearchMenu .searchbox .search-field .icon-delete{
+        height: 30px;
+        width: 30px;
+        text-align: center;
+        line-height: 30px;
+        position: absolute;
+        font-size: 18px;
+        color: #9a9b9c;
+        top:15px;
+        right:25px;
+        display: none;
+    }
+    .mSearchMenu .searchbox .search-field.show-delete .icon-delete{
+        display: block;
+    }
+    .mSearchMenu .searchbox .search-field.show-delete .icon-delete:hover{
+        color:#009AA9;
+    }
+    .mSearchMenu .searchbox .cancel-search{
+        text-decoration: none;
+        font-size:14px;
+        color:#9a9b9c;
+    }
+    .mSearchMenu .searchbox .cancel-search:hover{
+        color:#009aa9;
+    }
+    .mSearchMenu .search-record{
+        padding:20px 10px;
+        border-bottom:10px solid #eee;
+    }
+    .mSearchMenu .title{
+        display:inline-block;
+        width:92%;
+        color:#009AA9;
+        font-weight:bold;
+        font-size:16px;
+    }
+    .mSearchMenu .search-history .clear-btn{
+        display:inline-block;
+        color:#9a9b9c;
+        font-size:12px;
+    }
+    .mSearchMenu .search-history .history-record,
+    .mSearchMenu .hot-search .hot-record,
+    .mSearchMenu .search-brand .brand-suggest,
+    .mSearchMenu .search-brand .product-suggest,
+    .mSearchMenu .search-product-list .view-all-suggest{
+        border:1px solid #4B4B4B;
+        border-radius:5px;
+        color:#4B4B4B;
+        padding:5px;
+        display:inline-block;
+        margin-right:10px;
+        margin-top:10px;
+    }
+    .mSearchMenu .search-history .history-record a,
+    .mSearchMenu .hot-search .hot-record a,
+    .mSearchMenu .search-brand .brand-suggest a,
+    .mSearchMenu .search-brand .product-suggest a{
+        text-decoration:none;
+        color:#4B4B4B;
+    }
+    .mSearchMenu .search-product-list .view-all-suggest a{
+        text-decoration:none;
+        color:#009AA9;
+    }
+    .mSearchMenu .search-brand .search-brand-list .title{
+        display:table;
+    }
+
+    .mSearchMenu .search-product-list .view-all-suggest{
+        border:1px solid #009AA9;
+        color:#009AA9;  
+        display: table;
+    }
+
+    .mSearchMenu .hot-search, .mSearchMenu .search-product-list{
+        padding:20px 10px;
+    }
+    .mSearchMenu .divider{
+        padding:20px 10px;
+        border-bottom:10px solid #eee;
+    }
+    .mSearchMenu .search-suggestion, .mSearchMenu .search-brand{
+        display:none;
+    }
+}
+
+/*End of mobile search menu*/
+
+/* 20180502 - Citi PWP */
+@media screen and (min-width: 980px){
+    header .citi-header{
+        background-color: #EEEEEE;
+        height: 80px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+    }
+    header .citi-header .header-container{
+        width: 800px;
+        margin: 0 auto;
+    }
+    header .citi-header .left{
+        float: left;
+        display: inline-block;
+        color: #032c6e;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 40px;
+    }
+    header .citi-header .right{
+        float: right;
+        display: inline-block;
+        color: #032c6e;
+        font-size: 16px;
+        line-height: 40px;
+    } 
+    main.citi-main{
+        margin-top: 100px;
+        min-height: 650px;
+    }
+    main.citi-main .container{
+        width: 800px;
+        margin: 0 auto;
+    }
+    .citi-main .brand-logo{
+        text-align: center;
+        line-height: 100px;
+    }
+    .citi-main .brand-logo img:first-child{
+        width: 200px;
+    }
+    .citi-main .brand-logo img:last-child{
+        width: 120px;
+    }
+    .citi-main .pwp-msg{
+        text-align: center;
+        margin: 20px;
+        font-size: 18px;
+    }
+    .citi-main .otp-title{
+        text-align: center;
+        margin: 20px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .citi-main .redemption-title{
+        text-align: center;
+        margin: 20px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .citi-main .redemption-detail{
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .citi-main .redemption-detail .redemption-amount{
+        position: relative;
+        background: #eeeeee;
+        line-height: 40px;
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    .citi-main .redemption-detail .redemption-amount .unit{
+         position: absolute; 
+         display: block; 
+         left: 10px; 
+         top: 1px; 
+         z-index: 9; 
+    }
+    .citi-main .redemption-detail #redemptionAmount{
+        text-align: center;
+        background: none;
+        border: none;
+    }
+    .citi-main .redemption-detail .points-deducted,
+    .citi-main .redemption-detail .available-points,
+    .citi-main .redemption-detail .transaction-amount{
+        text-align: left;
+    }
+    .citi-main .redemption-detail .points-deducted span,
+    .citi-main .redemption-detail .available-points span,
+    .citi-main .redemption-detail .transaction-amount span{
+        float: right;
+    }
+    .citi-main .redemption-detail .layout-slider{
+        margin: 40px 0 60px;
+    }
+    .citi-main .redemption-detail .jslider .jslider-pointer{
+        background-image: none;
+        background-color: #1894d5;
+        border-radius: 50px;
+    }
+    .citi-main .redemption-detail .jslider .jslider-label{
+        opacity: 1;
+    }
+    .citi-main .redemption-detail .jslider .jslider-label,
+    .citi-main .redemption-detail .jslider .jslider-value{
+        top:20px;
+        font-size: 12px;
+    }
+    .citi-main .redemption-detail .jslider .jslider-bg .l,
+    .citi-main .redemption-detail .jslider .jslider-bg .f,
+    .citi-main .redemption-detail .jslider .jslider-bg .r,
+    .citi-main .redemption-detail .jslider .jslider-bg .v{
+        background: none;
+        background-color: #cce7ff;
+    }
+    .citi-main .pwp-msg span{
+        font-weight: 500;
+    }
+    .citi-main .pwp-card{
+        text-align: center;
+        font-size: 16px;
+    }
+    .citi-main .pwp-card p{
+        margin: 20px;
+        font-size: 14px;
+    }
+    .citi-main .otp-title img{
+        width: 45px;
+        display: inline-block;
+    }
+    .citi-main .otp-title .otp-fail{
+        display: inline-block;
+        margin-left: 10px;
+    }
+    .citi-main .otp-cs p{
+        text-align: center;
+        font-size: 16px;
+    }
+    .citi-main .otp-cs p a{
+        color: #1894d5;
+    }
+    .citi-main .otp-success-msg p{
+        text-align: center;
+        font-size: 16px;
+    }
+    .citi-main .otp-success-msg span{
+        font-weight: 500;
+    }
+    .citi-main .otp-phone p{
+        text-align: center;
+        font-size: 18px;
+    }
+    .citi-main .otp-phone span{
+        font-weight: 500;
+    }
+    .citi-main .otp-phone .input-phone{
+        text-align: center;
+        margin: 20px 0 40px;
+    }
+    .citi-main .otp-phone .input-phone input:first-child{
+        background: transparent !important;
+        color: #000;
+        border: 1px solid #9a9b9c;
+        padding: 10px;
+        width: 70px;
+        margin-right: 5px;
+    }
+    .citi-main .otp-phone .input-phone input:last-child{
+        background: transparent !important;
+        color: transparent;
+        border: 1px solid #9a9b9c;
+        padding: 10px;
+        text-shadow: 0 0 0 black;
+    }
+    .citi-main .otp-phone .input-otp{
+        width: 300px;
+        overflow: hidden;
+        margin: 0 auto;
+        padding: 20px 0;
+        width: 100%;
+        text-align: center;
+    }
+    .citi-main .otp-phone .input-otp .input-otp-inner{
+        left: 0;
+        position: sticky;
+    }
+    .citi-main .otp-phone .input-otp .input-otp-inner .partition-otp{
+        width: 55px;
+        border: none;
+        border-bottom: 1px solid #000;
+        display: inline-block;
+        text-align: center;
+        margin: 0 5px;
+        font-size: 25px;
+    }
+    .citi-main .otp-phone .input-otp .input-otp-inner .partition-otp:focus{
+        outline: none;
+    }
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button { 
+      -webkit-appearance: none; 
+      margin: 0; 
+    }
+    .citi-main .pwp-card .citi-rewards,
+    .citi-main .pwp-card .citi-premier,
+    .citi-main .pwp-card .citi-prestige{
+        width: 30%;
+        display: inline-block;
+    }
+    .citi-main .pwp-card .citi-rewards img,
+    .citi-main .pwp-card .citi-premier img,
+    .citi-main .pwp-card .citi-prestige img{
+        width: 100%;
+        border: 15px solid transparent;
+    }
+    .citi-main .pwp-card .citi-rewards p,
+    .citi-main .pwp-card .citi-premier p,
+    .citi-main .pwp-card .citi-prestige p{
+        margin: 0;
+    }
+    .citi-main .pwp-card .message p{
+        color: #717171;
+        text-align: center;
+        font-size: 14px;
+        margin: 30px;
+    }
+    .citi-main .pwp-card .message p a{
+        color: #717171;
+        text-decoration: underline;
+    }
+    .citi-main .confirmation p{
+        color: #717171;
+        text-align: center;
+        font-size: 14px;
+        margin: 30px;
+    }
+    .citi-main .confirmation p a{
+        color: #717171;
+        text-decoration: underline;
+    }
+    .citi-main .confirmation .error{
+        color: red;
+        text-align: center;
+        margin: 10px 0 30px;
+        display: none;
+    }
+    .citi-main .confirmation .citi-button-blue{
+        background-color: #1894d5;
+        width: 200px;
+        line-height: 40px;
+        font-size: 18px;
+        color: white;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .citi-main .confirmation .citi-button-blue a{
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+    }
+    .citi-main .confirmation #continue-shopping,
+    .citi-main .confirmation #finish-shopping{
+        width: 250px;
+        margin-top: 30px;
+    }
+    .citi-main .confirmation .citi-button-grey{
+        display: none;
+        background-color: #959595;
+        width: 250px;
+        line-height: 40px;
+        font-size: 18px;
+        color: white;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .citi-main .confirmation .citi-button-grey a{
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+    }
+    .citi-main .confirmation #send-otp{
+        display: none;
+    }
+    .citi-main .confirmation .continue-shopping{
+        text-align: center;
+        margin: 20px;
+        font-size: 14px;
+    }
+    .citi-main .confirmation .continue-shopping a{
+        color: #032c6e;
+        text-decoration: underline;
+    }
+
+    footer.citi-footer{
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 112;
+        padding-bottom: 0;
+    }
+    footer .contact{
+        background-color: #EEEEEE;
+        height: 30px;
+        line-height: 50px;
+        text-align: center;
+        color: #032c6e;
+    }
+    footer .copyright{
+        background-color: #EEEEEE;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 979px){
+    header .citi-header{
+        background-color: #EEEEEE;
+        height: 80px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+    }
+    header .citi-header .header-container{
+        width: 700px;
+        margin: 0 auto;
+    }
+    header .citi-header .left{
+        float: left;
+        display: inline-block;
+        color: #032c6e;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 40px;
+    }
+    header .citi-header .right{
+        float: right;
+        display: inline-block;
+        color: #032c6e;
+        font-size: 16px;
+        line-height: 40px;
+    } 
+    main.citi-main{
+        margin-top: 100px;
+        min-height: 650px;
+    }
+    main.citi-main .container{
+        width: 700px;
+        margin: 0 auto;
+    }
+    .citi-main .brand-logo{
+        text-align: center;
+        line-height: 100px;
+    }
+    .citi-main .brand-logo img:first-child{
+        width: 200px;
+    }
+    .citi-main .brand-logo img:last-child{
+        width: 120px;
+    }
+    .citi-main .pwp-msg{
+        text-align: center;
+        margin: 20px;
+        font-size: 18px;
+    }
+    .citi-main .otp-title{
+        text-align: center;
+        margin: 20px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .citi-main .redemption-title{
+        text-align: center;
+        margin: 20px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .citi-main .redemption-detail{
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .citi-main .redemption-detail .redemption-amount{
+        position: relative;
+        background: #eeeeee;
+        line-height: 40px;
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    .citi-main .redemption-detail .redemption-amount .unit{
+         position: absolute; 
+         display: block; 
+         left: 10px; 
+         top: 1px; 
+         z-index: 9; 
+    }
+    .citi-main .redemption-detail #redemptionAmount{
+        text-align: center;
+        background: none;
+        border: none;
+    }
+    .citi-main .redemption-detail .points-deducted,
+    .citi-main .redemption-detail .available-points,
+    .citi-main .redemption-detail .transaction-amount{
+        text-align: left;
+    }
+    .citi-main .redemption-detail .points-deducted span,
+    .citi-main .redemption-detail .available-points span,
+    .citi-main .redemption-detail .transaction-amount span{
+        float: right;
+    }
+    .citi-main .redemption-detail .layout-slider{
+        margin: 40px 0 60px;
+    }
+    .citi-main .redemption-detail .jslider .jslider-pointer{
+        background-image: none;
+        background-color: #1894d5;
+        border-radius: 50px;
+    }
+    .citi-main .redemption-detail .jslider .jslider-label{
+        opacity: 1;
+    }
+    .citi-main .redemption-detail .jslider .jslider-label,
+    .citi-main .redemption-detail .jslider .jslider-value{
+        top:20px;
+        font-size: 12px;
+    }
+    .citi-main .redemption-detail .jslider .jslider-bg .l,
+    .citi-main .redemption-detail .jslider .jslider-bg .f,
+    .citi-main .redemption-detail .jslider .jslider-bg .r,
+    .citi-main .redemption-detail .jslider .jslider-bg .v{
+        background: none;
+        background-color: #cce7ff;
+    }
+    .citi-main .pwp-msg span{
+        font-weight: 500;
+    }
+    .citi-main .pwp-card{
+        text-align: center;
+        font-size: 16px;
+    }
+    .citi-main .pwp-card p{
+        margin: 20px;
+        font-size: 14px;
+    }
+    .citi-main .otp-title img{
+        width: 45px;
+        display: inline-block;
+    }
+    .citi-main .otp-title .otp-fail{
+        display: inline-block;
+        margin-left: 10px;
+    }
+    .citi-main .otp-cs p{
+        text-align: center;
+        font-size: 16px;
+    }
+    .citi-main .otp-cs p a{
+        color: #1894d5;
+    }
+    .citi-main .otp-success-msg p{
+        text-align: center;
+        font-size: 16px;
+    }
+    .citi-main .otp-success-msg span{
+        font-weight: 500;
+    }
+    .citi-main .otp-phone p{
+        text-align: center;
+        font-size: 18px;
+    }
+    .citi-main .otp-phone span{
+        font-weight: 500;
+    }
+    .citi-main .otp-phone .input-phone{
+        text-align: center;
+        margin: 20px 0 40px;
+    }
+    .citi-main .otp-phone .input-phone input:first-child{
+        background: transparent !important;
+        color: #000;
+        border: 1px solid #9a9b9c;
+        padding: 10px;
+        width: 70px;
+        margin-right: 5px;
+    }
+    .citi-main .otp-phone .input-phone input:last-child{
+        background: transparent !important;
+        color: transparent;
+        border: 1px solid #9a9b9c;
+        padding: 10px;
+        text-shadow: 0 0 0 black;
+    }
+    .citi-main .otp-phone .input-otp{
+        width: 300px;
+        overflow: hidden;
+        margin: 0 auto;
+        padding: 20px 0;
+        width: 100%;
+        text-align: center;
+    }
+    .citi-main .otp-phone .input-otp .input-otp-inner{
+        left: 0;
+        position: sticky;
+    }
+    .citi-main .otp-phone .input-otp .input-otp-inner .partition-otp{
+        width: 55px;
+        border: none;
+        border-bottom: 1px solid #000;
+        display: inline-block;
+        text-align: center;
+        margin: 0 5px;
+        font-size: 25px;
+    }
+    .citi-main .otp-phone .input-otp .input-otp-inner .partition-otp:focus{
+        outline: none;
+    }
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button { 
+      -webkit-appearance: none; 
+      margin: 0; 
+    }
+    .citi-main .pwp-card .citi-rewards,
+    .citi-main .pwp-card .citi-premier,
+    .citi-main .pwp-card .citi-prestige{
+        width: 30%;
+        display: inline-block;
+    }
+    .citi-main .pwp-card .citi-rewards img,
+    .citi-main .pwp-card .citi-premier img,
+    .citi-main .pwp-card .citi-prestige img{
+        width: 100%;
+        border: 15px solid transparent;
+    }
+    .citi-main .pwp-card .citi-rewards p,
+    .citi-main .pwp-card .citi-premier p,
+    .citi-main .pwp-card .citi-prestige p{
+        margin: 0;
+    }
+    .citi-main .pwp-card .message p{
+        color: #717171;
+        text-align: center;
+        font-size: 14px;
+        margin: 30px;
+    }
+    .citi-main .pwp-card .message p a{
+        color: #717171;
+        text-decoration: underline;
+    }
+    .citi-main .confirmation p{
+        color: #717171;
+        text-align: center;
+        font-size: 14px;
+        margin: 30px;
+    }
+    .citi-main .confirmation p a{
+        color: #717171;
+        text-decoration: underline;
+    }
+    .citi-main .confirmation .error{
+        color: red;
+        text-align: center;
+        margin: 10px 0 30px;
+        display: none;
+    }
+    .citi-main .confirmation .citi-button-blue{
+        background-color: #1894d5;
+        width: 200px;
+        line-height: 40px;
+        font-size: 18px;
+        color: white;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .citi-main .confirmation .citi-button-blue a{
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+    }
+    .citi-main .confirmation #continue-shopping,
+    .citi-main .confirmation #finish-shopping{
+        width: 250px;
+        margin-top: 30px;
+    }
+    .citi-main .confirmation .citi-button-grey{
+        display: none;
+        background-color: #959595;
+        width: 250px;
+        line-height: 40px;
+        font-size: 18px;
+        color: white;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .citi-main .confirmation #send-otp{
+        display: none;
+    }
+    .citi-main .confirmation .citi-button-grey a{
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+    }
+    .citi-main .confirmation .continue-shopping{
+        text-align: center;
+        margin: 20px;
+        font-size: 14px;
+    }
+    .citi-main .confirmation .continue-shopping a{
+        color: #032c6e;
+        text-decoration: underline;
+        cursor: pointer;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+    }
+
+    footer.citi-footer{
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 112;
+        padding-bottom: 0;
+    }
+    footer .contact{
+        background-color: #EEEEEE;
+        height: 30px;
+        line-height: 50px;
+        text-align: center;
+        color: #032c6e;
+    }
+    footer .copyright{
+        background-color: #EEEEEE;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 767px){
+    header .citi-header{
+        background-color: #EEEEEE;
+        height: 50px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        padding: 0;
+    }
+    header .citi-header .header-container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    header .citi-header .left{
+        color: #032c6e;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 50px;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+    main.citi-main{
+        margin-top: 60px;
+    }
+    main.citi-main.authentication{
+        height: 700px;
+    }
+    main.citi-main .container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .citi-main .brand-logo{
+        text-align: initial;
+        line-height: 90px;
+    }
+    .citi-main .brand-logo img:first-child{
+        width: 170px;
+        margin: 20px;
+    }
+    .citi-main .brand-logo img:last-child{
+        width: 120px;
+        float: right;
+    }
+    .citi-main .pwp-msg{
+        text-align: center;
+        margin: 20px;
+        font-size: 18px;
+    }
+    .citi-main .otp-title{
+        text-align: center;
+        margin: 20px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .citi-main .redemption-title{
+        text-align: center;
+        margin: 20px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .citi-main .redemption-detail{
+        text-align: center;
+        width: 100%;
+        padding: 20px;
+        padding-top: 0px;
+    }
+    .citi-main .redemption-detail .redemption-amount{
+        position: relative;
+        background: #eeeeee;
+        line-height: 40px;
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    .citi-main .redemption-detail .redemption-amount .unit{
+         position: absolute; 
+         display: block; 
+         left: 10px; 
+         top: 1px; 
+         z-index: 9; 
+    }
+    .citi-main .redemption-detail #redemptionAmount{
+        text-align: center;
+        background: none;
+        border: none;
+    }
+    .citi-main .pwp-card .citi-rewards img, .citi-main .pwp-card .citi-premier img, .citi-main .pwp-card .citi-prestige img{
+        border: 10px solid transparent;
+    }
+    .citi-main .redemption-detail .points-deducted,
+    .citi-main .redemption-detail .available-points,
+    .citi-main .redemption-detail .transaction-amount{
+        text-align: left;
+    }
+    .citi-main .redemption-detail .points-deducted span,
+    .citi-main .redemption-detail .available-points span,
+    .citi-main .redemption-detail .transaction-amount span{
+        float: right;
+    }
+    .citi-main .redemption-detail .layout-slider{
+        margin: 40px 0 60px;
+    }
+    .citi-main .redemption-detail .jslider .jslider-pointer{
+        background-image: none;
+        background-color: #1894d5;
+        border-radius: 50px;
+    }
+    .citi-main .redemption-detail .jslider .jslider-label{
+        opacity: 1;
+    }
+    .citi-main .redemption-detail .jslider .jslider-label,
+    .citi-main .redemption-detail .jslider .jslider-value{
+        top:20px;
+        font-size: 12px;
+    }
+    .citi-main .redemption-detail .jslider .jslider-bg .l,
+    .citi-main .redemption-detail .jslider .jslider-bg .f,
+    .citi-main .redemption-detail .jslider .jslider-bg .r,
+    .citi-main .redemption-detail .jslider .jslider-bg .v{
+        background: none;
+        background-color: #cce7ff;
+    }
+    .citi-main .pwp-msg span{
+        font-weight: 500;
+    }
+    .citi-main .pwp-card{
+        text-align: center;
+        font-size: 16px;
+    }
+    .citi-main .pwp-card p{
+        margin: 20px;
+        font-size: 14px;
+    }
+    .citi-main .otp-title img{
+        width: 45px;
+        margin-bottom: 10px;
+    }
+    .citi-main .otp-title .otp-fail{
+        text-align: center;
+    }
+    .citi-main .otp-cs p{
+        text-align: center;
+        font-size: 16px;
+    }
+    .citi-main .otp-cs p a{
+        color: #1894d5;
+    }
+    .citi-main .otp-success-msg{
+        margin:40px;
+    }
+    .citi-main .otp-success-msg p{
+        text-align: center;
+        font-size: 16px;
+    }
+    .citi-main .otp-success-msg span{
+        font-weight: 500;
+    }
+    .citi-main .otp-phone p{
+        text-align: center;
+        font-size: 18px;
+    }
+    .citi-main .otp-phone span{
+        font-weight: 500;
+    }
+    .citi-main .otp-phone .input-phone{
+        text-align: center;
+        margin: 20px 0 40px;
+    }
+    .citi-main .otp-phone .input-phone input:first-child{
+        background: transparent !important;
+        color: #000;
+        border: 1px solid #9a9b9c;
+        padding: 10px;
+        width: 70px;
+        margin-right: 5px;
+    }
+    .citi-main .otp-phone .input-phone input:last-child{
+        background: transparent !important;
+        color: transparent;
+        border: 1px solid #9a9b9c;
+        padding: 10px;
+        text-shadow: 0 0 0 black;
+    }
+    .citi-main .otp-phone .input-otp{
+        width: 300px;
+        overflow: hidden;
+        margin: 0 auto;
+        padding: 20px 0;
+        width: 100%;
+        text-align: center;
+    }
+    .citi-main .otp-phone .input-otp .input-otp-inner{
+        left: 0;
+        position: sticky;
+    }
+    .citi-main .otp-phone .input-otp .input-otp-inner .partition-otp{
+        width: 40px;
+        border: none;
+        border-bottom: 1px solid #000;
+        display: inline-block;
+        text-align: center;
+        margin: 0 5px;
+        font-size: 25px;
+    }
+    .citi-main .otp-phone .input-otp .input-otp-inner .partition-otp:focus{
+        outline: none;
+    }
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button { 
+      -webkit-appearance: none; 
+      margin: 0; 
+    }
+    .citi-main .pwp-card .citi-rewards,
+    .citi-main .pwp-card .citi-premier,
+    .citi-main .pwp-card .citi-prestige{
+        width: 30%;
+        display: inline-block;
+        min-height: 120px;
+        vertical-align: top;
+    }
+    .citi-main .pwp-card .citi-rewards img,
+    .citi-main .pwp-card .citi-premier img,
+    .citi-main .pwp-card .citi-prestige img{
+        width: 100%;
+        border: 15px solid transparent;
+    }
+    .citi-main .pwp-card .citi-rewards p,
+    .citi-main .pwp-card .citi-premier p,
+    .citi-main .pwp-card .citi-prestige p{
+        margin: 0;
+    }
+    .citi-main .pwp-card .message p{
+        color: #717171;
+        text-align: center;
+        font-size: 14px;
+    }
+    .citi-main .pwp-card .message p a{
+        color: #717171;
+        text-decoration: underline;
+    }
+    .citi-main .confirmation{
+        position: fixed;
+        bottom: 65px;
+        left: 0;
+        right: 0;
+        background: white;
+        padding-top: 15px;
+    }
+    .citi-main .confirmation p{
+        color: #717171;
+        text-align: center;
+        font-size: 14px;
+        margin: 30px;
+    }
+    .citi-main .confirmation p a{
+        color: #717171;
+        text-decoration: underline;
+    }
+    .citi-main .confirmation .error{
+        color: red;
+        text-align: center;
+        margin: 10px 0 30px;
+        display: none;
+    }
+    .citi-main .confirmation .citi-button-blue{
+        background-color: #1894d5;
+        width: 200px;
+        line-height: 40px;
+        font-size: 18px;
+        color: white;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .citi-main .confirmation .citi-button-blue a{
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+    }
+    .citi-main .confirmation #continue-shopping,
+    .citi-main .confirmation #finish-shopping{
+        width: 250px;
+        margin-bottom: 30px;
+    }
+    .citi-main .confirmation #send-otp{
+        display: none;
+    }
+    .citi-main .confirmation .citi-button-grey{
+        display: none;
+        background-color: #959595;
+        width: 250px;
+        line-height: 40px;
+        font-size: 18px;
+        color: white;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .citi-main .confirmation .citi-button-grey a{
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+    }
+    .citi-main .confirmation .continue-shopping{
+        text-align: center;
+        margin: 20px;
+        font-size: 14px;
+    }
+    .citi-main .confirmation .continue-shopping a{
+        color: #032c6e;
+        text-decoration: underline;
+        cursor: pointer;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+    }
+
+    footer.citi-footer{
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 112;
+        padding-bottom: 0;
+    }
+    footer .contact{
+        background-color: #EEEEEE;
+        height: 25px;
+        line-height: 40px;
+        text-align: center;
+        color: #032c6e;
+    }
+    footer .copyright{
+        background-color: #EEEEEE;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+    }
+}
+
+/* End of 20180502 - Citi PWP */
+
+/* 20180514 - Citi PWP Popup */
+@media screen and (min-width: 980px){
+    .pwp_confirmation{
+        display: none;
+        width:100%;
+        height:100%;
+        top:0;
+        position:fixed;
+        background-color:rgba(0,0,0,0.6);
+        z-index:199999;
+    }
+    .pwp_confirmation .pwp_confirmation_popup{
+        background-color:white;
+        position:relative;
+        top:25%;
+        width:80%;
+        margin:0 auto;
+        padding:20px;
+    }
+    .pwp_confirmation .pwp_confirmation_popup .close-btn{
+        text-align: right;
+        font-size: 14px;
+    }
+    .pwp_confirmation .pwp_confirmation_popup .close-btn a{
+        text-decoration: none;
+        color:#4c4c4c;
+    }
+    .pwp_confirmation .pwp_confirmation_popup .title{
+        font-size:14px;
+        text-align:center;
+        margin: 20px;
+    }
+    .pwp_confirmation .pwp_confirmation_popup .back-btn .citi-button-blue{
+        background-color: #1894d5;
+        width: 200px;
+        line-height: 40px;
+        font-size: 18px;
+        color: white;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .pwp_confirmation .pwp_confirmation_popup .back-btn .citi-button-blue a{
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+    }
+    .pwp_confirmation .pwp_confirmation_popup .back-btn .exit-popup{
+        text-align: center;
+        margin: 20px;
+        font-size: 14px;
+    }
+    .pwp_confirmation .pwp_confirmation_popup .back-btn .exit-popup a{
+        color: #032c6e;
+        text-decoration: underline;
+        cursor: pointer;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 979px){
+    .pwp_confirmation{
+        display: none;
+        width:100%;
+        height:100%;
+        top:0;
+        position:fixed;
+        background-color:rgba(0,0,0,0.6);
+        z-index:199999;
+    }
+    .pwp_confirmation .pwp_confirmation_popup{
+        background-color:white;
+        position:relative;
+        top:25%;
+        width:90%;
+        margin:0 auto;
+        padding:20px;
+    }
+    .pwp_confirmation .pwp_confirmation_popup .close-btn{
+        text-align: right;
+        font-size: 14px;
+    }
+    .pwp_confirmation .pwp_confirmation_popup .close-btn a{
+        text-decoration: none;
+        color:#4c4c4c;
+    }
+    .pwp_confirmation .pwp_confirmation_popup .title{
+        font-size:14px;
+        text-align:center;
+        margin: 20px;
+    }
+    .pwp_confirmation .pwp_confirmation_popup .back-btn .citi-button-blue{
+        background-color: #1894d5;
+        width: 200px;
+        line-height: 40px;
+        font-size: 18px;
+        color: white;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .pwp_confirmation .pwp_confirmation_popup .back-btn .citi-button-blue a{
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+    }
+    .pwp_confirmation .pwp_confirmation_popup .back-btn .exit-popup{
+        text-align: center;
+        margin: 20px;
+        font-size: 14px;
+    }
+    .pwp_confirmation .pwp_confirmation_popup .back-btn .exit-popup a{
+        color: #032c6e;
+        text-decoration: underline;
+        cursor: pointer;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+    }
+}
+@media screen and (max-width: 767px){
+    .pwp_confirmation{
+        display: none;
+        width:100%;
+        height:100%;
+        top:0;
+        position:fixed;
+        background-color:rgba(0,0,0,0.6);
+        z-index:199999;
+    }
+    .pwp_confirmation .pwp_confirmation_popup{
+        background-color:white;
+        position:relative;
+        top:25%;
+        width:90%;
+        margin:0 auto;
+        padding:20px;
+    }
+    .pwp_confirmation .pwp_confirmation_popup .close-btn{
+        text-align: right;
+        font-size: 14px;
+    }
+    .pwp_confirmation .pwp_confirmation_popup .close-btn a{
+        text-decoration: none;
+        color:#4c4c4c;
+    }
+    .pwp_confirmation .pwp_confirmation_popup .title{
+        font-size:14px;
+        text-align:center;
+        margin: 20px;
+    }
+    .pwp_confirmation .pwp_confirmation_popup .back-btn .citi-button-blue{
+        background-color: #1894d5;
+        width: 200px;
+        line-height: 40px;
+        font-size: 18px;
+        color: white;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .pwp_confirmation .pwp_confirmation_popup .back-btn .citi-button-blue a{
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+    }
+    .pwp_confirmation .pwp_confirmation_popup .back-btn .exit-popup{
+        text-align: center;
+        margin: 20px;
+        font-size: 14px;
+    }
+    .pwp_confirmation .pwp_confirmation_popup .back-btn .exit-popup a{
+        color: #032c6e;
+        text-decoration: underline;
+        cursor: pointer;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+    }
+}
+/* End of 20180514 - Citi PWP Popup */
+@media (max-width: 767px) {
+    body.language-en .globalWrapper.show-mobile-header-message .mobileHeaderMessage .store-lang > div, 
+    body.language-en .globalWrapper.show-mobile-header-message .mobileHeaderMessage .store-lang .delivery, 
+    body.language-en .globalWrapper.show-mobile-header-message .mobileHeaderMessage .store-lang .delivery .dest, 
+    body.language-en .globalWrapper.show-mobile-header-message .mobileHeaderMessage .store-lang .watsonGoSwitch {
+            padding: 0 2px;
+    }
+}
+
+
+.bgPink a {
+    overflow: hidden;
+  }
+  
+  .bgPink a span {
+    display: inline-block;
+    height: auto;
+    line-height: 1em;
+  }
+  
+  .animate-slide-up {
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-animation-name: slider;
+    animation-name: slider;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+  }
+  
+  @-webkit-keyframes slider {
+    0% {
+      -webkit-transform: translateY(0%);
+      transform: translateY(0%);
+    }
+    45% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+      transform: translateY(0%);
+    }
+    49% {
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    51% {
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    55% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+      transform: translateY(0%);
+    }
+    100% {
+      -webkit-transform: translateY(0%);
+      transform: translateY(0%);
+    }
+  }
+  
+  @keyframes slider {
+    0% {
+      -webkit-transform: translateY(0%);
+      transform: translateY(0%);
+    }
+    45% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+      transform: translateY(0%);
+    }
+    49% {
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    51% {
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    55% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+      transform: translateY(0%);
+    }
+    100% {
+      -webkit-transform: translateY(0%);
+      transform: translateY(0%);
+    }
+  }
+  
+/* 20180809 - add pages for Category entry DY at homepage (by vendor) */
+.dy-products {
+    padding-bottom: 10px;
+}
+.dy-products .title {
+    display: block;
+    height: 30px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    font-size: 18px;
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.dy-products .title .line {
+    display: block;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 1px;
+    background-color: #000;
+    z-index: 1;
+    margin-top: 15px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+.dy-products .title .text {
+    position: absolute;
+    font-weight: bold;
+    text-align: center;
+    border: 0px solid red;
+    display: inline-block;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: #fff;
+    z-index: 2;
+    position: absolute;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.dy-products .swiper-container {
+    border-right: 1px solid #dfdfdf !important;
+}
+.dy-products .swiper-container .pagination-btn {
+    background-image: none;
+    background-color: #7fccd4;
+    width: 32px;
+    height: 44px;
+}
+.dy-products .swiper-container .pagination-btn > i {
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.dy-products .swiper-container .pagination-btn.swiper-button-prev {
+    border-radius: 0px 5px 5px 0px;
+    left: 0px;
+}
+
+.dy-products .swiper-container .pagination-btn.swiper-button-next {
+    border-radius: 5px 0px 0px 5px;
+    right: 0px;
+}
+.dy-products .swiper-container .pagination-btn.swiper-button-disabled{
+    display: none;
+}
+
+.dy-products .swiper-container .swiper-wrapper .swiper-slide {
+    border: 1px solid #dfdfdf;
+    border-right: 0px solid #dfdfdf;
+    cursor: pointer;
+    padding: 15px 15px;
+    text-align: center;
+}
+
+.dy-products .swiper-container .swiper-wrapper .swiper-slide:last-child {
+    border-right: 0px solid #dfdfdf !important;
+}
+
+.dy-products .swiper-container .swiper-wrapper .swiper-slide img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.dy-products .swiper-container .swiper-wrapper .swiper-slide .desc {
+    color: #43484d;
+    font-size: 13px;
+    height: 4.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+}
+.dy-products .swiper-container .swiper-wrapper .swiper-slide .price {
+    color: #e600a0;
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+@media screen and (min-width: 768px) and (max-width: 979px){
+    .dy-products .title .line{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+@media (max-width: 767px) {
+    .dy-products {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .dy-products .title .line {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .dy-products .title .text {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .dy-products .swiper-container .pagination-btn > i {
+        font-size: 23px;
+    }
+    .dy-products .swiper-container .pagination-btn {
+        width: 26px;
+        height: 40px;
+        display: inline-block;
+    }
+    .dy-products .swiper-container .swiper-wrapper .swiper-slide .desc {
+        font-size: 14px;
+        line-height: 1.5em;
+        margin-top: 5px;
+        height: 3em;
+    }
+}
+
+/*# sourceMappingURL=dy_custom.css.map */
+/* End of 20180809 - add pages for Category entry DY at homepage (by vendor) */
+
+/* Add Shipment label */
+.shipment-label {
+  position: relative;
+  font-size: 12px;
+  margin: 5px 0 0;
+}
+.shipment-label i {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 1px 4px;
+  transform: translateY(-50%);
+}
+.shipment-label span {
+  display: inline-block;
+  min-width: 98px;
+  padding: 7px 9px 6px 13px;
+  margin-left: 12px;
+  border-radius: 20px 5px 5px 20px;
+}
+.shipment-label.first span {
+  background-color: #f2f9f7;
+}
+.shipment-label.first i {
+  background: #86c9bf;
+}
+.shipment-label.second span {
+  background-color: #fdffcd;
+}
+.shipment-label.second i {
+  background-color: #ced529;
+}
+.shipment-label.third span {
+  background-color: #fff2d7;
+}
+.shipment-label.third i {
+  background-color: #f9bb41;
+}
+/* End of Add Shipment label */
+
+/* Add Alert Note Box */
+.alert-note {
+  position: relative;
+  background-color: #e5f4f6;
+  border: none;
+  border-radius: 5px;
+  color: #009aa9;
+  font-size: 14px;
+  margin-top: 30px;
+  margin-bottom: 0;
+  padding-left: 40px;
+}
+.alert-note i {
+  position: absolute;
+  left: 15px;
+  top: 13px;
+  font-size: 17px;
+}
+@media (max-width: 767px) {
+  .alert-note {
+    background-color: #ffffff;
+    border-radius: 0;
+    margin: 0 -15px;
+  }
+}
+/* End of Add Alert Note Box */
+
+/*  20191029 Max order amount alert */
+.checkout_homeD .summary_bar .title .check_out-btn.max-order-amount a{
+    width: 217px;
+    background-color: #e600a0;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: 0;
+    position: relative;
+    line-height: normal;
+    padding: 11px 12px;
+}
+
+.over-alert{
+    position: absolute;
+    left: 20%;
+    top: -67px;
+    padding: 9px 12px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    display: block;
+    z-index: 1;
+    width: 321px;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #e2231a;
+}
+
+.over-alert:before,
+.over-alert:after{
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    content: '';
+    left: 63%;
+    position: absolute;
+    margin-left: -8px;
+}
+
+.over-alert:before {
+    border-top: 8px solid rgba(0, 0, 0, 0.1);
+    bottom: -8px;
+}
+
+.over-alert:after {
+    border-top: 8px solid #fff;
+    bottom: -5px;
+}
+
+.checkout_homeD .summary_bar .title .over-alert i.icon-missing{
+    display: inline-block;
+    float: left;
+    width: 35px;
+    transform: unset;
+    -webkit-transform: unset;
+    -moz-transform: unset;
+    -ms-transform: unset;
+}
+
+.over-alert .icon-missing:before{
+    font-size: 35px;
+    color: #e2231a;
+    font-weight: bold;
+}
+
+.over-alert .alert-message{
+    margin-left: 45px;
+}
+
+@media screen and (max-width: 979px) and (min-width: 768px){
+    .checkout_homeD .summary_bar .summary_pay .check_out-btn.max-order-amount a{
+        width: 100%;
+        background-color: #e600a0;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 500;
+        border: 0;
+    }
+
+    .over-alert{
+        left: -22%;
+        top: -70px;
+    }
+
+    .checkout_homeD .summary_bar .summary_pay .over-alert i.icon-missing{
+        display: inline-block;
+        float: left;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .checkout_homeD .summary_bar .summary_pay .check_out-btn.max-order-amount a{
+        background-color: #e600a0;
+        text-transform: uppercase;
+        border: 0;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .checkout_homeD .summary_bar .summary_pay .over-alert i.icon-missing{
+        display: inline-block;
+        float: left;
+    }
+
+    .over-alert{
+        left: -136%;
+        top: -69px;
+    }
+
+    .over-alert:before, .over-alert:after{
+        left: 79%;
+    }
+}
+/* End of Max order amount alert */

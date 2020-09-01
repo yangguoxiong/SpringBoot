@@ -1,0 +1,87 @@
+.ws-banner {
+  max-width: 875px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ws-banner .banner-bg {
+  text-align: center;
+  overflow: hidden;
+}
+
+.ws-banner .banner-bg img {
+  position: absolute;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.ws-banner .banner-text {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.ws-banner .banner-text .no-of-promo-code,
+.ws-banner .banner-text .modify-date {
+  position: absolute;
+  width: 100%;
+}
+
+.ws-banner .banner-text .no-of-promo-code {
+  bottom: 40px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.ws-banner .banner-text .no-of-promo-code span {
+  font-size: 43px;
+  font-weight: normal;
+  margin: 0px 5px;
+}
+
+@media (max-width: 375px) {
+  .ws-banner .banner-text .no-of-promo-code {
+    font-size: 22px;
+    bottom: 50px;
+  }
+  .ws-banner .banner-text .no-of-promo-code span {
+    font-size: 36px;
+  }
+}
+
+.ws-banner .banner-text .modify-date {
+  bottom: 25px;
+  font-size: 14px;
+}
+
+@media (max-width: 375px) {
+  .ws-banner .banner-text .modify-date {
+    bottom: 35px;
+    font-size: 13px;
+  }
+}
+
+.ws-banner .banner-text .for-more {
+  display: inline;
+  position: absolute;
+  right: 38px;
+  bottom: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #000;
+}
+
+@media (max-width: 375px) {
+  .ws-banner .banner-text .for-more {
+    right: 10px;
+    bottom: 10px;
+    font-size: 18px;
+  }
+}

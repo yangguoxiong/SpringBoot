@@ -1,0 +1,68 @@
+<html lang="en" >
+
+<head>
+   
+    <style>
+
+
+
+    .wtchk-loading-bg {
+    	background: #fff url('assets/img/search-animation/search-bg.png');
+    	position: relative;
+    	height: 300px;
+        animation: wtchk-bg 4.5s linear infinite;
+    }
+
+    .wtchk-loading-bag {
+    	width: 200px;
+        height: 200px;
+        margin: 2% auto;
+    	background: url('assets/img/search-animation/bag_loop-20180619.png');
+    	animation: wtchk-bag 1.5s steps(34) infinite;
+    	position: relative;
+    	z-index: 10;
+    }
+    @keyframes wtchk-bg{
+        100% {
+            background-position: 300px;
+        }
+    }
+
+	@keyframes wtchk-bag {
+		100% {
+			background-position: -6800px;
+		}
+	}
+
+	.wtchk-loading-product {
+    	width: 100px;
+        height: 100px;
+        margin: 0 auto;
+    	background: url('assets/img/search-animation/drop-products.png');    	
+    	background-position: 0px -10px;
+    	background-repeat: repeat-y;
+    	animation: wtchk-product 1.5s infinite linear;
+    	margin-bottom: -75px;
+    }
+
+	@keyframes wtchk-product {
+		0%   { background-position: 0 -10px; }
+		100% {
+			background-position: 0 395px;
+		}
+	}
+
+    </style>
+</head>
+
+<body>
+
+
+	<div class="wtchk-loading-bg">
+		<div class="wtchk-loading-product"></div>
+		<div class="wtchk-loading-bag"></div>
+	</div>
+
+</body>
+
+</html>

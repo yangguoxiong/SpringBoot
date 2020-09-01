@@ -1,0 +1,195 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?20677349');
+  src: url('../font/fontello.eot?20677349#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?20677349') format('woff2'),
+       url('../font/fontello.woff?20677349') format('woff'),
+       url('../font/fontello.ttf?20677349') format('truetype'),
+       url('../font/fontello.svg?20677349#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?20677349#fontello') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon--:before { content: '\e800'; } /* '' */
+.icon-add:before { content: '\e801'; } /* '' */
+.icon-account:before { content: '\e802'; } /* '' */
+.icon-add-wishlist:before { content: '\e803'; } /* '' */
+.icon-added-wishlist:before { content: '\e804'; } /* '' */
+.icon-back-arrow:before { content: '\e805'; } /* '' */
+.icon-bag:before { content: '\e806'; } /* '' */
+.icon-blog-icon:before { content: '\e807'; } /* '' */
+.icon-box01:before { content: '\e808'; } /* '' */
+.icon-box02:before { content: '\e809'; } /* '' */
+.icon-check-box01:before { content: '\e80a'; } /* '' */
+.icon-check-box02:before { content: '\e80b'; } /* '' */
+.icon-close:before { content: '\e80c'; } /* '' */
+.icon-comment:before { content: '\e80d'; } /* '' */
+.icon-convenience-store:before { content: '\e80e'; } /* '' */
+.icon-delete:before { content: '\e80f'; } /* '' */
+.icon-email:before { content: '\e810'; } /* '' */
+.icon-facebook:before { content: '\e811'; } /* '' */
+.icon-history:before { content: '\e812'; } /* '' */
+.icon-home-d:before { content: '\e813'; } /* '' */
+.icon-home:before { content: '\e814'; } /* '' */
+.icon-icard:before { content: '\e815'; } /* '' */
+.icon-icon_added-wishlist:before { content: '\e816'; } /* '' */
+.icon-icon_arrow:before { content: '\e817'; } /* '' */
+.icon-icon_wishlist:before { content: '\e818'; } /* '' */
+.icon-instagram:before { content: '\e819'; } /* '' */
+.icon-line:before { content: '\e81a'; } /* '' */
+.icon-login:before { content: '\e81b'; } /* '' */
+.icon-more:before { content: '\e81c'; } /* '' */
+.icon-product-image_s:before { content: '\e81d'; } /* '' */
+.icon-product:before { content: '\e81e'; } /* '' */
+.icon-promotion:before { content: '\e81f'; } /* '' */
+.icon-search:before { content: '\e820'; } /* '' */
+.icon-share:before { content: '\e821'; } /* '' */
+.icon-share_email:before { content: '\e822'; } /* '' */
+.icon-share_facebook:before { content: '\e823'; } /* '' */
+.icon-shopping-bag:before { content: '\e824'; } /* '' */
+.icon-size-box:before { content: '\e825'; } /* '' */
+.icon-star01:before { content: '\e826'; } /* '' */
+.icon-star02:before { content: '\e827'; } /* '' */
+.icon-store-location:before { content: '\e828'; } /* '' */
+.icon-top:before { content: '\e829'; } /* '' */
+.icon-wechat:before { content: '\e82a'; } /* '' */
+.icon-youtube:before { content: '\e82b'; } /* '' */
+.icon-zoom:before { content: '\e82c'; } /* '' */
+.icon-overseas:before { content: '\e82d'; } /* '' */
+.icon-write:before { content: '\e82e'; } /* '' */
+.icon-edit-icon:before { content: '\e82f'; } /* '' */
+.icon-faq:before { content: '\e830'; } /* '' */
+.icon-filter:before { content: '\e831'; } /* '' */
+.icon-gps:before { content: '\e832'; } /* '' */
+.icon-information-icon:before { content: '\e833'; } /* '' */
+.icon-lock:before { content: '\e834'; } /* '' */
+.icon-map-icon:before { content: '\e835'; } /* '' */
+.icon-phone-icon:before { content: '\e836'; } /* '' */
+.icon-add-address-icon:before { content: '\e837'; } /* '' */
+.icon-home-delivery:before { content: '\e838'; } /* '' */
+.icon-guid-view:before { content: '\e839'; } /* '' */
+.icon-list-view:before { content: '\e83a'; } /* '' */
+.icon-save-for-later:before { content: '\e83b'; } /* '' */
+.icon-save-for-later_hover:before { content: '\e83c'; } /* '' */
+.icon-korea-direct-delivery:before { content: '\e83d'; } /* '' */
+.icon-warning:before { content: '\e83e'; } /* '' */
+.icon-notify:before { content: '\e83f'; } /* '' */
+.icon-sdd:before { content: '\e840'; } /* '' */
+.icon-link:before { content: '\e841'; } /* '' */
+.icon-reflash-01:before { content: '\e842'; } /* '' */
+.icon-cash-on-delivery:before { content: '\e843'; } /* '' */
+.icon-free-delivery:before { content: '\e844'; } /* '' */
+.icon-locate-our-store:before { content: '\e845'; } /* '' */
+.icon-notification:before { content: '\e846'; } /* '' */
+.icon-social-responsibilities:before { content: '\e847'; } /* '' */
+.icon-topproduct:before { content: '\e848'; } /* '' */
+.icon-visit-our-store:before { content: '\e849'; } /* '' */
+.icon-carrer:before { content: '\e84a'; } /* '' */
+.icon-spin5:before { content: '\e84b'; } /* '' */
+.icon-checked-thin:before { content: '\e84c'; } /* '' */
+.icon-information:before { content: '\e84d'; } /* '' */
+.icon-pay-code-icon:before { content: '\e84e'; } /* '' */
+.icon-printer:before { content: '\e84f'; } /* '' */
+.icon-return:before { content: '\e850'; } /* '' */
+.icon-step1:before { content: '\e851'; } /* '' */
+.icon-step2:before { content: '\e852'; } /* '' */
+.icon-step3:before { content: '\e853'; } /* '' */
+.icon-step4:before { content: '\e854'; } /* '' */
+.icon-step5:before { content: '\e855'; } /* '' */
+.icon-vip:before { content: '\e856'; } /* '' */
+.icon-missing:before { content: '\e857'; } /* '' */
+.icon-right-open-big:before { content: '\e858'; } /* '' */
+.icon-left-open-big:before { content: '\e859'; } /* '' */
+.icon-address:before { content: '\e85a'; } /* '' */
+.icon-answer:before { content: '\e85b'; } /* '' */
+.icon-ask:before { content: '\e85c'; } /* '' */
+.icon-zoomin:before { content: '\e85d'; } /* '' */
+.icon-zoomout:before { content: '\e85e'; } /* '' */
+.icon-arrow_left:before { content: '\e85f'; } /* '' */
+.icon-bottommenu_account:before { content: '\e860'; } /* '' */
+.icon-arrow_down:before { content: '\e861'; } /* '' */
+.icon-bottommenu_home:before { content: '\e862'; } /* '' */
+.icon-bottommenu_storelocator:before { content: '\e863'; } /* '' */
+.icon-bottommenu_more:before { content: '\e864'; } /* '' */
+.icon-footer_socialmedia_facebook:before { content: '\e865'; } /* '' */
+.icon-bottommenu_offer:before { content: '\e866'; } /* '' */
+.icon-footer_socialmedia_waibot:before { content: '\e867'; } /* '' */
+.icon-tabbar_download:before { content: '\e868'; } /* '' */
+.icon-homepage_bottom_locateourstores:before { content: '\e869'; } /* '' */
+.icon-tabbar_delivery:before { content: '\e86a'; } /* '' */
+.icon-footer_socialmedia_wechat:before { content: '\e86b'; } /* '' */
+.icon-footer_socialmedia_youtube:before { content: '\e86c'; } /* '' */
+.icon-homepage_bottom_career:before { content: '\e86d'; } /* '' */
+.icon-homepage_bottom_socialrespon:before { content: '\e86e'; } /* '' */
+.icon-topbar_sidemenu_go:before { content: '\e86f'; } /* '' */
+.icon-tabbar_pickup:before { content: '\e870'; } /* '' */
+.icon-topbar_close:before { content: '\e871'; } /* '' */
+.icon-topbar_filter:before { content: '\e872'; } /* '' */
+.icon-topbar_close_search:before { content: '\e873'; } /* '' */
+.icon-topbar_desktop_account:before { content: '\e874'; } /* '' */
+.icon-topbar_search:before { content: '\e875'; } /* '' */
+.icon-topbar_shoppingcart:before { content: '\e876'; } /* '' */
+.icon-topbar_sidemenu:before { content: '\e877'; } /* '' */
+.icon-topbar_close-1:before { content: '\e878'; } /* '' */
+.icon-delivery_international:before { content: '\e879'; } /* '' */
+.icon-delivery_watsonsdelivery:before { content: '\e87a'; } /* '' */
+.icon-delivery_watsonsgo:before { content: '\e87b'; } /* '' */
+.icon-delivery_watsonsstore:before { content: '\e87c'; } /* '' */
+.icon-subscribe_1_0:before { content: '\e87d'; } /* '' */
+.icon-scan:before { content: '\e87e'; } /* '' */
+.icon-checked:before { content: '\e87f'; } /* '' */
+.icon-eye:before { content: '\e880'; } /* '' */
+.icon-clock:before { content: '\e881'; } /* '' */
+.icon-edit:before { content: '\e886'; } /* '' */
+.icon-credit-card:before { content: '\e888'; } /* '' */
+.icon-delete-bin:before { content: '\e889'; } /* '' */
+.icon-delivery-way:before { content: '\e88a'; } /* '' */
+.icon-delivery-complete:before { content: '\e88b'; } /* '' */
+.icon-delivery-preparing:before { content: '\e88c'; } /* '' */
+.icon-payment-wallet:before { content: '\e88d'; } /* '' */
+.icon-selected-tick:before { content: '\e88e'; } /* '' */

@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+@import "function";
+
+$desktop-hi: 1280px;
+$desktop: 980px;
+$mobile: 768px;
+$prefix: "at-revamp";
+
+.dy-products {
+  //border: 1px solid #000;
+  padding-bottom: 10px;
+  @media (max-width: $mobile) {
+    padding-left: 0px;
+    padding-right: 0px; 
+  }
+  .title {
+    display: block;
+    height: 30px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    font-size: 18px;
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .line {
+      //position: absolute;
+      display: block;
+      @include box-sizing();
+      height: 1px;
+      background-color: #000;
+      z-index: 1;
+      margin-top: 15px;
+      margin-left: 120px;
+      margin-right: 120px;
+      @media (max-width: $mobile) {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+    .text {
+      position: absolute;
+      font-weight: bold;
+      text-align: center;
+      border: 0px solid red;
+      display: inline-block;
+      padding-left: 60px;
+      padding-right: 60px;
+      @media (max-width: $mobile) {
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+      background-color: #fff;
+      z-index: 2;
+      @include float(centerMiddle);
+    }
+  }
+  .swiper-container {
+    border-right: 1px solid #dfdfdf !important;
+    .pagination-btn {
+      background-image: none;
+      background-color: #7fccd4;
+      width: 32px;
+      height: 44px;
+      $r: 5px;
+      > i {
+        font-size: 25px;
+        @media (max-width: $mobile) {
+          font-size: 23px;
+        }
+        color: #fff;
+        @include float(centerMiddle);
+      }
+      @media (max-width: $mobile) {
+        width: 26px;
+        height: 40px;
+        display: inline-block;
+      }
+      &.swiper-button-prev {
+        @include border-radius(0px $r $r 0px);
+        left: 0px;
+      }
+      &.swiper-button-next {
+        @include border-radius($r 0px 0px $r);
+        right: 0px;
+      }
+    }
+    &.swiper-container-horizontal {
+    }
+    .swiper-wrapper {
+      .swiper-slide {
+        border: 1px solid #dfdfdf;
+        //border: 1px solid red;
+        border-right: 0px solid #dfdfdf;
+        cursor: pointer;
+        &:last-child {
+          border-right: 0px solid #dfdfdf !important;
+        }
+        //border: 1px solid red;
+        padding: 15px 15px;
+        text-align: center;
+        &.swiper-slide-active {
+          //border: 1px solid red;
+        }
+        img {
+          max-width: 100%;
+          vertical-align: middle;
+          //border: 1px solid red;
+        }
+        .desc {
+          color: #43484d;
+          font-size: 13px;
+          height: 4.5em;
+          @media (max-width: $mobile) {
+            font-size: 14px;
+            line-height: 1.5em;
+            margin-top: 5px;
+            height: 3em;
+          }
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+        }
+        .price {
+          color: #e600a0;
+          font-size: 17px;
+          font-weight: bold;
+          margin-top: 10px;
+        }
+      }
+    }
+    .swiper-pagination {
+    }
+    .swiper-notification {
+    }
+  }
+}

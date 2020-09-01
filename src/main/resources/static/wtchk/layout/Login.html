@@ -1,0 +1,2184 @@
+<!DOCTYPE html>
+<html lang="en" class="zh">
+    <head>
+        <meta charset="UTF-8">
+        <title>home page</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/fontello.css">
+        <link rel="stylesheet" href="assets/css/swiper.min.css">
+        <link rel="stylesheet" href="assets/css/global.css">
+        <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+        <link rel="stylesheet" href="assets/css/header_footer.css">
+        <link rel="stylesheet" href="assets/css/mobile.css">
+        <link rel="stylesheet" href="assets/css/tablet.css">
+        <link rel="stylesheet" href="assets/css/desktop_980.css">
+        <link rel="stylesheet" href="assets/css/desktop_1280.css">
+        <link rel="stylesheet" href="assets/css/custom-hk.css">
+        <script src="assets/js/vendor/jquery-3.0.0.min.js"></script>
+        <script src="assets/js/vendor/jquery.placeholder.js"></script>
+        <script src="assets/js/vendor/jquery.easing.1.3.js"></script>
+        <script src="assets/js/vendor/bootstrap.min.js"></script>
+        <script src="assets/js/vendor/bootstrap-select.js"></script>
+        <script src="assets/js/vendor/jquery.nicescroll.min.js"></script>
+        <script src="assets/js/vendor/swiper.min.js"></script>
+        <script src="assets/js/common.js"></script>
+        <script src="assets/js/custom-wtchk.js"></script>
+        <script src="assets/js/login.js"></script>
+        <!--[if IE]> 	
+        <link rel="stylesheet" href="assets/css/idangerous.swiper.css">
+        <script src="assets/js/vendor/idangerous.swiper.min.js"></script>
+        <script type="text/javascript">
+        $(function(){
+                var mySwiper = new Swiper('#main-banner-container', {
+                autoplay: 5000,
+                calculateHeight:true,
+                pagination : '#main-banner-pagination',
+                paginationClickable :true,
+                prevButton:'#main-banner-prev',
+                nextButton:'#main-banner-next',
+            })
+            $('#main-banner-prev').click(function(){
+                        mySwiper.swipePrev(); 
+                })
+                $('#main-banner-next').click(function(){
+                        mySwiper.swipeNext(); 
+                })
+
+                var quick_link = new Swiper('#quick-link-container',{
+                slidesPerView : $("#quick-link-container .swiper-slide").length>4?'auto':$("#quick-link-container .swiper-slide").length,
+                spaceBetween : 0,
+                //slidesOffsetBefore : $("#quick-link-container .swiper-slide").width()*$("#quick-link-container .swiper-slide").length>$(window).width()?0:($(window).width()-$("#quick-link-container .swiper-slide").width()*$("#quick-link-container .swiper-slide").length)/2,
+                calculateHeight:true,
+            })
+            $('#quick-link-prev').click(function(){
+                        quick_link.swipePrev(); 
+                })
+                $('#quick-link-next').click(function(){
+                        quick_link.swipeNext(); 
+                })
+
+                var carousel1 = new Swiper('#small-banner-carousel1', {
+                pagination : '#small-banner-carousel1-pagination',
+                paginationClickable :true,
+                calculateHeight:true,
+                autoplay: 5000,
+            })
+
+            var carousel2 = new Swiper('#small-banner-carousel2', {
+                pagination : '#small-banner-carousel2-pagination',
+                paginationClickable :true,
+                calculateHeight:true,
+                autoplay: 5000,
+            })
+
+            var carousel3 = new Swiper('#small-banner-carousel3', {
+                pagination : '#small-banner-carousel3-pagination',
+                paginationClickable :true,
+                calculateHeight:true,
+                autoplay: 5000,
+            })
+        
+        })
+        </script>
+                
+        <![endif]-->
+    </head>
+    <body>
+	<div class="popup overlay" id="deliveryDestUpdatePopup">
+            <div class="popupContainer">
+                <i class="icon-close close-btn"></i>
+                <p class="popup-title h4">提示</p>
+                <p class="popup-content">*請註意每當更改送貨地區，系統會自動將你所選購的貨物重新整理。</p>
+                <div class="green-btn submit-btn">
+                    <a href="">確定</a>
+                </div>
+            </div>
+	</div>
+        <div class="globalWrapper login">
+            <header class="bootstrap">
+                <div class="headerMessage h-transition">
+                    <div class="container clearfix">
+                        <div class="pull-left freeTextField">
+                            <a href="/eshopperBenefit" title="★全站活動詳情請點我★ 網路商店首購送$100 結帳輸入1688再折$50">★全站活動詳情請點我★ 網路商店首購送$100 結帳輸入1688再折$50</a>
+                        </div>
+                        <div class="pull-right hidden-sm hidden-xs">
+                            <div class="store-lang">
+                                <div class="store"><a href=""><i class="icon-store-location"></i>門市</a></div>
+                                <div class="delivery">運送至：
+                                    <div class="dest">
+                                        <a >香港 <i class="icon-icon_arrow"></i></a>
+                                        <div class="dest-box">
+                                            <a href="">國內</a>
+                                            <a href="">台灣</a>
+                                            <a href="">澳門</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="watsonsGoSwitch off">Watsons GO
+                                    <div class="watsonsGoSwitchBar" id="watsonsGoSwitchBar">
+                                        <div class="watsonsGoSwitchButton" id="watsonsGoSwitchButton"></div>
+                                        <div class="arrow-up off"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="lang">
+                                    <a >English <i class="icon-icon_arrow"></i></a>
+                                    <div class="lang-box">
+                                        <a href="">繁體</a>
+                                        <a href="">简体</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="overlayGo off"></div>
+                <div class="watsonsGoSwitchNoticePopup">
+                    <div class="container">
+                        <div id="watsonsGoModeOn" class="off">
+                            <div class="popupContainer">
+                                <i class="icon-close"></i>
+                                <p class="h4">Try Watsons GO now!</p>
+                                <p style="color: #E600A0;">Available for deliver to specific district</p>
+                                <p><a href="#">Know more</a></p>
+                                <p>
+                                    *By switching to Watsons GO, your selected products will be updated by the system.</p>
+                                <button>GO!</button>
+                            </div>
+                        </div>
+                        <div id="watsonsGoModeOff" class="off">
+                            <div class="popupContainer">
+                                <i class="icon-close"></i>
+                                <p class="h4">Switch off Watsons GO</p>
+                                <p>
+                                    *By switching off, your selected products will be updated by the system.</p>
+                                <button>OK</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobileHeaderMessage hidden-md hidden-lg">
+                    <div class="container clearfix">
+                        <div class="store-lang">
+                            <div class="btn-close"><i class="icon-close"></i></div>
+                            <div class="delivery">運送至：
+                                <div class="dest">
+                                    <a >香港 <i class="icon-icon_arrow"></i></a>
+                                    <div class="dest-box">
+                                        <a href="">國內</a>
+                                        <a href="">台灣</a>
+                                        <a href="">澳門</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="watsonsGoSwitch off">Watsons GO
+                                <div class="watsonsGoSwitchBar" id="watsonsGoSwitchBar">
+                                    <div class="watsonsGoSwitchButton" id="watsonsGoSwitchButton"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="headerLogoBar">
+                    <div class="container">
+                        <div class="topLogo pull-left">
+                            <a href="">
+                                <img title="" src="assets/img/watsons_logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="header-Secure_Checkout hide">
+                            <i class="icon-lock"></i>Secure Checkout
+                        </div>
+                        <div class="header-FAQ hide">
+                            <a href="">
+                                <i class="icon-faq"></i>FAQ
+                            </a>
+                        </div>
+                        <div class="productMenu pull-left hidden-lg hidden-md">
+                            <a href="javascript:void(0)">
+                                <i class="icon-topbar_sidemenu"></i>
+                                <i class="icon-topbar_sidemenu_go"></i>
+                            </a>
+                        </div>
+                        <a href="" class="back-btn hide"><i class="icon-back-arrow i1"></i></a>
+                        <a href="" class="close-btn hide"><i class="icon-close i1"></i></a>
+                        <div class="mobile-header-menu menu-promotion hide">
+                            <span>最新優惠</span>
+                        </div>
+                        <div class="mobile-header-menu menu-account hide">
+                            <span class="s1">我的帳戶</span>
+                            <div class="h1 hide"><span class="userName">Welcome back ! Rodney </span><span>You have: 878 Points</span></div>
+                        </div>
+                        <div class="mobile-header-menu menu-more hide">
+                            <span>MORE</span>
+                        </div>
+                        <!--<a href="" class="myAccount-btn hide hidden-md hidden-lg"><i class="icon-login i2"></i></a>-->
+                        <div class="myBasket pull-right" id="myBasket">
+                            <a href="">
+                                <i class="icon-shopping-bag"></i>
+                                <span class="item">99+</span>
+                            </a>
+                        </div>
+                        <div class="mSearchbox pull-right hidden-md hidden-lg">
+                            <i class="icon-search"></i>
+                        </div>
+                        <div class="myAccount hidden-sm hidden-xs pull-right" id="myAccountfl">
+                            <i class="icon-login"></i>
+                            <p class="welcomeText">您好！</p>
+                            <p class="accountLink"><a href="javascript:void(0)"><strong>請登入我的帳戶</strong> <i class="icon-icon_arrow"></i></a></p>
+                            <div id="signInItem" class="miniPopup popupMyAccount">
+                                <style>
+                                    /* Logic for header MyAccount menu */
+                                    #signInItem .popupContainer,
+                                    #signInItem .popupContainer.load, 
+                                    #signInItem .popupContainer.link,
+                                    #signInItem.loaded .popupContainer.unload,
+                                    #signInItem.loaded .popupContainer.link,
+                                    #signInItem.linked .popupContainer.unload,
+                                    #signInItem.linked .popupContainer.load {
+                                        display: none;
+                                    }
+                                    #signInItem .popupContainer.unload, 
+                                    #signInItem.loaded .popupContainer.load,
+                                    #signInItem.linked .popupContainer.link {
+                                        display: block;
+                                    }
+                                </style>
+                                
+                                <!-- Status: Guest -->
+                                <div class="popupContainer unload">
+                                    <div class="login-box" id="unload">
+                                        <div class="btnSignIn btnFade" id="login-btn"><a href="javascript:void(0)">登入</a></div>
+                                        <div class="newCustomer">
+                                            第一次登入? <a href="">立即註冊</a>
+                                        </div>
+                                    </div>
+                                    <ol class="">
+                                        <li class="hide dt">我旳電子商店帳戶</li>
+                                        <li class="dd hidden-xs hidden-sm"><a href="">我的帳戶</a></li>
+                                        <li class="dd"><a href="">訂單查詢</a></li>
+                                        <li class="dd"><a href="">我的最愛</a></li>
+                                    </ol>
+                                    <div class="btnActivateCard " id="openCard-btn"><a href="javascript:void(0)"><img class="mbCard" src="assets/img/MBcard_31x20.png">申請易賞錢卡</a></div>
+                                    <ol class="">
+                                        <li class="hide dt">易賞錢會員</li>
+                                        <li class="dd"><a href="">會員福利</a></li>
+                                    </ol>
+                                </div>
+                                
+                                <!-- Status: Logged In -->
+                                <div class="popupContainer load">
+                                    <div class="login-box hide hidden-lg hidden-md" id="loaded">
+                                        <div class="title">你尚未連結易賞錢會員</div>
+                                        <div class="btnSignIn newActivateCard"><a id="notOpenCard-btn-mobile"><img class="mbCard" src="assets/img/MBcard_31x20.png">連結易賞錢卡</a></div> 
+                                        <div class="login-text">或</div>
+                                        <div class="app-link"><a href="">立即下載「易賞錢」app</a></div>
+                                    </div>
+                                    <ol class="">
+                                        <li class="hide dt">我旳電子商店帳戶</li>
+                                        <li class="dd hidden-xs hidden-sm"><a href="">我的帳戶</a></li>
+                                        <li class="dd hidden-xs hidden-sm"><a href="">訂單查詢</a></li>
+                                        <li class="dd hidden-md hidden-lg"><a href="">更新個人資訊</a></li>
+                                        <li class="dd hidden-md hidden-lg"><a href="">送貨地址</a></li>
+                                        <li class="dd hidden-md hidden-lg"><a href="">更改密碼</a></li>
+                                        <li class="dd hidden-md hidden-lg"><a href="">電子優惠券 / 電子現金券</a></li>
+                                        <li class="dd"><a href="">我的最愛</a></li>
+                                        <li class="dd hidden-md hidden-lg"><a href="">有貨通知</a></li>
+                                    </ol>
+                                    <div class="btnActivateCard hidden-xs hidden-sm login-no-card hide" id="notOpenCard-btn"><a href="javascript:void(0)"><img class="mbCard" src="assets/img/MBcard_31x20.png">連結易賞錢卡</a></div>
+                                    <ol class="hidden-md hidden-lg">
+                                        <li class="hide dt">我的錢包</li>
+                                        <li class="dd"><a href="">信用卡</a></li>
+                                    </ol>                                    
+                                    <ol class="">
+                                        <li class="hide dt">易賞錢會籍</li>
+                                        <li class="dd hidden-xs hidden-sm"><a href="">未申請易賞錢卡? <span class="highlight">立即申請</span></a></li>
+                                        <li class="dd hidden-md hidden-lg"><a href="">申請/連結會員卡</a></li>
+                                        <li class="dd"><a href="">會員福利</a></li>
+                                        <li class="dd highlight"><a href="">企業優惠</a></li>
+                                    </ol>
+                                    <ol class="hidden-md hidden-lg">
+                                        <li class="hide dt">我的網上訂單</li>
+                                        <li class="dd"><a href="">訂單紀錄</a></li>
+                                        <li class="dd"><a href="">訂購紀錄</a></li>
+                                    </ol>
+                                    <div class="btnSignIn login-no-card hide" id="logout-btn"><a href="">登出</a></div>
+                                </div>
+                                
+                                <!-- Status: Linked Card -->
+                                <div class="popupContainer link">
+                                    <div class="card-point hide">
+                                        <div class="card-no hidden-lg hidden-md">易賞錢卡號：0205566920</div>
+                                        <div class="card">
+                                            <img src="assets/img/MBcard_108x69.png" alt="">
+                                        </div>
+                                        <div class="point">
+                                            <div class="h1 hidden-xs hidden-sm">易賞錢積分</div>
+                                            <div class="h1 hidden-md hidden-lg">易賞錢積分結餘</div>
+                                            <div class="h2">549,440</div>
+                                            <div class="h3 hidden-md hidden-lg">(相等於HK$85.94)</div>
+                                        </div>
+                                        <div class="point-progress-intro hidden-md hidden-lg">797積分當中的0積分將於2018年2月1日到期。</div>
+                                    </div>
+                                    <ol class="">
+                                        <li class="hide dt">我旳電子商店帳戶</li>
+                                        <li class="dd hidden-xs hidden-sm"><a href="">我的帳戶</a></li>
+                                        <li class="dd hidden-xs hidden-sm"><a href="">訂單查詢</a></li>
+                                        <li class="dd hidden-md hidden-lg"><a href="">更新個人資訊</a></li>
+                                        <li class="dd hidden-md hidden-lg"><a href="">送貨地址</a></li>
+                                        <li class="dd hidden-md hidden-lg"><a href="">更改密碼</a></li>
+                                        <li class="dd hidden-md hidden-lg"><a href="">電子優惠券 / 電子現金券</a></li>
+                                        <li class="dd"><a href="">我的最愛</a></li>
+                                        <li class="dd hidden-md hidden-lg"><a href="">有貨通知</a></li>
+                                    </ol>
+                                    <ol class="hidden-md hidden-lg">
+                                        <li class="hide dt">我的錢包</li>
+                                        <li class="dd"><a href="">信用卡</a></li>
+                                    </ol>                                    
+                                    <ol class="">
+                                        <li class="hide dt">易賞錢會籍</li>
+                                        <li class="dd hidden-md hidden-lg"><a href="">會員積分報表</a></li>
+                                        <li class="dd"><a href="">會員福利</a></li>
+                                        <li class="dd"><a href="">會員優惠</a></li>
+                                        <li class="dd hidden-md hidden-lg"><a href="">會員活動</a></li>
+                                        <li class="dd hidden-md hidden-lg"><a href="">會員Clubs</a></li>
+                                        <li class="dd highlight"><a href="">企業優惠</a></li>
+                                    </ol>
+                                    <ol class="hidden-md hidden-lg">
+                                        <li class="hide dt">我的網上訂單</li>
+                                        <li class="dd"><a href="">訂單紀錄</a></li>
+                                        <li class="dd"><a href="">訂購紀錄</a></li>
+                                    </ol>
+                                    <div class="btnSignIn login-no-card hide" id="logout-btn"><a href="">登出</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="searchbox hidden-sm hidden-xs pull-right">
+                            <form id="search_form1" action="/">
+                                <fieldset class="search-field">
+                                    <input name="text" type="text" placeholder="搜尋" id="searchboxfl" autocomplete="off" >
+                                    <a href="javascript:void(0);" class="icon-delete-a"><i class="icon-delete"></i></a>
+                                    <a href="javascript:void(0);" class="icon-search-a"><i class="icon-search"></i></a>
+                                </fieldset>
+                            </form>
+                            <div id="searchboxItem" class="miniPopup popupSearch">
+                                <div class="popupContainer">
+                                    <div class="result">
+                                        <ul class="resultList">
+                                            <li><span>搜尋紀錄</span></li>
+                                            <li><a href="">曼秀雷敦 Lip Pure天然植物潤唇膏 - 無香料</a></li>
+                                            <li><a href="">曼秀雷敦 Lip Pure天然植物潤唇膏 - 佛手柑</a></li>
+                                            <li><a href="">曼秀雷敦 Lip Pure天然植物潤唇膏 - 香橙4G</a></li>
+                                            <li><a href="">曼秀雷敦 Lip Pure天然植物潤唇膏 - 香橙4G</a></li>
+                                            <li><a href="">曼秀雷敦 Lip Pure天然植物潤唇膏 - 香橙4G</a></li>
+                                        </ul>
+                                        <ul class="resultList">
+                                            <li><span>熱門搜尋</span></li>
+                                            <li><a href="">曼秀雷敦 Lip Pure天然植物潤唇膏 - 無香料</a></li>
+                                            <li><a href="">曼秀雷敦 Lip Pure天然植物潤唇膏 - 佛手柑</a></li>
+                                            <li><a href="">曼秀雷敦 Lip Pure天然植物潤唇膏 - 香橙4G</a></li>
+                                            <li><a href="">曼秀雷敦 Lip Pure天然植物潤唇膏 - 香橙4G</a></li>
+                                            <li><a href="">曼秀雷敦 Lip Pure天然植物潤唇膏 - 香橙4G</a></li>
+                                        </ul>
+                                    </div>
+                                    <!--<div class="bottom"><a href="#" id="searchAll">查看所有搜尋結果</a></div>-->
+                                </div>
+                            </div>
+                            <!--With brand display-->
+                            <div id="searchboxItem2" class="miniPopup popupSearch">
+                                    <div class="popupContainer">
+                                        <div class="result">
+                                            <ul class="resultList">
+                                                <li><span>品牌</span></li>
+                                                <li><a href="">雙飛人藥水</a><img src="assets/img/8906239934494.png"></li>
+                                                <li><a href="">妙蓮眼藥水</a><img src="assets/img/8906239934494.png"></li>
+                                            </ul>
+                                            <ul class="resultList">
+                                                <li><span>產品</span></li>
+                                                <li><a href="">雙飛人藥水 雙飛人藥水</a></li>
+                                                <li><a href="">妙蓮眼藥水 妙蓮1號眼藥水 15毫升</a></li>
+                                                <li><a href="">妙蓮眼藥水 妙蓮3號眼藥水 15毫升</a></li>
+                                                <li><a href="">妙蓮眼藥水 妙蓮3號眼藥水 15毫升</a></li>
+                                                <li><a href="">妙蓮眼藥水 妙蓮3號眼藥水 15毫升</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="bottom"><a href="#" id="searchAll">查看所有搜尋結果</a></div>
+                                    </div>
+                                </div>
+                        </div>
+                        
+
+                    </div>
+                </div>
+                <div class="mobile-menu-3 hide hidden-md hidden-lg">
+                    <a href="javascript:void(0)"><i class="icon-back-arrow i1"></i></a><span>LIPSTICK</span><a href="javascript:void(0)"><i class="icon-bag i2"></i></a><a data-id="show-mobile-menu-3-search" href="javascript:void(0)"><i class="icon-search i3"></i></a><a href="javascript:void(0)"><i class="icon-home i4"></i></a><a href="javascript:void(0)"><i class="icon-edit-icon hide i5"></i></a>
+                </div>
+                <div class="mobile-menu-3-search hidden-lg hidden-md">
+                    <div class="head-searchbox">
+                        <a href="javascript:void(0)" class="cancel">Cancel</a>
+                        <div class="searchbox">
+                            <form>
+                                <fieldset class="search-field">
+                                    <input name="text" type="search" placeholder="搜尋" autocomplete="off" >
+                                    <i class="icon-delete"></i>
+                                    <i class="icon-search"></i>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="result-content">
+                        <div class="result-box">
+                            <div class="title">HISTORY <span>Clear</span></div>
+                            <ul>
+                                <li><a href="">SENKA</a></li>
+                                <li><a href="">SENKA</a></li>
+                                <li><a href="">SENKA</a></li>
+                                <li><a href="">SENKA</a></li>
+                            </ul>
+                        </div>
+                        <div class="result-box">
+                            <div class="title">HOT SUGGESTIEMS</div>
+                            <ul>
+                                <li><a href="">ALCON Disfecting</a></li>
+                                <li><a href="">SENKA</a></li>
+                                <li><a href="">SENKA</a></li>
+                                <li><a href="">SENKA</a></li>
+                                <li><a href="">ALCON Disfecting</a></li>
+                            </ul>
+                        </div>
+                        <div class="result-box">
+                            <div class="title">HOT SUGGESTIEMS</div>
+                            <ul>
+                                <li><a href="">ALCON Disfecting</a></li>
+                                <li><a href="">SENKA</a></li>
+                                <li><a href="">SENKA</a></li>
+                                <li><a href="">SENKA</a></li>
+                                <li><a href="">ALCON Disfecting</a></li>
+                            </ul>
+                        </div>
+                        <div class="result-box">
+                            <div class="title">HOT SUGGESTIEMS</div>
+                            <ul>
+                                <li><a href="">ALCON Disfecting</a></li>
+                                <li><a href="">SENKA</a></li>
+                                <li><a href="">SENKA</a></li>
+                                <li><a href="">SENKA</a></li>
+                                <li><a href="">ALCON Disfecting</a></li>
+                            </ul>
+                        </div>
+                        <div class="result-box">
+                            <div class="title">HOT SUGGESTIEMS</div>
+                            <ul>
+                                <li><a href="">ALCON Disfecting</a></li>
+                                <li><a href="">SENKA</a></li>
+                                <li><a href="">SENKA</a></li>
+                                <li><a href="">SENKA</a></li>
+                                <li><a href="">ALCON Disfecting</a></li>
+                            </ul>
+                        </div>
+                        <div class="result-box">
+                            <div class="title">HOT SUGGESTIEMS</div>
+                            <ul>
+                                <li><a href="">ALCON Disfecting</a></li>
+                                <li><a href="">SENKA</a></li>
+                                <li><a href="">SENKA</a></li>
+                                <li><a href="">SENKA</a></li>
+                                <li><a href="">ALCON Disfecting</a></li>
+                            </ul>
+                        </div>
+                        <div class="result-box">
+                            <div class="title">HOT SUGGESTIEMS</div>
+                            <ul>
+                                <li><a href="">ALCON Disfecting</a></li>
+                                <li><a href="">SENKA</a></li>
+                                <li><a href="">SENKA</a></li>
+                                <li><a href="">SENKA</a></li>
+                                <li><a href="">ALCON Disfecting</a></li>
+                            </ul>
+                        </div>
+                        <div class="result-box">
+                            <div class="title">HOT SUGGESTIEMS</div>
+                            <ul>
+                                <li><a href="">ALCON Disfecting</a></li>
+                                <li><a href="">SENKA</a></li>
+                                <li><a href="">SENKA</a></li>
+                                <li><a href="">SENKA</a></li>
+                                <li><a href="">ALCON Disfecting</a></li>
+                            </ul>
+                        </div>
+                    </div>	
+                </div>
+                <div class="mobile-PLP-menu hide hidden-md hidden-lg">
+                    <a href="javascript:void(0)"><i class="icon-back-arrow i1"></i></a>
+                    <div class="h1"><span class="s1">Special Treatment</span><span class="s2">Total: 52 Items</span></div>
+                    <a href="javascript:void(0)"><i class="icon-bag i2"></i></a><a href="javascript:void(0)"><i class="icon-history i3"></i></a>
+                </div>
+                <div class="navContainer-bg"></div>
+                <nav class="h-transition menu-product-content">
+                    <div class="navContainer-bg-cover"></div>
+                    <div class="container content-1">
+                        <div class="hidden-md hidden-lg"></div>
+                        <div class="generalContent">
+                            <div class="navContainer hidden-xs hidden-sm bgPink" data-id="01">
+                                <a title="最新優惠">
+                                    <span>最新優惠</span>
+                                    <i class="icon-icon_arrow hidden-md hidden-lg"></i>
+                                </a>
+                            </div>
+                            <div class="navContainer hidden-md hidden-lg show_All_Brand" data-id="show_All_Brand">
+                                <a title="全部品牌" href="">
+                                    <span>全部品牌</span>
+                                    <i class="icon-icon_arrow hidden-md hidden-lg"></i>
+                                </a>
+                            </div>
+                            <div class="navContainer hidden-md hidden-lg Only_at_Watsons" data-id="Only_at_Watsons">
+                                <a title="屈臣氏獨家" href="Brand_Listing_Page_Watsons.html">
+                                    <span>屈臣氏獨家</span>
+                                    <i class="icon-icon_arrow hidden-md hidden-lg"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="categoryContent">
+                            <div class="title hidden-md hidden-lg">產品分類</div>
+                            <div class="navContainer" data-id="02">
+                                <a title="最新優惠">
+                                    <span>健康</span>
+                                    <i class="icon-icon_arrow expand hidden-md hidden-lg"></i>
+                                </a>
+                            </div>
+                            <div class="navContainer" data-id="03">
+                                <a title="最新優惠">
+                                    <span>醫藥</span>
+                                    <i class="icon-icon_arrow expand hidden-md hidden-lg"></i>
+                                </a>
+                            </div>
+                            <div class="navContainer" data-id="04">
+                                <a title="最新優惠">
+                                    <span>護膚</span>
+                                    <i class="icon-icon_arrow expand hidden-md hidden-lg"></i>
+                                </a>
+                            </div>
+                            <div class="navContainer" data-id="05">
+                                <a title="最新優惠">
+                                    <span>化妝</span>
+                                    <i class="icon-icon_arrow expand hidden-md hidden-lg"></i>
+                                </a>
+                            </div>
+                            <div class="navContainer" data-id="06">
+                                <a title="最新優惠">
+                                    <span>個人護理</span>
+                                    <i class="icon-icon_arrow expand hidden-md hidden-lg"></i>
+                                </a>
+                            </div>
+                            <div class="navContainer" data-id="07">
+                                <a title="最新優惠">
+                                    <span>嬰幼</span>
+                                    <i class="icon-icon_arrow expand hidden-md hidden-lg"></i>
+                                </a>
+                            </div>
+                            <div class="navContainer" data-id="08">
+                                <a title="最新優惠">
+                                    <span>生活潮流</span>
+                                    <i class="icon-icon_arrow expand hidden-md hidden-lg"></i>
+                                </a>
+                            </div>
+                            <div class="navContainer hidden-xs hidden-sm" data-id="09">
+                                <a title="大手買">
+                                    <span>大手買</span>
+                                    <i class="icon-icon_arrow expand hidden-md hidden-lg"></i>
+                                </a>
+                            </div>
+                            <div class="navContainer hidden-xs hidden-sm show_All_Brand" data-id="show_All_Brand">
+                                <a title="品牌" href="">
+                                    <span>品牌</span>
+                                    <i class="icon-icon_arrow expand hidden-md hidden-lg"></i>
+                                </a>
+                            </div>
+                            <div class="navContainer hidden-xs hidden-sm Only_at_Watsons" data-id="Only_at_Watsons">
+                                <a title="屈臣氏獨家" href="Brand_Listing_Page_Watsons.html">
+                                    <span>屈臣氏獨家</span>
+                                    <i class="icon-icon_arrow hidden-md hidden-lg"></i>
+                                </a>
+                            </div>
+                            <div class="navContainer hidden-xs hidden-sm Health_Service" data-id="Health_Service">
+                                <a title="健康顧問">
+                                    <span>健康顧問</span>
+                                    <i class="icon-icon_arrow expand hidden-md hidden-lg"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <a href="" class="navBlog hidden-xs hidden-sm">
+                            <i class="icon-blog-icon"></i> BLOG
+                        </a>
+                    </div>
+                    <div class="navSubContainer sub hide-this" data-id="01">
+                        <div class="navSubContainer-box clearfix">
+                            <div class="title"><b>全部優惠</b></div>
+                            <div class="col-1 col-item navCol">
+                                <dl>
+                                    <dt><a href=""><span>重點推介</span></a></dt>
+                                    <dd>
+                                        <a href=""  title="Tru Niagen">Tru Niagen</a>		
+                                        <a href=""  title="Baby-Pedia">Baby-Pedia</a>
+                                        <a href=""  title="Naturals by Watsons">Naturals by Watsons</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href=""><span>精選優惠</span></a></dt>
+                                    <dd>
+                                        <a href=""  title="新品哈燒推薦">新品哈燒推薦</a>
+                                        <a href=""  title="超殺換購價">超殺換購價</a>
+                                        <a href=""  title="本檔必買推薦">本檔必買推薦</a>
+                                        <a href=""  title="滿$1500送$100">滿$1500送$100</a>
+                                        <a href=""  title="醫美滿$2800送$200">醫美滿$2800送$200</a>
+                                        <a href=""  title="精選商品85折">精選商品85折</a>
+                                        <a href=""  title="韓國直送專區">韓國直送專區</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href=""><span>每週著數</span></a></dt>
+                                    <dd>
+                                        <a href=""  title="著數星期三">著數星期三</a>
+                                        <a href=""  title="瘋搶星期五">瘋搶星期五</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href=""><span>易賞錢優惠</span></a></dt>
+                                    <dd>
+                                        <a href=""  title="易賞錢會員獨家換購">易賞錢會員獨家換購</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="col-5 col-item navCol tipsAdvice">
+                                <dl class="tipsAndAdvice">
+                                    <dt><a href=""><span>流行趨勢</span></a></dt>
+                                    <dd >
+                                        <a class="image" href=""><img src="assets/img/220x124-6.jpg" title="" alt="" ></a>
+                                        <a class="textLink" href="">全店滿$1500送$100 &gt;</a>
+                                        <a class="image" href=""><img src="assets/img/220x124-6.jpg" title="" alt=""></a>
+                                        <a class="textLink" href="">會員滿額抽電影欣賞派對/電影票 &gt;</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navSubContainer sub hide-this" data-id="02">
+                        <div class="navSubContainer-box clearfix">
+                            <div class="col-1 col-item navCol">
+                                <dl class="hidden-lg hidden-md">
+                                    <dt>
+                                        <a href="" title="全部">
+                                            <span>全部</span>
+                                        </a>
+                                    </dt><dd></dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <a href="" title="臉部彩妝">
+                                            <span>臉部彩妝</span>
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <a href="" title="隔離霜/飾底乳">隔離霜/飾底乳</a>
+                                        <a href="" title="粉底液/霜">粉底液/霜</a>
+                                        <a href="" title="BB霜/CC霜">BB霜/CC霜</a>
+                                        <a href="" title="粉餅/蜜粉">粉餅/蜜粉</a>
+                                        <a href="" title="腮紅 / 修容 /遮瑕膏">腮紅 / 修容 /遮瑕膏</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <a href="" title="眼/眉彩妝">
+                                            <span>眼/眉彩妝</span>
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <a href="" title="眼線筆/液/膠">眼線筆/液/膠</a>
+                                        <a href="" title="睫毛膏">睫毛膏</a>
+                                        <a href="" title="眉筆/眉粉">眉筆/眉粉</a>
+                                        <a href="" title="眼影">眼影</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <a href="" title="唇部彩妝">
+                                            <span>唇部彩妝</span>
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <a href="" title="唇膏">唇膏</a>
+                                        <a href="" title="唇蜜">唇蜜</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <a href="" title="精選特惠組">
+                                            <span>精選特惠組</span>
+                                        </a>
+                                    </dt><dd></dd>
+                                </dl>
+                            </div>
+                            <div class="col-1 col-item navCol">
+                                <dl>
+                                    <dt>
+                                        <a href="" title="指甲彩繪">
+                                            <span>指甲彩繪</span>
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <a href="" title="指甲油 / 去光水">指甲油 / 去光水</a>
+                                        <a href="" title="指甲貼">指甲貼</a>
+                                        <a href="" title="專業美甲">專業美甲</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <a href="" title="彩妝用具">
+                                            <span>彩妝用具</span>
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <a href="" title="刷具 / 眼影棒">刷具 / 眼影棒</a>
+                                        <a href="" title="粉撲/粉盒">粉撲/粉盒</a>
+                                        <a href="" title="彩妝用具其他">彩妝用具其他</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <a href="" title="更多開架彩妝">
+                                            <span>更多開架彩妝</span>
+                                        </a>
+                                    </dt><dd></dd>
+                                </dl>
+                            </div>
+                            <div class="col-3 col-item navCol">
+                                <dl>
+                                    <dt>
+                                        <a href="" title="推薦品牌">
+                                            <span>推薦品牌</span>
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <a href="">SOFINA 蘇菲娜</a>
+                                        <a href="">L'Oreal Paris 巴黎萊雅</a>
+                                        <a href="">媚比琳 Maybelline</a>
+                                        <a href="">KATE 凱婷</a>
+                                        <a href="">Bourjois 妙巴黎</a>
+                                        <a href="">ZA</a>
+                                        <a href="">Kiss Me 奇士美</a>
+                                        <a href="">1028</a>
+                                        <a href="">CEZANNE</a>
+                                        <a href="">CANMAKE</a>
+                                        <a href="">露華濃 Revlon</a>
+                                        <a href="">INTEGRATE 絕色魅癮</a>
+                                        <a href="">媚點</a>
+                                        <a href="">Absolute New York</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="col-4 col-item navCol">
+                                <dl>
+                                    <dt>
+                                        <a href="" title="韓流美妝">
+                                            <span>韓流美妝</span>
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <a href=""  title="A’PIEU">A’PIEU</a>
+                                        <a href=""  title="CLIO 珂莉奧">CLIO 珂莉奧</a>
+                                        <a href=""  title="Hope Girl">Hope Girl</a>
+                                        <a href=""  title="L'egere 蘭吉兒">L'egere 蘭吉兒</a>
+                                        <a href=""  title="Missha">Missha</a>
+                                        <a href=""  title="Peripera">Peripera</a>
+                                        <a href=""  title="touch in SOL">touch in SOL</a>
+                                        <a href=""  title="THEFACESHOP菲詩小舖">THEFACESHOP菲詩小舖</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="col-5 col-item navCol tipsAdvice">
+                                <dl class="tipsAndAdvice">
+                                    <dt>
+                                        <a href="" title="流行趨勢">
+                                            <span>流行趨勢</span>
+                                        </a>
+                                    </dt>
+                                    <dd >
+                                        <a class="image" href=""><img src="assets/img/8994163851294.jpg" title="" alt=""></a>
+                                        <a class="textLink" href="">KOSE滿$588現折$100 &gt;</a>
+                                        <a class="image" href=""><img src="assets/img/220x124-6.jpg" title="" alt=""></a>
+                                        <a class="textLink" href="">香氛饗宴 香水滿$1500現折$150 &gt;</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navSubContainer sub hide-this" data-id="03">
+                        <div class="navSubContainer-box clearfix">
+                            <div class="col-1 col-item navCol">
+                                <dl class="hidden-lg hidden-md">
+                                    <dt>
+                                        <a href="" title="全部">
+                                            <span>全部</span>
+                                        </a>
+                                    </dt><dd></dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <a href="" title="臉部彩妝">
+                                            <span>臉部彩妝</span>
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <a href="" title="隔離霜/飾底乳">隔離霜/飾底乳</a>
+                                        <a href="" title="粉底液/霜">粉底液/霜</a>
+                                        <a href="" title="BB霜/CC霜">BB霜/CC霜</a>
+                                        <a href="" title="粉餅/蜜粉">粉餅/蜜粉</a>
+                                        <a href="" title="腮紅 / 修容 /遮瑕膏">腮紅 / 修容 /遮瑕膏</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <a href="" title="眼/眉彩妝">
+                                            <span>眼/眉彩妝</span>
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <a href="" title="眼線筆/液/膠">眼線筆/液/膠</a>
+                                        <a href="" title="睫毛膏">睫毛膏</a>
+                                        <a href="" title="眉筆/眉粉">眉筆/眉粉</a>
+                                        <a href="" title="眼影">眼影</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <a href="" title="唇部彩妝">
+                                            <span>唇部彩妝</span>
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <a href="" title="唇膏">唇膏</a>
+                                        <a href="" title="唇蜜">唇蜜</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <a href="" title="精選特惠組">
+                                            <span>精選特惠組</span>
+                                        </a>
+                                    </dt><dd></dd>
+                                </dl>
+                            </div>
+                            <div class="col-1 col-item navCol">
+                                <dl>
+                                    <dt>
+                                        <a href="" title="指甲彩繪">
+                                            <span>指甲彩繪</span>
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <a href="" title="指甲油 / 去光水">指甲油 / 去光水</a>
+                                        <a href="" title="指甲貼">指甲貼</a>
+                                        <a href="" title="專業美甲">專業美甲</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <a href="" title="彩妝用具">
+                                            <span>彩妝用具</span>
+                                            
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <a href="" title="刷具 / 眼影棒">刷具 / 眼影棒</a>
+                                        <a href="" title="粉撲/粉盒">粉撲/粉盒</a>
+                                        <a href="" title="彩妝用具其他">彩妝用具其他</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <a href="" title="更多開架彩妝">
+                                            <span>更多開架彩妝</span>
+                                        </a>
+                                    </dt><dd></dd>
+                                </dl>
+                            </div>
+                            <div class="col-3 col-item navCol">
+                                <dl>
+                                    <dt>
+                                        <a href="" title="推薦品牌">
+                                            <span>推薦品牌</span>
+                                            
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <a href="">SOFINA 蘇菲娜</a>
+                                        <a href="">L'Oreal Paris 巴黎萊雅</a>
+                                        <a href="">媚比琳 Maybelline</a>
+                                        <a href="">KATE 凱婷</a>
+                                        <a href="">Bourjois 妙巴黎</a>
+                                        <a href="">ZA</a>
+                                        <a href="">Kiss Me 奇士美</a>
+                                        <a href="">1028</a>
+                                        <a href="">CEZANNE</a>
+                                        <a href="">CANMAKE</a>
+                                        <a href="">露華濃 Revlon</a>
+                                        <a href="">INTEGRATE 絕色魅癮</a>
+                                        <a href="">媚點</a>
+                                        <a href="">Absolute New York</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="col-4 col-item navCol">
+                                <dl>
+                                    <dt>
+                                        <a href="" title="韓流美妝">
+                                            <span>韓流美妝</span>
+                                            
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <a href=""  title="A’PIEU">A’PIEU</a>
+                                        <a href=""  title="CLIO 珂莉奧">CLIO 珂莉奧</a>
+                                        <a href=""  title="Hope Girl">Hope Girl</a>
+                                        <a href=""  title="L'egere 蘭吉兒">L'egere 蘭吉兒</a>
+                                        <a href=""  title="Missha">Missha</a>
+                                        <a href=""  title="Peripera">Peripera</a>
+                                        <a href=""  title="touch in SOL">touch in SOL</a>
+                                        <a href=""  title="THEFACESHOP菲詩小舖">THEFACESHOP菲詩小舖</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navSubContainer sub hide-this" data-id="04">
+                        <div class="navSubContainer-box clearfix">
+                            <div class="col-1 col-item navCol">
+                                <dl class="hidden-lg hidden-md">
+                                    <dt>
+                                        <a href="" title="全部">
+                                            <span>全部</span>
+                                        </a>
+                                    </dt><dd></dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <a href="" title="臉部彩妝">
+                                            <span>臉部彩妝</span>
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <a href="" title="隔離霜/飾底乳">隔離霜/飾底乳</a>
+                                        <a href="" title="粉底液/霜">粉底液/霜</a>
+                                        <a href="" title="BB霜/CC霜">BB霜/CC霜</a>
+                                        <a href="" title="粉餅/蜜粉">粉餅/蜜粉</a>
+                                        <a href="" title="腮紅 / 修容 /遮瑕膏">腮紅 / 修容 /遮瑕膏</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <a href="" title="眼/眉彩妝">
+                                            <span>眼/眉彩妝</span>
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <a href="" title="眼線筆/液/膠">眼線筆/液/膠</a>
+                                        <a href="" title="睫毛膏">睫毛膏</a>
+                                        <a href="" title="眉筆/眉粉">眉筆/眉粉</a>
+                                        <a href="" title="眼影">眼影</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <a href="" title="唇部彩妝">
+                                            <span>唇部彩妝</span>
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <a href="" title="唇膏">唇膏</a>
+                                        <a href="" title="唇蜜">唇蜜</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <a href="" title="精選特惠組">
+                                            <span>精選特惠組</span>
+                                        </a>
+                                    </dt><dd></dd>
+                                </dl>
+                            </div>
+                            <div class="col-1 col-item navCol">
+                                <dl>
+                                    <dt>
+                                        <a href="" title="指甲彩繪">
+                                            <span>指甲彩繪</span>
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <a href="" title="指甲油 / 去光水">指甲油 / 去光水</a>
+                                        <a href="" title="指甲貼">指甲貼</a>
+                                        <a href="" title="專業美甲">專業美甲</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <a href="" title="彩妝用具">
+                                            <span>彩妝用具</span>
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <a href="" title="刷具 / 眼影棒">刷具 / 眼影棒</a>
+                                        <a href="" title="粉撲/粉盒">粉撲/粉盒</a>
+                                        <a href="" title="彩妝用具其他">彩妝用具其他</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <a href="" title="更多開架彩妝">
+                                            <span>更多開架彩妝</span>
+                                        </a>
+                                    </dt><dd></dd>
+                                </dl>
+                            </div>
+                            <div class="col-5 col-item navCol tipsAdvice">
+                                <dl class="tipsAndAdvice">
+                                    <dt>
+                                        <a href="" title="流行趨勢">
+                                            <span>流行趨勢</span>
+                                        </a>
+                                    </dt>
+                                    <dd >
+                                        <a class="image" href=""><img src="assets/img/8994163851294.jpg" title="" alt=""></a>
+                                        <a class="textLink" href="">KOSE滿$588現折$100 &gt;</a>
+                                        <a class="image" href=""><img src="assets/img/220x124-6.jpg" title="" alt=""></a>
+                                        <a class="textLink" href="">香氛饗宴 香水滿$1500現折$150 &gt;</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navSubContainer sub hide-this" data-id="05">
+                        <div class="navSubContainer-box clearfix">
+                            <div class="col-1 col-item navCol">
+                                <dl>
+                                    <dt>
+                                        <a href="" title="指甲彩繪">
+                                            <span>指甲彩繪</span>
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <a href="" title="指甲油 / 去光水">指甲油 / 去光水</a>
+                                        <a href="" title="指甲貼">指甲貼</a>
+                                        <a href="" title="專業美甲">專業美甲</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <a href="" title="彩妝用具">
+                                            <span>彩妝用具</span>
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <a href="" title="刷具 / 眼影棒">刷具 / 眼影棒</a>
+                                        <a href="" title="粉撲/粉盒">粉撲/粉盒</a>
+                                        <a href="" title="彩妝用具其他">彩妝用具其他</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <a href="" title="更多開架彩妝">
+                                            <span>更多開架彩妝</span>
+                                        </a>
+                                    </dt><dd></dd>
+                                </dl>
+                            </div>
+                            <div class="col-3 col-item navCol">
+                                <dl>
+                                    <dt>
+                                        <a href="" title="推薦品牌">
+                                            <span>推薦品牌</span>
+                                            
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <a href="">SOFINA 蘇菲娜</a>
+                                        <a href="">L'Oreal Paris 巴黎萊雅</a>
+                                        <a href="">媚比琳 Maybelline</a>
+                                        <a href="">KATE 凱婷</a>
+                                        <a href="">Bourjois 妙巴黎</a>
+                                        <a href="">ZA</a>
+                                        <a href="">Kiss Me 奇士美</a>
+                                        <a href="">1028</a>
+                                        <a href="">CEZANNE</a>
+                                        <a href="">CANMAKE</a>
+                                        <a href="">露華濃 Revlon</a>
+                                        <a href="">INTEGRATE 絕色魅癮</a>
+                                        <a href="">媚點</a>
+                                        <a href="">Absolute New York</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="col-4 col-item navCol">
+                                <dl>
+                                    <dt>
+                                        <a href="" title="韓流美妝">
+                                            <span>韓流美妝</span>
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <a href=""  title="A’PIEU">A’PIEU</a>
+                                        <a href=""  title="CLIO 珂莉奧">CLIO 珂莉奧</a>
+                                        <a href=""  title="Hope Girl">Hope Girl</a>
+                                        <a href=""  title="L'egere 蘭吉兒">L'egere 蘭吉兒</a>
+                                        <a href=""  title="Missha">Missha</a>
+                                        <a href=""  title="Peripera">Peripera</a>
+                                        <a href=""  title="touch in SOL">touch in SOL</a>
+                                        <a href=""  title="THEFACESHOP菲詩小舖">THEFACESHOP菲詩小舖</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="col-5 col-item navCol tipsAdvice">
+                                <dl class="tipsAndAdvice">
+                                    <dt>
+                                        <a href="" title="流行趨勢">
+                                            <span>流行趨勢</span>
+                                        </a>
+                                    </dt>
+                                    <dd >
+                                        <a class="image" href=""><img src="assets/img/8994163851294.jpg" title="" alt=""></a>
+                                        <a class="textLink" href="">KOSE滿$588現折$100 &gt;</a>
+                                        <a class="image" href=""><img src="assets/img/220x124-6.jpg" title="" alt=""></a>
+                                        <a class="textLink" href="">香氛饗宴 香水滿$1500現折$150 &gt;</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navSubContainer sub hide-this" data-id="06">
+                        <div class="navSubContainer-box clearfix">
+                            <div class="col-1 col-item navCol">
+                                <dl>
+                                    <dt>
+                                        <a href="" title="推薦品牌">
+                                            <span>推薦品牌</span>
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <a href="">SOFINA 蘇菲娜</a>
+                                        <a href="">L'Oreal Paris 巴黎萊雅</a>
+                                        <a href="">媚比琳 Maybelline</a>
+                                        <a href="">KATE 凱婷</a>
+                                        <a href="">Bourjois 妙巴黎</a>
+                                        <a href="">ZA</a>
+                                        <a href="">Kiss Me 奇士美</a>
+                                        <a href="">1028</a>
+                                        <a href="">CEZANNE</a>
+                                        <a href="">CANMAKE</a>
+                                        <a href="">露華濃 Revlon</a>
+                                        <a href="">INTEGRATE 絕色魅癮</a>
+                                        <a href="">媚點</a>
+                                        <a href="">Absolute New York</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="col-4 col-item navCol">
+                                <dl>
+                                    <dt>
+                                        <a href="" title="韓流美妝">
+                                            <span>韓流美妝</span>
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <a href=""  title="A’PIEU">A’PIEU</a>
+                                        <a href=""  title="CLIO 珂莉奧">CLIO 珂莉奧</a>
+                                        <a href=""  title="Hope Girl">Hope Girl</a>
+                                        <a href=""  title="L'egere 蘭吉兒">L'egere 蘭吉兒</a>
+                                        <a href=""  title="Missha">Missha</a>
+                                        <a href=""  title="Peripera">Peripera</a>
+                                        <a href=""  title="touch in SOL">touch in SOL</a>
+                                        <a href=""  title="THEFACESHOP菲詩小舖">THEFACESHOP菲詩小舖</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="col-5 col-item navCol tipsAdvice">
+                                <dl class="tipsAndAdvice">
+                                    <dt>
+                                        <a href="" title="流行趨勢">
+                                            <span>流行趨勢</span>
+                                        </a>
+                                    </dt>
+                                    <dd >
+                                        <a class="image" href=""><img src="assets/img/8994163851294.jpg" title="" alt=""></a>
+                                        <a class="textLink" href="">KOSE滿$588現折$100 &gt;</a>
+                                        <a class="image" href=""><img src="assets/img/220x124-6.jpg" title="" alt=""></a>
+                                        <a class="textLink" href="">香氛饗宴 香水滿$1500現折$150 &gt;</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navSubContainer sub hide-this" data-id="07">
+                        <div class="navSubContainer-box clearfix">
+                            <div class="col-1 col-item navCol">
+                                <dl>
+                                    <dt>
+                                        <a href="" title="指甲彩繪">
+                                            <span>指甲彩繪</span>
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <a href="" title="指甲油 / 去光水">指甲油 / 去光水</a>
+                                        <a href="" title="指甲貼">指甲貼</a>
+                                        <a href="" title="專業美甲">專業美甲</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <a href="" title="彩妝用具">
+                                            <span>彩妝用具</span>
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <a href="" title="刷具 / 眼影棒">刷具 / 眼影棒</a>
+                                        <a href="" title="粉撲/粉盒">粉撲/粉盒</a>
+                                        <a href="" title="彩妝用具其他">彩妝用具其他</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <a href="" title="更多開架彩妝">
+                                            <span>更多開架彩妝</span>
+                                        </a>
+                                    </dt><dd></dd>
+                                </dl>
+                            </div>
+                            <div class="col-4 col-item navCol">
+                                <dl>
+                                    <dt>
+                                        <a href="" title="韓流美妝">
+                                            <span>韓流美妝</span>
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <a href=""  title="A’PIEU">A’PIEU</a>
+                                        <a href=""  title="CLIO 珂莉奧">CLIO 珂莉奧</a>
+                                        <a href=""  title="Hope Girl">Hope Girl</a>
+                                        <a href=""  title="L'egere 蘭吉兒">L'egere 蘭吉兒</a>
+                                        <a href=""  title="Missha">Missha</a>
+                                        <a href=""  title="Peripera">Peripera</a>
+                                        <a href=""  title="touch in SOL">touch in SOL</a>
+                                        <a href=""  title="THEFACESHOP菲詩小舖">THEFACESHOP菲詩小舖</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="col-5 col-item navCol tipsAdvice">
+                                <dl class="tipsAndAdvice">
+                                    <dt>
+                                        <a href="" title="流行趨勢">
+                                            <span>流行趨勢</span>
+                                        </a>
+                                    </dt>
+                                    <dd >
+                                        <a class="image" href=""><img src="assets/img/8994163851294.jpg" title="" alt=""></a>
+                                        <a class="textLink" href="">KOSE滿$588現折$100 &gt;</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navSubContainer sub hide-this" data-id="08">
+                        <div class="navSubContainer-box clearfix">
+                            <div class="col-5 col-item navCol tipsAdvice">
+                                <dl class="tipsAndAdvice">
+                                    <dt>
+                                        <a href="" title="流行趨勢">
+                                            <span>流行趨勢</span>
+                                        </a>
+                                    </dt>
+                                    <dd >
+                                        <a class="image" href=""><img src="assets/img/8994163851294.jpg" title="" alt=""></a>
+                                        <a class="textLink" href="">KOSE滿$588現折$100 &gt;</a>
+                                        <a class="image" href=""><img src="assets/img/220x124-6.jpg" title="" alt=""></a>
+                                        <a class="textLink" href="">香氛饗宴 香水滿$1500現折$150 &gt;</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navSubContainer sub hide-this" data-id="09">
+                        <div class="navSubContainer-box clearfix">
+                            <div class="col-5 col-item navCol tipsAdvice">
+                                <dl class="tipsAndAdvice">
+                                    <dt>
+                                        <a href="" title="流行趨勢">
+                                            <span>流行趨勢</span>
+                                        </a>
+                                    </dt>
+                                    <dd >
+                                        <a class="image" href=""><img src="assets/img/8994163851294.jpg" title="" alt=""></a>
+                                        <a class="textLink" href="">KOSE滿$588現折$100 &gt;</a>
+                                        <a class="image" href=""><img src="assets/img/220x124-6.jpg" title="" alt=""></a>
+                                        <a class="textLink" href="">香氛饗宴 香水滿$1500現折$150 &gt;</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="col-4 col-item navCol">
+                                <dl>
+                                    <dt>
+                                        <a href="" title="韓流美妝">
+                                            <span>韓流美妝</span>
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <a href=""  title="A’PIEU">A’PIEU</a>
+                                        <a href=""  title="CLIO 珂莉奧">CLIO 珂莉奧</a>
+                                        <a href=""  title="Hope Girl">Hope Girl</a>
+                                        <a href=""  title="L'egere 蘭吉兒">L'egere 蘭吉兒</a>
+                                        <a href=""  title="Missha">Missha</a>
+                                        <a href=""  title="Peripera">Peripera</a>
+                                        <a href=""  title="touch in SOL">touch in SOL</a>
+                                        <a href=""  title="THEFACESHOP菲詩小舖">THEFACESHOP菲詩小舖</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navSubContainer sub hide-this" data-id="10">
+                        <div class="navSubContainer-box clearfix">
+                            <div class="col-1 col-item navCol">
+                                <dl>
+                                    <dt>
+                                        <a href="" title="韓流美妝">
+                                            <span>韓流美妝</span>
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <a href=""  title="A’PIEU">A’PIEU</a>
+                                        <a href=""  title="CLIO 珂莉奧">CLIO 珂莉奧</a>
+                                        <a href=""  title="Hope Girl">Hope Girl</a>
+                                        <a href=""  title="L'egere 蘭吉兒">L'egere 蘭吉兒</a>
+                                        <a href=""  title="Missha">Missha</a>
+                                        <a href=""  title="Peripera">Peripera</a>
+                                        <a href=""  title="touch in SOL">touch in SOL</a>
+                                        <a href=""  title="THEFACESHOP菲詩小舖">THEFACESHOP菲詩小舖</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="col-1 col-item navCol">
+                                <dl class="hidden-lg hidden-md">
+                                    <dt>
+                                        <a href="" title="全部">
+                                            <span>全部</span>
+                                            <i class="icon-icon_arrow hidden-md hidden-lg"></i>
+                                        </a>
+                                    </dt><dd></dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <a href="" title="臉部彩妝">
+                                            <span>臉部彩妝</span>
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <a href="" title="隔離霜/飾底乳">隔離霜/飾底乳</a>
+                                        <a href="" title="粉底液/霜">粉底液/霜</a>
+                                        <a href="" title="BB霜/CC霜">BB霜/CC霜</a>
+                                        <a href="" title="粉餅/蜜粉">粉餅/蜜粉</a>
+                                        <a href="" title="腮紅 / 修容 /遮瑕膏">腮紅 / 修容 /遮瑕膏</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <a href="" title="眼/眉彩妝">
+                                            <span>眼/眉彩妝</span>
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <a href="" title="眼線筆/液/膠">眼線筆/液/膠</a>
+                                        <a href="" title="睫毛膏">睫毛膏</a>
+                                        <a href="" title="眉筆/眉粉">眉筆/眉粉</a>
+                                        <a href="" title="眼影">眼影</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <a href="" title="唇部彩妝">
+                                            <span>唇部彩妝</span>
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <a href="" title="唇膏">唇膏</a>
+                                        <a href="" title="唇蜜">唇蜜</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <a href="" title="精選特惠組">
+                                            <span>精選特惠組</span>
+                                        </a>
+                                    </dt><dd></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navSubContainer sub hide-this" data-id="Health_Service">
+                        <div class="navSubContainer-box clearfix">
+                            <div class="col-1 col-item navCol">
+                                <dl>
+                                    <dt>
+                                        <a href="" title="健康評估服務"><span>健康評估服務</span></a>
+                                    </dt><dd></dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <a href="" title="雙重保健服務"><span>雙重保健服務</span></a>
+                                    </dt><dd></dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <a href="" title="註冊營養師諮詢服務"><span>註冊營養師諮詢服務</span></a>
+                                    </dt><dd></dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <a href="" title="註冊中醫診治服務"><span>註冊中醫診治服務</span></a>
+                                    </dt><dd></dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <a href="" title="客戶陪月顧問服務"><span>客戶陪月顧問服務</span></a>
+                                    </dt><dd></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </nav>
+            </header>
+            <div class="bootstrap navSubContainer container hide-this sub-all_brands" data-id="all_brands">
+                <div class="multilevel-title hidden-xs hidden-sm">
+                    <span>
+                        <a href="">首頁</a>
+                    </span>
+                    &gt;                                                         
+                    <h1>
+                        All Brands
+                    </h1>
+                </div>
+                <div class="sub-all_brands-title hidden-xs hidden-sm">品牌清單</div>
+                <div class="sub-all_brands-search hidden-sm hidden-xs">
+                    <div class="searchbox pull-left">
+                        <form id="all_brands-search_form1">
+                            <fieldset class="search-field">
+                                <input name="text" type="text" placeholder="輸入品牌名稱進行搜索" id="all_brands-searchboxfl" autocomplete="off">
+                                <a href="javascript:void(0);" class="icon-delete-a"><i class="icon-delete"></i></a>
+                                <a href="javascript:void(0);" class="icon-search-a"><i class="icon-search"></i></a>
+                            </fieldset>
+                        </form>
+                        <div id="all_brands-searchboxItem" class="miniPopup popupSearch">
+                            <div class="popupContainer">
+                                <div class="result">
+                                    <ul class="resultList">
+                                        <li><a href="">ARDELL ARDELL時尚假睫毛-自然款black #121</a></li>
+                                        <li><a href="">ARDELL ARDELL時尚假睫毛-自然款black #121</a></li>
+                                        <li><a href="">ARDELL ARDELL時尚假睫毛-自然款black #121</a></li>
+                                        <li><a href="">ARDELL ARDELL時尚假睫毛-自然款black #121</a></li>
+                                    </ul>
+                                </div>
+                                <div class="bottom"><a href="#" id="all_brands-searchAll">查看所有搜尋結果</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="green-btn small pull-left"><a href="">品牌搜索</a></div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="letter-menu">
+                    <a href="javascript:void(0)">A</a>
+                    <a href="javascript:void(0)">B</a>
+                    <a href="javascript:void(0)">C</a>
+                    <a href="javascript:void(0)">D</a>
+                    <a href="javascript:void(0)">E</a>
+                    <a href="javascript:void(0)">F</a>
+                    <a href="javascript:void(0)">G</a>
+                    <a href="javascript:void(0)">H</a>
+                    <a href="javascript:void(0)">I</a>
+                    <a href="javascript:void(0)">J</a>
+                    <a href="javascript:void(0)">K</a>
+                    <a href="javascript:void(0)">L</a>
+                    <a href="javascript:void(0)">M</a>
+                    <a href="javascript:void(0)">N</a>
+                    <a href="javascript:void(0)">O</a>
+                    <a href="javascript:void(0)">P</a>
+                    <a href="javascript:void(0)">Q</a>
+                    <a href="javascript:void(0)">R</a>
+                    <a href="javascript:void(0)">S</a>
+                    <a href="javascript:void(0)">T</a>
+                    <a href="javascript:void(0)">U</a>
+                    <a href="javascript:void(0)">V</a>
+                    <a href="javascript:void(0)">W</a>
+                    <a href="javascript:void(0)">X</a>
+                    <a href="javascript:void(0)">Y</a>
+                    <a href="javascript:void(0)">Z</a>
+                    <a href="javascript:void(0)">123</a>
+                    <a href="javascript:void(0)">注音</a>
+                </div>
+                <ul>
+                    <li>
+                        <div class="h2">A</div>
+                        <p><a href="">ASAHI</a></p>
+                        <p><a href="">AGAINST</a></p>
+                        <p><a href="">AQUAFESTIVA</a></p>
+                        <p><a href="">AGV</a></p>
+                        <p><a href="">ARDELLEXCLUSIVE</a></p>
+                    </li>
+                    <li>
+                        <div class="h2">B</div>
+                        <p><a href="">BUBCHEN</a></p>
+                        <p><a href="">BODYFANTASIES</a></p>
+                        <p><a href="">BRAUN</a></p>
+                    </li>
+                    <li>
+                        <div class="h2">C</div>
+                        <p><a href="">Chloe 克羅伊</a></p>
+                        <p><a href="">Collagen</a></p>
+                        <p><a href="">COLGATEEXCLUSIVE</a></p>
+                        <p><a href="">CROCODILE 鱷魚</a></p>
+                        <p><a href="">COOKIES</a></p>
+                        <p><a href="">CRÈME</a></p>
+                        <p><a href="">CK</a></p>
+                        <p><a href="">CLARINS 克蘭詩</a></p>
+                        <p><a href="">CURE</a></p>
+                        <p><a href="">Cezanne</a></p>
+                        <p><a href="">CLEAN</a></p>
+                        <p><a href="">CHANEL 香奈兒</a></p>
+                        <p><a href="">CEZANNE</a></p>
+                        <p><a href="">CHRISTIAN Dior</a></p>
+                        <p><a href="">CLEOMONTHLE</a></p>
+                        <p><a href="">Comefree</a></p>
+                        <p><a href="">Cheers</a></p>
+                        <p><a href="">COLGATE</a></p>
+                        <p><a href="">CIELO 宣若</a></p>
+                        <p><a href="">CHANSON 強生</a></p>
+                        <p><a href="">Curel 珂潤</a></p>
+                        <p><a href="">CENTRUM</a></p>
+                        <p><a href="">Canmake</a></p>
+                        <p><a href="">COTA</a></p>
+                        <p><a href="">CAROLINAHERRERA</a></p>
+                        <p><a href="">Combos</a></p>
+                        <p><a href="">CAMAY</a></p>
+                        <p><a href="">Clean&Clear 可伶可俐</a></p>
+                        <p><a href="">CARMEX</a></p>
+                        <p><a href="">CLIO 珂莉奧</a></p>
+                        <p><a href="">Colgate 高露潔</a></p>
+                        <p><a href="">CHAPEX 喬沛詩</a></p>
+                        <p><a href="">CHUNGGONG</a></p>
+                        <p><a href="">CHICCO</a></p>
+                        <p><a href="">Centrum 善存</a></p>
+                        <p><a href="">CLEAR</a></p>
+                        <p><a href="">CLOROX</a></p>
+                        <p><a href="">CANMAKE</a></p>
+                        <p><a href="">CHANGGUNG</a></p>
+                        <p><a href="">CLEAR淨</a></p>
+                        <p><a href="">Conair</a></p>
+                        <p><a href="">CETAPHIL 舒特膚</a></p>
+                        <p><a href="">CHENGKUANG</a></p>
+                        <p><a href="">CHANEN</a></p>
+                        <p><a href="">CUREL</a></p>
+                        <p><a href="">CLIO</a></p>
+                        <p><a href="">CANDYCOLOR</a></p>
+                        <p><a href="">CALVINKLEIN</a></p>
+                        <p><a href="">CHAPEX</a></p>
+                    </li>
+                    <li>
+                        <div class="h2">D</div>
+                        <p><a href="">DRSFORMULA</a></p>
+                        <p><a href="">Dr. Walker</a></p>
+                        <p><a href="">DR.WU</a></p>
+                        <p><a href="">DRSFORMULA</a></p>
+                        <p><a href="">DORAEMON</a></p>
+                        <p><a href="">Dr.Check</a></p>
+                        <p><a href="">Ducato</a></p>
+                        <p><a href="">Depend</a></p>
+                        <p><a href="">DRMORITA</a></p>
+                        <p><a href="">DIVINIA</a></p>
+                        <p><a href="">DEPAREE</a></p>
+                        <p><a href="">Dr.Organic</a></p>
+                        <p><a href="">Dr.C.SOLDAN</a></p>
+                        <p><a href="">Dr.Satin</a></p>
+                        <p><a href="">DRJOU 森田藥粧</a></p>
+                        <p><a href="">DOVE</a></p>
+                        <p><a href="">Dove 多芬</a></p>
+                        <p><a href="">DELIGHT</a></p>
+                        <p><a href="">Deja Vu</a></p>
+                        <p><a href="">DARLIE 黑人</a></p>
+                        <p><a href="">DRCHECK</a></p>
+                        <p><a href="">DUREX</a></p>
+                        <p><a href="">DORIS</a></p>
+                        <p><a href="">DOWNY</a></p>
+                        <p><a href="">DISNEY</a></p>
+                        <p><a href="">DEJAVU</a></p>
+                        <p><a href="">DARLIE</a></p>
+                        <p><a href="">Dr’s Formula</a></p>
+                        <p><a href="">DHC</a></p>
+                        <p><a href="">DHC</a></p>
+                        <p><a href="">DENIVIT</a></p>
+                        <p><a href="">Disney 迪士尼</a></p>
+                        <p><a href="">DEPEND</a></p>
+                        <p><a href="">DRCYJ</a></p>
+                        <p><a href="">DKNY</a></p>
+                        <p><a href="">DRWU</a></p>
+                        <p><a href="">DRSATIN</a></p>
+                    </li>
+                    <li class="clearfix"></li>
+                    <li>
+                        <div class="h2">E</div>
+                        <p><a href="">EBiSU 日本</a></p>
+                        <p><a href="">EBISU</a></p>
+                        <p><a href="">ESTEE LAUDER</a></p>
+                        <p><a href="">EXTRA</a></p>
+                        <p><a href="">Estee Lauder 雅詩蘭黛</a></p>
+                        <p><a href="">Ellgy 優姿</a></p>
+                        <p><a href="">EXTRA</a></p>
+                        <p><a href="">ECLIPSE</a></p>
+                        <p><a href="">Ettusais 艾杜紗</a></p>
+                        <p><a href="">EVOLU</a></p>
+                        <p><a href="">Elastine 伊絲婷</a></p>
+                    </li>
+                    <li>
+                        <div class="h2">F</div>
+                        <p><a href="">FRESHLIGHT</a></p>
+                        <p><a href="">FLORAL 威瑪舒培</a></p>
+                        <p><a href="">FUJI</a></p>
+                        <p><a href="">Ferrari 法拉利</a></p>
+                        <p><a href="">Freshlight 富麗絲</a></p>
+                        <p><a href="">For Beloved One 寵愛之名</a></p>
+                        <p><a href="">FERRARI</a></p>
+                        <p><a href="">FELIX FAMILY 菲力家族</a></p>
+                        <p><a href="">FCUK</a></p>
+                        <p><a href="">Findom</a></p>
+                        <p><a href="">FASIO</a></p>
+                        <p><a href="">FEBICO</a></p>
+                        <p><a href="">FASHIONGLOVES</a></p>
+                        <p><a href="">Farcent 花仙子</a></p>
+                        <p><a href="">FORBELOVEDONE</a></p>
+                        <p><a href="">Fasio 菲希歐</a></p>
+                        <p><a href="">FITIT&WHITIA</a></p>
+                        <p><a href="">FARCENT</a></p>
+                        <p><a href="">FITIT&WHITIA</a></p>
+                        <p><a href="">FACE Q 絕世愛美肌</a></p>
+                        <p><a href="">FUNAICARE</a></p>
+                    </li>
+                    <li>
+                        <div class="h2">G</div>
+                        <p><a href="">GLORYNUTRIA</a></p>
+                        <p><a href="">GERBER 嘉寶</a></p>
+                        <p><a href="">Gillette 吉列</a></p>
+                        <p><a href="">GUARANTY</a></p>
+                        <p><a href="">GOLDEN</a></p>
+                        <p><a href="">GINSENG 金蔘</a></p>
+                        <p><a href="">Garnier 卡尼爾</a></p>
+                        <p><a href="">GREENTIMETEA 波爾</a></p>
+                        <p><a href="">GAP</a></p>
+                        <p><a href="">GLADE 滿庭香</a></p>
+                        <p><a href="">GATSBY</a></p>
+                        <p><a href="">GREEN</a></p>
+                        <p><a href="">GARNIER</a></p>
+                        <p><a href="">GRAPEKING 葡萄王</a></p>
+                        <p><a href="">GW</a></p>
+                        <p><a href="">GILLETTE</a></p>
+                        <p><a href="">GLICO 格力高</a></p>
+                        <p><a href="">GATSBY</a></p>
+                        <p><a href="">GUM</a></p>
+                        <p><a href="">GIORGIOARMANI</a></p>
+                        <p><a href="">GNC健安喜</a></p>
+                        <p><a href="">GUM</a></p>
+                        <p><a href="">Glysomed 葛妮絲</a></p>
+                        <p><a href="">GREEN 綠的</a></p>
+                        <p><a href="">GLICO</a></p>
+                        <p><a href="">GUCCI</a></p>
+                        <p><a href="">Garmin</a></p>
+                        <p><a href="">GREENGEN 綠寶藍</a></p>
+                    </li>
+                    <li>
+                        <div class="h2">H</div>
+                        <p><a href="">HADALABO</a></p>
+                        <p><a href="">HAC</a></p>
+                        <p><a href="">HIKARU</a></p>
+                        <p><a href="">HUGOBOSS</a></p>
+                        <p><a href="">HELLOKITTY</a></p>
+                        <p><a href="">Hansal 德國賀壽</a></p>
+                        <p><a href="">HUEYYUAN 輝葉</a></p>
+                        <p><a href="">HONEYCAKE</a></p>
+                        <p><a href="">HUGGIES 好奇</a></p>
+                        <p><a href="">HQCP</a></p>
+                        <p><a href="">Hair Pro by Watsons</a></p>
+                        <p><a href="">HCL</a></p>
+                        <p><a href="">HUATUO 華陀</a></p>
+                        <p><a href="">HANSKIN</a></p>
+                        <p><a href="">HARMONY</a></p>
+                        <p><a href="">HOLLYWOOD</a></p>
+                        <p><a href="">HSINGHAI 杏海</a></p>
+                        <p><a href="">HITACHI 日立</a></p>
+                        <p><a href="">HONEYWELL</a></p>
+                        <p><a href="">Hello Kitty</a></p>
+                        <p><a href="">Hada-Labo 肌研</a></p>
+                        <p><a href="">HIMALAYA</a></p>
+                        <p><a href="">Herbal Essences 草本精華</a></p>
+                        <p><a href="">HAC</a></p>
+                        <p><a href="">Hau</a></p>
+                        <p><a href="">HEME</a></p>
+                        <p><a href="">HANGUN 樂趣</a></p>
+                        <p><a href="">Happy bath 韓國</a></p>
+                        <p><a href="">HYDRON 海昌</a></p>
+                        <p><a href="">HIKARU</a></p>
+                    </li>
+                </ul>
+            </div>
+            <main class="login_page">
+                <div class="container">
+                    <div class="popup-general with-checkbox" id="first-login-tnc">
+                        <div class="background"></div>
+                            <div class="wrapper">
+                                <i class="icon-close close-btn"></i>
+                                <div class="innerwrapper">
+                                    <div class="title h3">Terms of Service</div>
+                                    <div class="scroll-content">
+                                        <p>
+                                           TERMS AND CONDITIONS FOR ONLINE PURCHASE
+                                            1. General
+                                            1.1. In these terms and conditions and the Special Conditions (as defined below) (collectively referred to as the “Terms and Conditions”), "Watsons" or “we” or “us” means Watsons, a division of A. S. Watson Retail (HK) Limited and the "customer" or “you” meansLorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,  Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,  Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,     
+                                        </p>
+                                    </div>
+                                    <div class="agree-tnc">
+                                        <label>
+                                            <u class="checkbox-label"><input class="agree-tnc" type="checkbox"><em class="icon-check-box02"></em></u>
+                                            <span>* I have read and agreed to the Terms and Conditions and the Privacy Policy Statement.</span>
+                                        </label>
+                                    </div>
+                                    <div class="agree-contact">
+                                        <label>
+                                            <u class="checkbox-label"><input type="checkbox"><em class="icon-check-box02"></em></u>
+                                            <span>I do not wish to receive any updates on special offers, promotions, discounts or similar communications through Email and SMS.</span>
+                                        </label>
+                                    </div>
+                                    <div class="action-btn">
+                                        <div class="btn green-btn disabled-light">
+                                            <a href="javascript:void(0)">Confirm</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="multilevel-title hidden-xs hidden-sm">
+                        <span>
+                            <a href="">首頁</a> 
+                        </span>
+                        &gt;                                                   
+                        <h1>
+                            登入
+                        </h1>
+                    </div>
+                    <div class="checkout_login_content">
+                        <div class="left">
+                            <div class="h1">LOGIN</div>
+                            <div class="lock-alert lock-attempt hide">
+                                For your security, you will have <span>3</span> more attempt before your account is locked.
+                            </div>
+                            <div class="lock-alert lock-date hide">
+                                This account has been locked until 1 Jan, 2019 10:29 am sue to too many failed login attempts. 
+                            </div>
+                            <div class="form">
+                                <div class="input">
+                                    <input type="text" id="mail" placeholder="Email">
+                                    <i class="icon-login"></i>
+                                    <div class="error-msg hide" id="errorLogin">Invalid email</div>
+                                </div>
+                                
+                                <div class="input">
+                                    <input type="password" id="password" placeholder="Password">
+                                    <i class="icon-lock"></i>
+                                    <div class="error-msg hide" id="errorPw">Invalid Password</div>
+                                </div>
+                                
+                                <div class="remember-forget">
+                                    <label class="remember">
+                                        <u class="checkbox-label"><input type="checkbox"><em class="icon-check-box02"></em></u>
+                                        <span>Remember me</span>
+                                    </label>
+                                    <div class="forget-password"><a href="">Forgot password?</a></div>
+                                </div>
+                            </div>
+                            <div class="green-btn">
+                                <a id="login-submit">Login</a>
+                            </div>
+                            <div class="mbLogin-msg">
+                                <img src="assets/img/graphic-app-user.png">
+                                <div class="msg-bubble">
+                                    <span>MoneyBack App User</span> can login with your email to enjoy member benefits. 
+                                    <div class="arrow"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="right">
+                            <div class="h1">DON'T HAVE ACCOUNT?</div>
+                            <div class="box">
+                                <span>Create your MoneyBack account and enjoy exclusive online benefits from us!</span>
+                                <div class="offer">
+                                    <p><i class="icon-checked"></i>New Joiner Offer</p>
+                                    <p><i class="icon-checked"></i>Birthday Surprise</p>
+                                </div>
+                            </div>
+                            <div class="green-empty-btn hidden-xs">
+                                <a href="javascript:void(0)">Register Now</a>
+                            </div>
+                            <div class="green-btn hidden-md hidden-lg hidden-sm">
+                                <a href="javascript:void(0)">Register Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="bootstrap">
+                <div class="mobile-language">
+                    <div class="box">
+                        <a href="">English</a>
+                        <a href="" class="active">繁體</a>
+                        <a href="">簡体</a>
+                    </div>
+                </div>
+                <div class="Good_Read hide">
+                    <div class="title">好文推薦</div>
+                    <div class="box">
+                        <a href="javascript:void(0)">BLOG</a>
+                    </div>
+                </div>
+                <div class="healthService hidden-sm hidden-xs">
+                    <div class="title hide">健康顧問</div>
+                    <div class="container clearfix hidden-lg hidden-md">
+                        <!-- Same as header menu item Health_Service -->
+                        <dl>
+                            <dt>
+                                <a href="" title="健康評估服務"><span>健康評估服務</span></a>
+                            </dt><dd></dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <a href="" title="雙重保健服務"><span>雙重保健服務</span></a>
+                            </dt><dd></dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <a href="" title="註冊營養師諮詢服務"><span>註冊營養師諮詢服務</span></a>
+                            </dt><dd></dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <a href="" title="註冊中醫診治服務"><span>註冊中醫診治服務</span></a>
+                            </dt><dd></dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <a href="" title="客戶陪月顧問服務"><span>客戶陪月顧問服務</span></a>
+                            </dt><dd></dd>
+                        </dl>
+                        <!-- End of Health_Service -->
+                    </div>
+                </div>
+                <div class="sitemapLinks hidden-sm hidden-xs">
+                    <div class="title hide">關於我們</div>
+                    <div class="container clearfix">
+                        <dl>
+                                <dt>關於屈臣氏<i class="icon-icon_arrow expand hide"></i></dt>
+                                <dd>
+                                        <a href="" title="公司簡介">公司簡介<i class="icon-icon_arrow hidden-md hidden-lg"></i></a>
+                                        <a href="" title="企業社會責任">企業社會責任<i class="icon-icon_arrow hidden-md hidden-lg"></i></a>
+                                        <a href="" title="加入我們">加入我們<i class="icon-icon_arrow hidden-md hidden-lg"></i></a>
+                                        <a href="" title="重要聲明">重要聲明<i class="icon-icon_arrow hidden-md hidden-lg"></i></a>
+                                        <a href="" title="更多地區">更多地區<i class="icon-icon_arrow hidden-md hidden-lg"></i></a>
+                                        <a href="" title="屈臣氏分店">屈臣氏分店<i class="icon-icon_arrow hidden-md hidden-lg"></i></a>
+                                </dd>
+                        </dl>
+                        <dl>
+                                <dt>電子商店<i class="icon-icon_arrow expand hide"></i></dt>
+                                <dd>
+                                        <a href="" title="網上購物流程">網上購物流程<i class="icon-icon_arrow hidden-md hidden-lg"></i></a>
+                                        <a href="" title="手機購物應用程式介紹">手機購物應用程式介紹<i class="icon-icon_arrow hidden-md hidden-lg"></i></a>
+                                        <a href="" title="香港送貨">香港送貨<i class="icon-icon_arrow hidden-md hidden-lg"></i></a>
+                                        <a href="" title="國內送貨">國內送貨<i class="icon-icon_arrow hidden-md hidden-lg"></i></a>
+                                </dd>
+                        </dl>
+                        <dl>
+                                <dt>貼心服務<i class="icon-icon_arrow expand hide"></i></dt>
+                                <dd>
+                                        <a href="" title="今日訂聽日送">今日訂聽日送<i class="icon-icon_arrow hidden-md hidden-lg"></i></a>
+                                        <a href="" title="網購店取">網購店取<i class="icon-icon_arrow hidden-md hidden-lg"></i></a>
+                                        <a href="" title="優先預訂">優先預訂<i class="icon-icon_arrow hidden-md hidden-lg"></i></a>
+                                </dd>
+                        </dl>
+                        <dl>
+                                <dt>客戶服務<i class="icon-icon_arrow expand hide"></i></dt>
+                                <dd>
+                                        <a href="" title="香港送貨常見問題">香港送貨常見問題<i class="icon-icon_arrow hidden-md hidden-lg"></i></a>
+                                        <a href="" title="國內送貨常見問題">國內送貨常見問題<i class="icon-icon_arrow hidden-md hidden-lg"></i></a>
+                                        <a href="" title="會員登記教學">會員登記教學<i class="icon-icon_arrow hidden-md hidden-lg"></i></a>
+                                        <a href="" title="購物教學">購物教學<i class="icon-icon_arrow hidden-md hidden-lg"></i></a>
+                                        <a href="" title="聯繫我們">聯繫我們<i class="icon-icon_arrow hidden-md hidden-lg"></i></a>
+                                </dd>
+                        </dl>
+                        <dl>
+                                <dt>網站聲明<i class="icon-icon_arrow expand hide"></i></dt>
+                                <dd>
+                                        <a href="" title="網站地圖">網站地圖<i class="icon-icon_arrow hidden-md hidden-lg"></i></a>
+                                        <a href="" title="隱私政策">隱私政策<i class="icon-icon_arrow hidden-md hidden-lg"></i></a>
+                                        <a href="" title="條款及細則">條款及細則<i class="icon-icon_arrow hidden-md hidden-lg"></i></a>
+                                        <a href="" title="免責聲明">免責聲明<i class="icon-icon_arrow hidden-md hidden-lg"></i></a>
+                                        <a href="" title="商標通知">商標通知<i class="icon-icon_arrow hidden-md hidden-lg"></i></a>
+                                        <a href="" title="版權資訊">版權資訊<i class="icon-icon_arrow hidden-md hidden-lg"></i></a>
+                                </dd>
+                        </dl>
+                    </div>
+<!--                    <div class="container clearfix hidden-md hidden-lg">
+                        <div>
+                            <a href="">關於我們<i class="icon-icon_arrow arrow-right hide"></i></a>
+                        </div>
+                        <div>
+                            <a href="">電子商店<i class="icon-icon_arrow arrow-right hide"></i></a>
+                        </div>
+                        <div>
+                            <a href="">貼心服務<i class="icon-icon_arrow arrow-right hide"></i></a>
+                        </div>
+                        <div>
+                            <a href="">客戶服務<i class="icon-icon_arrow arrow-right hide"></i></a>
+                        </div>
+                        <div>
+                            <a href="">網站聲明<i class="icon-icon_arrow arrow-right hide"></i></a>
+                        </div>
+                    </div>-->
+                </div>
+                <div class="socialMedia">
+                    <div class="container clearfix">
+                        <div class="title hide">社交平台</div>
+                        <div class="pull-left icon-list">
+                            <span class="hidden-sm hidden-xs">與屈臣氏保持聯繫</span>
+                            <a href="" target="_blank">
+                                <i class="icon-footer_socialmedia_facebook"></i>
+                                <span class="hide">Facebook</span>
+                            </a>
+                            <a href="" target="_blank">
+                                <i class="icon-footer_socialmedia_youtube"></i>
+                                <span class="hide">Youtube</span>
+                            </a>
+                            <a href="" target="_blank">
+                                <i class="icon-footer_socialmedia_wechat"></i>
+                                <span class="hide">Instagram</span>
+                            </a>
+                            <a href="" target="_blank">
+                                <i class="icon-footer_socialmedia_waibot"></i>
+                                <span class="hide">Wechat</span>
+                            </a>
+                        </div>
+                        <div class="pull-right">
+                            <div class="span pull-left"><span class="rrp">RRP</span><span>建議零售價</span></div>
+                        </div>
+                    </div>
+                </div>
+<!--                <div class="mobile-language hidden-lg hidden-md">
+                    <div class="title hide">Language</div>
+                    <ul>
+                        <li><a href="">English <i class="icon-return"></i></a></li>
+                        <li><a class="active" href="">繁體 <i class="icon-return"></i></a></li>
+                        <li><a href="">简体 <i class="icon-return"></i></a></li>
+                    </ul>
+                </div>-->
+                <div class="copyrightAndApp">
+                    <div class="container clearfix">
+                        <div class="payment pull-left">
+                            <div class="clearfix">
+                                <img title="" src="assets/img/Payment_Mobile.png" alt="" class="hidden-lg hidden-md">
+                                <img title="" src="assets/img/Payment_Desktop.png" alt="" class="hidden-xs hidden-sm">
+                            </div>
+                        </div>
+                        <div class="appDownloadContainer pull-right">
+                            <img src="assets/img/Watsons_icon.png" alt="" title="" class="pull-left">
+                            <div class="appText">
+                                <p>
+                                    <strong>屈臣氏購物APP 優惠一手掌握</strong>
+                                </p>
+                                <p>
+                                    立刻下載 <a href="" class="iphone_download">iPhone</a> 或 <a href="" class="andriod_download">Android</a> 版本</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="campaign hidden-lg hidden-md">
+                    <div class="container">
+                        <div class="img pull-left">
+                            <img src="assets/img/desktop_no1_zt_Small.png" alt="">
+                        </div>
+                        <div class="word pull-left">
+                            <p>《Campaign Asia-Pacific/ Nielsen》 <br>2017年「亞洲一千最佳品牌」逾六千名遍布13個亞太區市場受訪者網上市場調查結果</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="quality hidden-lg hidden-md">
+                    <div class="container">
+                        <div class="img">
+                            <img src="assets/img/QualityForPROD.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="footerPaymentsIcon">
+                    <div class="container clearfix">
+                        <div class="campaign  hidden-xs hidden-sm">
+                            <div class="campaign img pull-left">
+                                <img src="assets/img/desktop_no1_zt_Small.png" alt="">
+                            </div>
+                            <div class="campaign word pull-left">
+                                <p>《Campaign Asia-Pacific/ Nielsen》 <br>2017年「亞洲一千最佳品牌」逾六千名遍布13個亞太區市場受訪者網上市場調查結果</p>
+                            </div>
+                            <div class="quality img pull-right hidden-xs hidden-sm">
+                                <img src="assets/img/QualityForPROD.png" alt="">
+                            </div>
+                        </div>
+                        <div class="companyLogoContainer pull-left">
+                            <div class="clearfix banner center">
+                                <img title="屈臣氏集團屬下機構 長江和記實業" src="assets/img/KH_logo_zt.png" alt="屈臣氏集團屬下機構 長江和記實業">
+                            </div>
+                        </div>
+                        <div class="copyrightText pull-right">
+                            © 屈臣氏集團版權所有
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div class="mobile-menu bootstrap">
+                <ul class="hidden-lg hidden-md">
+                    <li class="active" data-id="home">
+                        <div class="icon"><i class="icon-bottommenu_home"></i></div>
+                        <div class="h1">Home</div>
+                    </li>
+                    <li data-id="store">
+                        <a href="">
+                        <div class="icon"><i class="icon-bottommenu_storelocator"></i></div>
+                        <div class="h1">Store</div>
+                        </a>
+                    </li>
+                    <li data-id="promotion">
+                        <div class="icon"><i class="icon-bottommenu_offer"></i></div>
+                        <div class="h1">Promotion</div>
+                    </li>
+                    <li data-id="account">
+                        <div class="icon"><i class="icon-bottommenu_account"></i></div>
+                        <div class="h1">Account</div>
+                    </li>
+                    <li data-id="more">
+                        <div class="icon"><i class="icon-bottommenu_more"></i></div>
+                        <div class="h1">More</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="back_to_top" id="toTop">
+                <i class="icon-top"></i>
+            </div>
+        </div>
+        <div class="mSearchMenu">
+            <div class="searchbox pull-left">
+                <form id="all_brands-search_form1">
+                    <fieldset class="search-field">
+                        <input name="text" type="text" placeholder="輸入品牌名稱進行搜索" id="searchinput" autocomplete="off" pattern="\d*">
+                        <i class="icon-search"></i>
+                        <i class="icon-delete"></i>
+                    </fieldset>
+                    <a class="cancel-search" href="javascript:void(0)">取消</a>
+                </form>
+                <div class="search-suggestion">
+                    <div class="divider">
+                        <div class="search-history">
+                            <div class="title">搜尋紀錄</div>
+                            <div class="clear-btn">清除</div>
+                            <div class="history-record">
+                                <a href="">曼秀雷敦 Lip Pure天然植物潤唇膏 - 無香料</a>
+                            </div>
+                            <div class="history-record">
+                                <a href="">曼秀雷敦 Lip Pure天然植物潤唇膏 - 佛手柑</a>
+                            </div>
+                            <div class="history-record">
+                                <a href="">曼秀雷敦 Lip Pure天然植物潤唇膏 - 香橙4G</a>
+                            </div>
+                        </div><!--End of search-result-->
+                    </div><!--End of divider-->
+                    <div class="hot-search">
+                            <div class="title">熱門搜尋</div>
+                            <div class="hot-record">
+                                <a href="">Olay ®新生™高效緊緻節日限量禮盒</a>
+                            </div>
+                            <div class="hot-record">
+                                <a href="">Curel 珂潤 潤浸保濕深層乳霜</a>
+                            </div>
+                            <div class="hot-record">
+                                <a href="">白蘭氏紅膠原青春飲</a>
+                            </div>
+                            <div class="hot-record">
+                                <a href="">Jo Malone 英國梨與小蒼蘭香水</a>
+                            </div>
+                            <div class="hot-record">
+                                <a href="">曼秀雷敦 Lip Pure天然植物潤唇膏 - 佛手柑</a>
+                            </div>
+                            <div class="hot-record">
+                                <a href="">曼秀雷敦 Lip Pure天然植物潤唇膏 - 佛手柑</a>
+                            </div>
+                            <div class="hot-record">
+                                <a href="">曼秀雷敦 Lip Pure天然植物潤唇膏 - 佛手柑</a>
+                            </div>
+                            <div class="hot-record">
+                                <a href="">曼秀雷敦 Lip Pure天然植物潤唇膏 - 佛手柑</a>
+                            </div>
+                        </div><!--End of hot-search-->
+                </div><!--End of search suggestion-->
+                <div class="search-brand">
+                    <div class="divider">
+                        <div class="search-brand-list">
+                            <div class="title">
+                                品牌
+                            </div><!--End of title-->
+                            <div class="brand-suggest">
+                                <a href="">妙蓮</a>
+                            </div>
+                            <div class="brand-suggest">
+                                <a href="">曼秀雷敦</a>
+                            </div>
+                            <div class="brand-suggest">
+                                <a href="">Brand A</a>
+                            </div>
+                        </div><!--End of search-brand-list-->
+                    </div><!--End of divider-->
+                    <div class="search-product-list">
+                        <div class="title">
+                            產品
+                        </div>
+                        <div class="product-suggest">
+                            <a href="">雙飛人藥水 雙飛人藥水</a>
+                        </div>
+                        <div class="product-suggest">
+                            <a href="">妙蓮眼藥水 妙蓮1號眼藥水 15毫升</a>
+                        </div>
+                        <div class="product-suggest">
+                            <a href="">妙蓮眼藥水 妙蓮3號眼藥水 15毫升</a>
+                        </div>
+                        <div class="product-suggest">
+                            <a href="">妙蓮眼藥水</a>
+                        </div>
+                        <div class="product-suggest">
+                            <a href="">妙蓮眼藥水 妙蓮3號眼藥水 15毫升</a>
+                        </div>
+                        <div class="view-all-suggest">
+                            <a href="">查看所有搜尋結果</a>
+                        </div>
+                    </div><!--End of search-product-list-->
+                </div><!--End of search brand-->
+            </div> <!--End of searchbox-->             
+         </div> <!--End of mSearchMenu-->
+    </body>
+</html>

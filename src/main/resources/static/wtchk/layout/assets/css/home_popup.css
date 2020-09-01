@@ -1,0 +1,111 @@
+.homepage .pop-up {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+.homepage .pop-up .wrapper {
+    position: relative;
+    height: 100%;
+    margin: 0 auto;
+}
+.homepage .pop-up .wrapper .text-box {
+    position: absolute;
+    max-width: 385px;
+    padding: 12px 6% 5px 2%;
+    background-color: white;
+    box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.3);
+    line-height: 22px;
+    right: 0;
+}
+.homepage .pop-up .wrapper .countdown-box {
+    position: absolute;
+    width: 438px;
+    padding: 18px 2% 15px 1%;
+    background-color: rgba(0, 0, 0, 0.35);
+    line-height: 22px;
+    left: 3%;
+    top: 38px;
+    color: #fff;
+}
+.homepage .pop-up .wrapper .countdown-box p {
+    text-align: center;
+}
+.homepage .pop-up .wrapper .countdown-box span {
+    display: inline-block;
+    font-size: 19px;
+    line-height: 22px;
+    padding: 0 14px;
+}
+.homepage .pop-up .wrapper .countdown-box .whiteBorderR {
+    border-right: 1px solid white;
+}
+.homepage .pop-up .wrapper .countdown-box #countdown {
+    color: #E1E99A;
+    font-size: 14px;
+    margin-top: 35px;
+    text-align: center;
+}
+.homepage .pop-up .wrapper .countdown-box #countdown span {
+    color: #ffffff;
+    font-size: 73px;
+    padding: 0;
+}
+@media (min-width: 980px) {
+    .homepage .pop-up .wrapper {
+        max-width: 1250px;
+    }
+}
+@media (max-width: 979px) {
+    .homepage .pop-up .wrapper {
+        max-width: 1250px;
+    }
+    .homepage .pop-up .wrapper .countdown-box {
+        width: 438px;
+        padding: 12px 0 8px 0;
+        left: 0;
+        top: 45px;
+    }
+    .homepage .pop-up .wrapper .countdown-box #countdown {
+        margin-top: 28px;
+    }
+}
+@media (max-width: 767px) {
+    .homepage .pop-up .wrapper {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .homepage .pop-up .wrapper .text-box {
+        padding: 12px 16% 5px 4%;
+    }
+    .homepage .pop-up .wrapper .countdown-box {
+        width: 244px;
+        padding: 2px 0 2px 0;
+        left: 0;
+        top: 28px;
+    }
+    .homepage .pop-up .wrapper .countdown-box span {
+        font-size: 11px;
+        line-height: 11px;
+        padding: 0 14px;
+    }
+    .homepage .pop-up .wrapper .countdown-box #countdown {
+        font-size: 10px;
+        margin-top: 16px;
+    }
+    .homepage .pop-up .wrapper .countdown-box #countdown span {
+        color: #ffffff;
+        font-size: 38px;
+        padding: 0;
+    }
+}
+
+.homepage .pop-up .wrapper .text-box a {
+    color: #009AA9;
+    text-decoration: underline;
+}
+.homepage .pop-up .wrapper .text-box .close-btn {
+    position: absolute;
+    right: 18px;
+    top: 10px;
+    cursor: pointer;
+}

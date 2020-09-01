@@ -1,0 +1,93 @@
+body {
+    font-family: 'Rubik', "STHeiti", Verdana, Arial, "Microsoft JhengHei", "微軟正黑體", "黑體-繁", "新細明體", sans-serif;
+    font-size: 12px;
+}
+@media (min-width: 980px) {
+    main {
+        margin-top: 180px;
+    }
+    .maintenance_page .maintenance_img {
+        width: 668px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .maintenance_page .maintenance_img img {
+        width: 100%;
+        display: block;
+    }
+    .maintenance_page .maintenance_img .maintenance_word {
+        font-weight: 300;
+        font-size: 24px;
+        color: #4B4B4B;
+        line-height: 41px;
+        position: absolute;
+        left: 300px;
+        top: 260px;
+    }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    main {
+        margin-top: 150px;
+    }
+    .maintenance_page .maintenance_img {
+        width: 668px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .maintenance_page .maintenance_img img {
+        width: 100%;
+        display: block;
+    }
+    .maintenance_page .maintenance_img .maintenance_word {
+        font-weight: 300;
+        font-size: 24px;
+        color: #4B4B4B;
+        line-height: 41px;
+        position: absolute;
+        left: 300px;
+        top: 260px;
+    }
+}
+@media (max-width: 767px) {
+    main {
+        margin-top: 150px;
+    }
+    .maintenance_page .maintenance_img {
+        width: 250px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .maintenance_page .maintenance_img img {
+        width: 100%;
+        display: block;
+    }
+    .maintenance_page .maintenance_img .maintenance_word {
+        font-weight: 300;
+        font-size: 18px;
+        color: #4B4B4B;
+        line-height: 34px;
+        margin-top: 5px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .hidden-xs {
+        display: none !important;
+    }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    .hidden-sm {
+        display: none !important;
+    }
+}
+@media (min-width: 980px) and (max-width: 1279px) {
+    .hidden-md {
+        display: none !important;
+    }
+}
+@media (min-width: 1280px) {
+    .hidden-lg {
+        display: none !important;
+    }
+}

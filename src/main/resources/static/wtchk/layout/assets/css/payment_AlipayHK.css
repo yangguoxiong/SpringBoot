@@ -1,0 +1,213 @@
+@media screen and (min-width: 980px){
+	main.alipay_hk{
+		margin-bottom: 100px;
+	}
+ 	.alipay_hk .payment_alert{
+ 		background: #e5f4f6;
+	    color: #009AA9;
+	    padding: 10px;
+	    max-width: 680px;
+	    text-align: center;
+	    margin: 0 auto;
+	    margin-top: 20px;
+	    margin-bottom: 20px;
+	    font-size: 14px;
+ 	}
+ 	.alipay_hk .alipay_main{
+ 		border: 1px solid #dfdfdf;
+	    padding: 25px;
+	    position: relative;
+	    font-size: 14px;
+ 	}
+ 	.alipay_main .title{
+ 		font-size: 17px;
+    	font-weight: 500;
+ 	}
+ 	.alipay_main .sub-title{
+ 		margin: 15px 0 25px;
+ 	}
+ 	.alipay_main .logo{
+ 		position: absolute;
+	    top: 25px;
+	    right: 25px;
+	    width: 168px;
+ 	}
+ 	.alipay_main .logo img{
+ 		width: 100%;
+ 	}
+ 	.alipay_main .total_amount{
+ 		margin-bottom: 20px;
+ 	}
+ 	.alipay_main .total_amount span{
+ 		font-size: 30px;
+    	font-weight: 500;
+    	color: #009AA9;
+ 	}
+ 	.alipay_main .scan_area{
+ 		width: 200px;
+	    height: 200px;
+	    display: inline-block;
+	    background-color: #dfdfdf;
+ 	}
+ 	.alipay_main .scan_reminder{
+ 		display: inline-block;
+ 		font-size: 0;
+ 		vertical-align: top;
+    	padding: 0px 30px;
+    	max-width: 434px;
+ 	}
+ 	.alipay_main .scan_reminder .scan_alert{
+ 		font-size: 0;
+    	margin-bottom: 20px;
+ 	}
+ 	.alipay_main .scan_reminder .scan_alert .icon{
+ 		display: inline-block;
+ 	}
+ 	.alipay_main .scan_reminder .scan_alert .icon i{
+ 		font-size: 25px;
+ 	}
+ 	.alipay_main .scan_reminder .scan_alert .msg{
+ 		display: inline-block;
+	    margin-left: 10px;
+	    line-height: 35px;
+	    font-size: 14px;
+	    vertical-align: bottom;
+ 	}
+ 	.alipay_main .install_app{
+ 		font-size: 14px;
+    	color: #9a9b9c;
+ 	}
+ 	.alipay_main .install_app .install_title{
+ 		font-size: 16px;
+ 		font-weight: 500;
+ 		margin-bottom: 10px;
+ 	}
+ 	.alipay_main .install_app .icon-list{
+ 		margin-top: 5px;
+ 	}
+ 	.alipay_main .install_app .icon{
+ 		display: inline-block;
+    	width: 45px;
+ 	}
+ 	.alipay_main .install_app .icon:nth-of-type(2){
+ 		margin-left: 10px;
+ 	}
+ 	.alipay_main .install_app .icon img{
+ 		width: 100%;
+ 	}
+ 	.alipay_main .green-empty-btn{
+ 		margin-top: 25px;
+ 	}
+ 	.alipay_main .green-empty-btn a{
+ 		width: 344px;
+ 		margin: initial;
+ 	}
+}
+@media screen and (min-width: 768px) and (max-width: 979px){
+	main.alipay_hk{
+		margin-bottom: 20px;
+	}
+	.alipay_hk.checkout_homeD .checkout_title{
+		padding-left: 0px;
+	}
+ 	.alipay_hk .payment_alert{
+ 		background: #e5f4f6;
+	    color: #009AA9;
+	    padding: 10px;
+	    max-width: 680px;
+	    text-align: center;
+	    margin: 0 auto;
+	    margin-top: 20px;
+	    margin-bottom: 20px;
+	    font-size: 14px;
+ 	}
+ 	.alipay_hk .alipay_main{
+ 		border: 1px solid #dfdfdf;
+	    padding: 25px;
+	    position: relative;
+	    font-size: 14px;
+ 	}
+ 	.alipay_main .title{
+ 		font-size: 17px;
+    	font-weight: 500;
+ 	}
+ 	.alipay_main .sub-title{
+ 		margin: 15px 0 25px;
+ 	}
+ 	.alipay_main .logo{
+ 		position: absolute;
+	    top: 25px;
+	    right: 25px;
+	    width: 168px;
+ 	}
+ 	.alipay_main .logo img{
+ 		width: 100%;
+ 	}
+ 	.alipay_main .total_amount{
+ 		margin-bottom: 20px;
+ 	}
+ 	.alipay_main .total_amount span{
+ 		font-size: 30px;
+    	font-weight: 500;
+    	color: #009AA9;
+ 	}
+ 	.alipay_main .scan_area{
+ 		width: 200px;
+	    height: 200px;
+	    display: inline-block;
+	    background-color: #dfdfdf;
+ 	}
+ 	.alipay_main .scan_reminder{
+ 		display: inline-block;
+ 		font-size: 0;
+ 		vertical-align: top;
+    	padding: 0px 30px;
+    	max-width: 434px;
+ 	}
+ 	.alipay_main .scan_reminder .scan_alert{
+ 		font-size: 0;
+    	margin-bottom: 20px;
+ 	}
+ 	.alipay_main .scan_reminder .scan_alert .icon{
+ 		display: inline-block;
+ 	}
+ 	.alipay_main .scan_reminder .scan_alert .icon i{
+ 		font-size: 25px;
+ 	}
+ 	.alipay_main .scan_reminder .scan_alert .msg{
+ 		display: inline-block;
+	    margin-left: 10px;
+	    line-height: 35px;
+	    font-size: 14px;
+	    vertical-align: bottom;
+ 	}
+ 	.alipay_main .install_app{
+ 		font-size: 14px;
+    	color: #9a9b9c;
+ 	}
+ 	.alipay_main .install_app .install_title{
+ 		font-size: 16px;
+ 		font-weight: 500;
+ 		margin-bottom: 10px;
+ 	}
+ 	.alipay_main .install_app .icon-list{
+ 		margin-top: 5px;
+ 	}
+ 	.alipay_main .install_app .icon{
+ 		display: inline-block;
+    	width: 45px;
+ 	}
+ 	.alipay_main .install_app .icon:nth-of-type(2){
+ 		margin-left: 10px;
+ 	}
+ 	.alipay_main .install_app .icon img{
+ 		width: 100%;
+ 	}
+ 	.alipay_main .green-empty-btn{
+ 		margin-top: 25px;
+ 	}
+ 	.alipay_main .green-empty-btn a{
+ 		width: 344px;
+ 		margin: initial;
+ 	}
+}

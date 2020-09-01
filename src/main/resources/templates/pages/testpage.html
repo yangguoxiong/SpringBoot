@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>Homepage</title>
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/homepage.css">
+	<link rel="stylesheet" href="/css/testpage.css">
+	<link rel="stylesheet" href="/css/swiper.min.css">
+	<script src="/js/vue.js"></script>
+	<script src="/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<header class="header-bg">
+		<h1 class="home">
+			<a th:href="@{/}">
+				<img class="home_logo" src="/img/logo2.jpg" alt="Mark">
+			</a>
+		</h1>
+		<ul class="top_nav">
+			<li class="top_nav_item">
+				<a th:href="@{/layout}" th:text="Wtchk"></a>
+			</li>
+			<li class="top_nav_item">
+				<a th:href="@{/layout}" th:text="Pnshk"></a>
+			</li>
+			<li class="top_nav_item">
+				<a th:href="@{/layout}" th:text="Personal"></a>
+			</li>
+			<li class="top-right media">
+				<a th:href="@{/layout}">
+					<img src="/img/media.png">
+				</a>
+				<div class="personal_info">
+					<div class="info_top">
+						<a th:href="@{/layout}">
+							<img src="/img/media.png">
+						</a>
+						<div class="info_right">
+							<a th:href="@{/}">
+								<span class="name" th:text="牧羊"></span>
+							</a>
+							<div class="meta">
+								<a th:href="@{/}" th:text="经验"></a>
+								<a th:href="@{/}" th:text="积分"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="top-right nav_register">
+				<a th:href="@{/layout}" th:text="注册"></a>
+			</li>
+			<li class="top-right nav_login">
+				<a th:href="@{/layout}" th:text="登录"></a>
+			</li>
+		</ul>
+	</header>
+	<div class="main" id="vue_root">
+		<div class="test_content">
+			my test content for label
+			<div>
+				<input type="radio" name="fale" id="fale" />
+				<label for="fale">男生</label>
+				<br />
+				<input type="radio" name="female" id="female" />
+				<label for="female">女生</label>
+				<br />
+				<label for="text_name">点击此处可以获取输入框焦点</label>
+				<br />
+				<input type="text" id="text_name" />
+			</div>
+		</div>
+	</div>
+	<footer class="footer-bg">
+		<div class="company_info">
+			<a class="company_link" th:href="@{/}" th:text="关于Mark"></a>
+			<a class="company_link" th:href="@{/}" th:text="服务协议"></a>
+			<a class="company_link" th:href="@{/}" th:text="客服服务"></a>
+			<a class="company_link" th:href="@{/}" th:text="侵权投诉"></a>
+		</div>
+		<div class="copyright">
+			<p>Copyright © 2012-2019 Tencent. All Rights Reserved.</p>
+		</div>
+	</footer>
+	<script src="/js/vue_app.js"></script>
+	<script src="/js/swiper.min.js"></script>
+	<script src="/js/homepage.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+@import "function";
+
+.ws-banner {
+  max-width: 875px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  .banner-bg {
+    text-align: center;
+    overflow: hidden;
+    img {
+      @include float(centerMiddle);
+    }
+  }
+  .banner-text {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    .no-of-promo-code,
+    .modify-date {
+      position: absolute;
+      width: 100%;
+    }
+    .no-of-promo-code {
+      bottom: 40px;
+      font-size: 30px;
+      font-weight: bold;
+      span {
+        font-size: 43px;
+        font-weight: normal;
+        margin: 0px 5px;
+      }
+      @media (max-width: $mobile) {
+        font-size: 22px;
+        bottom: 50px;
+        span {
+          font-size: 36px;
+        }
+      }
+    }
+    .modify-date {
+      bottom: 25px;
+      font-size: 14px;
+      @media (max-width: $mobile) {
+        bottom: 35px;
+        font-size: 13px;
+      }
+    }
+    .for-more {
+      display: inline;
+      position: absolute;
+      right: 38px;
+      bottom: 20px;
+      font-size: 25px;
+      font-weight: bold;
+      color: #000;
+      @media (max-width: $mobile) {
+        right: 10px;
+        bottom: 10px;
+        font-size: 18px;
+      }
+      i {
+        &.icon-right-open-big {
+        }
+      }
+    }
+  }
+}

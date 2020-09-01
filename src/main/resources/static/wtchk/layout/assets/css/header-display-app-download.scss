@@ -1,0 +1,104 @@
+@import 'function';
+
+$desktop-hi: 1280px;
+$desktop: 980px;
+$tablet: 768px;
+$mobile: 375px;
+
+.mobile-searching .header-apps-download {
+  display: none !important;
+}
+
+.header-apps-download {
+  display: none;
+  position: relative;
+  @media (max-width: $desktop) {
+    display: block;
+  }
+  background-color: #e5f5f5;
+  padding: 8px 50px 8px 40px;
+  min-height: 52px;
+  .msg-txt {
+    .small-logo {
+      left: -5px;
+      height: 46px;
+      position: absolute;
+      @include float(middle);
+      // margin-left: -60px;
+    }
+    position: absolute;
+    // display: table-cell;
+    @include float(middle);
+    // border: 10px solid #000;
+    padding-left: 44px;
+    padding-right: 50px;
+  }
+  .close-btn {
+    position: absolute;
+    // border: 1px solid #000;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    padding: 15px;
+    display: inline-block;
+    cursor: pointer;
+    i {
+      position: absolute;
+      @include float(middle);
+    }
+  }
+  .open-btn {
+    display: inline-block;
+    // border: 1px solid #000;
+    position: absolute;
+    color: #019aa8;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    padding: 15px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    // border: 1px solid #000;
+    width: 50px;
+    span {
+      white-space: nowrap;
+      position: absolute;
+      @include float(middle);
+    }
+  }
+}
+
+.has-apps-download-bar {
+  position: absolute;
+  display: none;
+  ~ header {
+    // border: 2px solid #000;
+    .header-apps-download {
+      display: none;
+    }
+    ~ main {
+      &.homepage {
+        @include desktop {
+          margin-top: 96px;
+        }
+      }
+    }
+  }
+  &:checked {
+    ~ header {
+      // border: 2px solid red;
+      .header-apps-download {
+        @media (max-width: $desktop) {
+          display: block;
+        }
+      }
+      ~ main {
+        &.homepage {
+          @include desktop {
+            margin-top: 147px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,294 @@
+@media (min-width: 980px){
+    .globalWrapper {
+        #watsonsGoModeOn, #watsonsGoModeOff{
+            right: 5px;
+            top: 0px;
+            max-width: 350px;
+        }
+    }
+    header .headerLogoBar, .sub-all_brands-search-header .headerLogoBar{
+        z-index: 3999;
+    }
+    #mode-switch-popup .popupHeader{
+        display: none;
+    }
+    #opps-popup .title{
+        font-size: 40px;
+    }
+    #opps-popup .subTitle{
+        font-size: 22px;
+    }
+    #opps-popup .scroll-content{
+        margin-top: 30px;
+    }
+    .mobileCceImg{
+        display: none;
+    }
+}
+
+@media (max-width: 979px){
+    .desktopCceImg{
+        display: none;
+    }
+    .globalWrapper #watsonsGoModeOn .popupContainer, .globalWrapper #watsonsGoModeOff .popupContainer{
+        padding: 0;
+        background-color: transparent;
+        max-width: 255px;
+    }
+    .globalWrapper .watsonsGoSwitchNoticePopup{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 17px;
+    }
+    .globalWrapper #watsonsGoModeOn.on, .globalWrapper #watsonsGoModeOff.on{
+        z-index: 4001;
+        width: 100%;
+        max-width: calc(~'100% - 77px');
+        padding: 0;
+        top: 0px;
+        height: auto;
+        position: relative;
+        // margin-right: 8px;
+        margin-left: 60px;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    .globalWrapper #watsonsGoModeOn .popupAction, .globalWrapper #watsonsGoModeOff .popupAction{
+        max-width: 259px;
+        background-color: transparent;
+        padding: 0 4px;
+    }
+    .globalWrapper #watsonsGoModeOn .popupAction a, .globalWrapper #watsonsGoModeOff .popupAction a{
+        display: block;
+        padding: 15px 0;
+        border-radius: 0px 0px 5px 5px;
+        line-height: 1;
+        background-color: #fff;
+    }
+    .globalWrapper #watsonsGoModeOn, .globalWrapper #watsonsGoModeOff{
+        box-shadow: 0 0px 20px 2px rgba(0, 0, 0, 0.5);
+        &:before{
+            content: none;
+        }
+    }
+    header .headerLogoBar .productMenu{
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 112;
+        background-color: #fff;
+        width: 60px;
+        height: 60px;
+        margin: 0;
+        i{
+            width: 60px;
+            height: 60px;
+            &:before{
+                line-height: 60px;
+            }
+        }
+    }
+    .globalWrapper .overlayGo{
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    .watsonsGoSwitchNoticePopup {
+        > .arrow-up{
+            position: absolute;
+            left: 63px;
+            top: 85px;
+            width: 0;
+            height: 0;
+            border-top: 12px solid transparent;
+            border-bottom: 12px solid transparent;
+            border-right: 15px solid #ddf2e6;
+            box-shadow: 0px 0px 70px -1px rgba(0,0,0,0.5);
+            z-index: 4002;
+            &.on{
+                display: none;
+            }
+            &.off{
+                display: none;
+            }
+        }
+    }
+    #mode-switch-popup {
+        .icon-close{
+            display: none;
+        }
+        .wrapper{
+            max-width: none;
+            max-height: none;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            .innerwrapper .modeSwitch-item {
+                .itemLeft{
+                    padding-left: 30px;
+                }
+                .itemRight{
+                    padding-right: 30px;
+                }
+            }
+        }
+        .popupHeader{
+            padding: 20px;
+            box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+            .popupButton{
+                display: block;
+                color: #4a4a4a;
+                i{
+                    margin-right: 10px;
+                    font-size: 20px;
+                }
+                span{
+                    font-size: 18px;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+    header .headerLogoBar .productMenu.cce {
+        i{
+            &.icon-topbar_sidemenu_cce{
+                display: block;
+            }
+            &.icon-topbar_sidemenu{
+                display: none;
+            }  
+        }
+    }
+    .deliveryTo{
+        display: inline-block;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li{
+            display: inline-block;
+            padding: 0 15px;
+            a{
+                color: #fff;
+                opacity: 0.5;
+            }
+            &.active{
+                a{
+                    opacity: 1;
+                }
+            }
+            + li{
+                position: relative;
+                &:before{
+                    content: '';
+                    border-left: 1px solid #fff;
+                    position: absolute;
+                    left: -2px;
+                    top: 50%;
+                    -webkit-transform: translate(0,-50%);
+                    -moz-transform: translate(0,-50%);
+                    -ms-transform: translate(0,-50%);
+                    -o-transform: translate(0,-50%);
+                    transform: translate(0,-50%);
+                    width: 1px;
+                    height: 16px;
+                }
+            }
+        }
+    }
+    .globalWrapper.show-menu-product .menu-product-content .content-1 .navContainer {
+        &.show_Switch_Popup{
+            a span{
+                font-size: 15px;
+                color: #009aa9;
+                img{
+                    margin-right: 5px;
+                    position: relative;
+                    top: -2px;
+                }
+            }
+        }
+    }
+    .shop_bag .shopBagContentRightTopBox .delivery_way .method_select {
+        height: auto;
+        padding: 15px 0;
+        .method_icon {
+            margin-bottom: 5px;
+        }
+        .method_select_label{
+            width: 100%;
+            padding: 0;
+            span{
+                color: #009aa9;
+                font-size: 16px;
+            }
+        }
+    }
+    #opps-popup .wrapper{
+        padding: 30px 15px;
+    }
+}
+
+@media (max-width: 767px){
+    // .mobile-menu{
+    //     z-index: 1111;
+    // }
+    #opps-popup {
+        .wrapper{
+            width: calc(~'100% - 40px')
+        }
+        .title{
+            font-size: 20px;
+        }
+        .scroll-content{
+            max-height: 280px;
+        }
+        .reset-bootstrp-select.quantity .bootstrap-select > .dropdown-toggle{
+            width: 60px;
+            background-color: #dfdfdf!important;
+        }
+        .popup-helpText-container{
+            border-top: 1px solid #dfdfdf;
+            padding-top: 10px;
+            margin-top: 10px;
+            .popup-helpText{
+                font-size: 14px;
+                color: #4a4a4a;
+                text-align: left;
+            }
+        }
+        .action-btn {
+            .green-btn, .green-empty-btn {
+                width: 100%;
+                a{
+                    width: 100%;
+                }
+            }
+            .actionButton + .actionButton{
+                margin: 0;
+                margin-top: 10px
+            }
+        }
+        .shop_bag {
+            .shopBagContentbLeftBottomBox {
+                .myBasketContent .myBasketTable .myBasketTableProduct .myBasketTableProductBox {
+                    .td{
+                        &:nth-of-type(3){
+                            width: auto;
+                        }
+                        &:nth-of-type(5) .quantity{
+                            margin: 0;
+                            width: 60px;
+                        }
+                    }
+                    .myBasketTableProductQuantity .qty-alert{
+                        width: 80px;
+                        left: 0;
+                        text-align: right;
+                    }
+                    .myBasketTableProductPrice .productPrice-rrp{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

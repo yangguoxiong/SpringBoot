@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8">
+	<title>Layout</title>
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/homepage.css">
+	<link rel="stylesheet" href="/css/nprogress.css">
+	<script type="text/javascript" src="/js/vue.js"></script>
+	<script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/js/nprogress.js"></script>
+</head>
+<body>
+	<div class="container" id="vue_root">
+		<header class="header-bg">
+			<h1 class="home">
+				<a href="javascript:void(0)" v-on:click="toHomePage()">
+					<img class="home_logo" src="/img/logo2.jpg" alt="Mark">
+				</a>
+			</h1>
+			<ul class="top_nav">
+				<li class="top_nav_item">
+					<a th:href="@{/layout}" th:text="Wtchk"></a>
+				</li>
+				<li class="top_nav_item">
+					<a th:href="@{/layout}" th:text="Pnshk"></a>
+				</li>
+				<li class="top_nav_item">
+					<a th:href="@{/layout}" th:text="个人空间"></a>
+				</li>
+				<li class="top-right media">
+					<a th:href="@{/layout}">
+						<img src="/img/media.png">
+					</a>
+					<div class="personal_info">
+						<div class="info_top">
+							<a th:href="@{/layout}">
+								<img src="/img/media.png">
+							</a>
+							<div class="info_right">
+								<a th:href="@{/}">
+									<span class="name" th:text="牧羊"></span>
+								</a>
+								<div class="meta">
+									<a th:href="@{/}" th:text="经验"></a>
+									<a th:href="@{/}" th:text="积分"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="top-right nav_register">
+					<a th:href="@{/layout}" th:text="注册"></a>
+				</li>
+				<li class="top-right nav_login">
+					<a th:href="@{/layout}" th:text="登录"></a>
+				</li>
+			</ul>
+		</header>
+		<table class="table table-striped table-bordered table-hover">
+			<thead>
+			<tr class="success">
+				<th>Sort</th>
+				<th>WTCHK Layout</th>
+			</tr>
+			</thead>
+			<tbody>
+				<tr th:each="file,sort : ${fileList}">
+					<td th:text="${sort.index + 1}">
+					</td>
+					<td>
+						<a th:href="@{'/wtchk/layout/' + ${file}}" th:text="${file}" target="_blank"></a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+<script src="/js/vue_app.js"></script>
+</html>

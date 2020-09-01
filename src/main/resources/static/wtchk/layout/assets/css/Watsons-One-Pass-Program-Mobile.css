@@ -1,0 +1,306 @@
+/*
+@include widescreen { }
+@include desktop-widescreen { }
+@include desktop { }
+@include tablet-desktop { } 
+@include tablet { }
+@include mobile-tablet { }
+@include mobile { }
+@include phone-mobile { }
+@include mobile { }
+*/
+/*
+@include desktop- { }
+@include tablet- { } 
+@include mobile- { }
+@include phone- { }
+*/
+.span-24.section2 {
+  margin: 0px;
+}
+
+.span-24.section2 .span-20 {
+  margin: 0px;
+  display: done;
+}
+
+.one-pass {
+  margin-top: 0px;
+  padding: 0px 0px;
+}
+
+.one-pass .container {
+  padding-left: 0px;
+  padding-right: 0px;
+  display: block;
+}
+
+.one-pass .container .bottom-btn .right-btn {
+  padding: 15px;
+}
+
+@media (max-width: 768px) {
+  .one-pass .container .bottom-btn .right-btn .green-btn a {
+    width: 100%;
+  }
+}
+
+.one-pass .container .top-banner {
+  display: block;
+}
+
+.one-pass .container .top-banner > img {
+  width: 100%;
+}
+
+.one-pass .container .tree-cards {
+  background-color: #f4f4f4;
+  text-align: center;
+  vertical-align: top;
+  padding: 10px 0px;
+}
+
+.one-pass .container .tree-cards .tree-cards-img {
+  width: 38%;
+  vertical-align: top;
+}
+
+.one-pass .container .tree-cards .right-region {
+  display: inline-block;
+  width: 55%;
+  text-align: left;
+  margin-left: 4px;
+  padding-top: 5px;
+}
+
+.one-pass .container .tree-cards .download-app-text {
+  display: inline-block;
+  line-height: 1.3em;
+  font-size: 0.7rem;
+  width: 100%;
+  font-weight: 500;
+  color: #3a3a3a;
+  padding: 5px 0px;
+}
+
+.one-pass .container .tree-cards .download-app-btn {
+  padding: 5px 0px;
+}
+
+.one-pass .container .tree-cards .download-app-btn a {
+  display: inline-block;
+}
+
+.one-pass .container .tree-cards .download-app-btn .btn-google,
+.one-pass .container .tree-cards .download-app-btn .btn-ios {
+  height: 23px;
+  margin-right: 3px;
+}
+
+.one-pass .container .how-to {
+  text-align: center;
+  padding: 0px 20px;
+  margin: auto;
+}
+
+.one-pass .container .how-to .hd-title {
+  font-weight: 500;
+  color: #0096a5;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.one-pass .container .how-to .three-steps-img {
+  width: 100%;
+}
+
+.one-pass .container .how-to .three-steps-text {
+  font-size: 0.8rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.one-pass .container .how-to .three-steps-text .text-reg {
+  line-height: 1.3em;
+  color: #555;
+  display: inline-block;
+  width: 28%;
+  font-weight: 500;
+  vertical-align: top;
+}
+
+.one-pass .container .how-to .three-steps-text .text-reg:nth-of-type(2) {
+  margin: 0px 6%;
+}
+
+.one-pass .container .rate {
+  padding: 15px;
+  padding-top: 0px;
+}
+
+.one-pass .container .rate .sub-title {
+  text-align: center;
+  color: #0099a8;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 20px;
+}
+
+.one-pass .container .rate .sub-box {
+  margin: 0px 0px 15px 0px;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.one-pass .container .rate .sub-box .sub-header {
+  padding: 8px 0px;
+  font-size: 0.8rem;
+  background-color: #e5f3f7;
+  text-align: center;
+  color: #555;
+  font-weight: 500;
+}
+
+.one-pass .container .rate .sub-box .sub-header .money-back-logo {
+  margin: 0px 4px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.one-pass .container .rate .sub-box .sub-header span {
+  color: #0099a8;
+  margin-right: 0.5rem;
+}
+
+.one-pass .container .rate .sub-box .sub-content {
+  background-color: #f6f6f6;
+  padding: 25px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.one-pass .container .rate .sub-box .sub-content .country-icons {
+  list-style: none;
+  padding: 0px;
+  margin: 0px auto;
+  font-size: 0px;
+  text-align: center;
+}
+
+.one-pass .container .rate .sub-box .sub-content .country-icons > li {
+  text-align: left;
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  margin: 0px;
+  padding: 0px 25px 25px 20%;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.one-pass .container .rate .sub-box .sub-content .country-icons > li img {
+  width: 45px;
+  border-radius: 50%;
+}
+
+.one-pass .container .rate .sub-box .sub-content .country-icons > li .c-left {
+  vertical-align: top;
+  display: inline-block;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.one-pass .container .rate .sub-box .sub-content .country-icons > li .c-left .c-name {
+  font-size: 1rem;
+  color: #0099a8;
+  margin-bottom: 5px;
+}
+
+.one-pass .container .rate .sub-box .sub-content .country-icons > li .c-left .c-rate {
+  font-size: 1rem;
+  color: #666;
+}
+
+.one-pass .container .terms {
+  color: #666;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.one-pass .container .terms a {
+  font-size: 0.8rem;
+  color: #666;
+  text-decoration: underline;
+}
+
+.one-pass .watson-offer {
+  background-color: #e5f3f7;
+}
+
+.one-pass .watson-offer .container {
+  padding: 40px 0px;
+}
+
+.one-pass .watson-offer .container .hd-title {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #e86ca9;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 10px;
+  line-height: 1.3em;
+  width: 80%;
+}
+
+.one-pass .watson-offer .container .text-line {
+  font-size: 0.9rem;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  line-height: 1.3em;
+}
+
+.one-pass .watson-offer .container .sep {
+  text-align: center;
+  padding: 10px;
+}
+
+.one-pass .watson-offer .container .sep span {
+  display: inline-block;
+  height: 0px;
+  font-size: 0px;
+  width: 80px;
+  border: 1px solid #ccc;
+}
+
+.one-pass .watson-offer .container .text-line-02 {
+  font-size: 0.9rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.one-pass .watson-offer .container .country-icons {
+  list-style: none;
+  padding: 0px;
+  margin: 20px 0px 0px 0px;
+  font-size: 0px;
+  text-align: center;
+}
+
+.one-pass .watson-offer .container .country-icons > li {
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
+  padding: 0px 15px;
+}
+
+.one-pass .watson-offer .container .country-icons > li img {
+  width: 45px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+.one-pass .watson-offer .container .country-icons > li .text {
+  font-size: 14px;
+}

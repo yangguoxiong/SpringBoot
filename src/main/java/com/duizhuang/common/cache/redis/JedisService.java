@@ -201,7 +201,7 @@ public class JedisService {
             System.out.println("==========================================");
 
             /**
-             * 获取list区间[i, j]元素: lrange(key, i, j). 返回List<String></String>
+             * 获取list区间[i, j]元素: lrange(key, i, j). 返回List<String>
              */
             List<String> lrange = jedis.lrange("list", 0, -1);
             System.out.println("获取list的值: " + lrange);

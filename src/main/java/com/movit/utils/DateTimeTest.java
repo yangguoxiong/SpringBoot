@@ -1,5 +1,6 @@
 package com.movit.utils;
 
+import com.google.common.collect.Lists;
 import org.apache.commons.lang.time.DateUtils;
 import org.joda.time.DateTime;
 import org.joda.time.Duration;
@@ -11,9 +12,8 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.ZoneId;
 import java.time.temporal.ChronoUnit;
+import java.util.*;
 import java.util.Calendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
 
 /**
  * joda时间使用方式
@@ -39,7 +39,39 @@ public class DateTimeTest {
         getPreviousSunday();
         getMinMonthDate();
         getMaxMonthDate();*/
-        test04();
+        // test04();
+        // test05();
+        // 获取当前时间小时数对应的最近每三小时的时间
+        int temp = 2;
+        if (temp > 24) {
+            temp = 24;
+        }
+        int sub = 0;
+        List<Integer> integers = Arrays.asList(0, 3, 6, 9, 12, 15, 18, 21, 24);
+        for (Integer integer : integers) {
+            if (integer == temp) {
+                break;
+            }
+            if (integer > temp) {
+                temp = sub;
+                break;
+            }
+            sub = integer;
+        }
+        System.out.println(temp);
+        String s = new DateTime().withTimeAtStartOfDay().plusHours(temp).toDate().toLocaleString();
+        System.out.println(DateTime.now().toDate().toLocaleString());
+        System.out.println(s);
+        System.out.println(DateTime.now().toString());
+    }
+
+    // 获取当前时间的整点时间
+    private static void test05() {
+        // 获取当前时间的小时数
+        int hourOfDay = DateTime.now().getHourOfDay();
+        // 从当天0点加上当前时间小时数,获得当前时间的整点时间,例如 当前时间: 2020-9-8 15:04:34  当前时间的整点时间: 2020-9-8 15:00:00
+        Date date = new DateTime().withTimeAtStartOfDay().plusHours(hourOfDay).toDate();
+        System.out.println(date.toLocaleString());
     }
 
     // 获得本周一与当前日期相差的天数

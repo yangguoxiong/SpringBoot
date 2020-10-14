@@ -42,6 +42,22 @@ public class DateTimeTest {
         // test04();
         // test05();
         // 获取当前时间小时数对应的最近每三小时的时间
+        // test06();
+        test07();
+    }
+
+    private static void test07() {
+        DateTime dateTime = new DateTime();
+        // 获取当前时间的小时数
+        int hourOfDay = dateTime.getHourOfDay();
+        // 获取当前时间的分钟数
+        int minuteOfHour = dateTime.getMinuteOfHour();
+        // 获取当前时间的秒数
+        int secondOfMinute = dateTime.getSecondOfMinute();
+        System.out.println(hourOfDay + "===" + minuteOfHour + "===" + secondOfMinute);
+    }
+
+    private static void test06() {
         int temp = 2;
         if (temp > 24) {
             temp = 24;

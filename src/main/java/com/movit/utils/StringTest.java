@@ -1,6 +1,10 @@
 package com.movit.utils;
 
-import org.apache.commons.collections4.CollectionUtils;
+import com.duizhuang.common.cache.redis.JsonUtil;
+import com.fasterxml.jackson.core.type.TypeReference;
+import org.apache.commons.lang.StringUtils;
+
+import java.util.Map;
 
 /**
  * Created by Mark on 2020/9/23 11:12.
@@ -14,6 +18,12 @@ public class StringTest {
         if (split != null && split.length > 0) {
             String url = split[0];
             System.out.println(url);
+        }
+
+        Map<String, Object> expandMap = JsonUtil.readValue("{\"from\": \"飙升榜\"}", new TypeReference<Map<String, Object>>() {
+        });
+        if (StringUtils.isNotBlank(String.valueOf(expandMap.get("from1")))) {
+            System.out.println(expandMap.get("from1"));
         }
     }
 }

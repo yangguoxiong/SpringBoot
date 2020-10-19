@@ -1,19 +1,18 @@
 package com.movit.utils;
 
-import com.google.common.collect.Lists;
 import org.apache.commons.lang.time.DateUtils;
 import org.joda.time.DateTime;
 import org.joda.time.Duration;
 
-import java.text.DateFormat;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.ZoneId;
 import java.time.temporal.ChronoUnit;
-import java.util.*;
 import java.util.Calendar;
+import java.util.*;
 
 /**
  * joda时间使用方式
@@ -43,18 +42,42 @@ public class DateTimeTest {
         // test05();
         // 获取当前时间小时数对应的最近每三小时的时间
         // test06();
-        test07();
+        try {
+            test07();
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
     }
 
-    private static void test07() {
-        DateTime dateTime = new DateTime();
-        // 获取当前时间的小时数
-        int hourOfDay = dateTime.getHourOfDay();
-        // 获取当前时间的分钟数
-        int minuteOfHour = dateTime.getMinuteOfHour();
-        // 获取当前时间的秒数
-        int secondOfMinute = dateTime.getSecondOfMinute();
-        System.out.println(hourOfDay + "===" + minuteOfHour + "===" + secondOfMinute);
+    /**
+     * 比较当前时间的时分秒是否在两个日期的时分秒内
+     *
+     * @param startTime
+     * @param endTime
+     * @return true: 当前时间的时分秒在两个日期的时分秒内(只比较时分秒)
+     * 例: startDate=2020-10-10 15:10:10 endDate=2022-11-11 18:10;10 当前时间=2019-08-08 17:00:00 返回: true
+     */
+    public static boolean test07() throws ParseException {
+        Date validStartTime = DateUtil.strToDate("2020-01-01 17:52:00", DateUtil.PATTERN_YMDHMS);
+        Date validEndTime = DateUtil.strToDate("2020-01-01 20:56:00", DateUtil.PATTERN_YMDHMS);
+
+        // 开始时间时分秒
+        DateTime startDate = new DateTime(validStartTime);
+        int startHour = startDate.getHourOfDay();
+        int startMinute = startDate.getMinuteOfHour();
+        int startSecond = startDate.getSecondOfMinute();
+        // 结束时间时分秒
+        DateTime endDate = new DateTime(validEndTime);
+        int endHour = endDate.getHourOfDay();
+        int endMinute = endDate.getMinuteOfHour();
+        int endSecond = endDate.getSecondOfMinute();
+        DateTime start = DateTime.now().withHourOfDay(startHour).withMinuteOfHour(startMinute).withSecondOfMinute(startSecond);
+        DateTime end = DateTime.now().withHourOfDay(endHour).withMinuteOfHour(endMinute).withSecondOfMinute(endSecond);
+        if (start.isBeforeNow() && end.isAfterNow()) {
+            return true;
+        }
+        // 当前时间时分秒不在开始时间和结束时间的时分秒范围内
+        return false;
     }
 
     private static void test06() {

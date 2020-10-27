@@ -4,6 +4,8 @@ import com.duizhuang.common.cache.redis.JsonUtil;
 import com.fasterxml.jackson.core.type.TypeReference;
 import org.apache.commons.lang.StringUtils;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -24,6 +26,27 @@ public class StringTest {
         });
         if (StringUtils.isNotBlank(String.valueOf(expandMap.get("from1")))) {
             System.out.println(expandMap.get("from1"));
+        }
+
+        List<String> list = new ArrayList<>();
+        list.add("tt");
+        list.add("dd");
+        list.add("gg");
+        System.out.println(list.get(1));
+
+        // test01();
+    }
+
+    private static void test01() {
+        // 双重for循环,里面的break只是跳出里面的for循环
+        for (int i = 0; i < 3; i++) {
+            System.out.println("外面i: " + i);
+            for (int i1 = 0; i1 < 3; i1++) {
+                System.out.println("里面i: " + i1);
+                if (i1 == 1) {
+                    break;
+                }
+            }
         }
     }
 }

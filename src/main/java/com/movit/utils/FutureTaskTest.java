@@ -11,9 +11,11 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.FutureTask;
 import java.util.concurrent.ScheduledThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
 
 /**
  * 测试异步执行任务FeatureTask
+ * 另一种异步执行方法可以参考:CompletableFutureTest
  */
 public class FutureTaskTest {
 
@@ -54,7 +56,7 @@ public class FutureTaskTest {
 
         try {
             // 这里使用get(),是线程阻塞的.表示只有执行完futureTask的代码,也就是futureTask执行完成之后,才会走下一步.
-            Pair<List<String>, Account> pair = futureTask.get();
+            Pair<List<String>, Account> pair = futureTask.get(5, TimeUnit.SECONDS); // 如果3秒获取不到数据,则抛异常TimeoutException
             if (ObjectUtil.isNotNull(pair)) {
                 System.out.println("异步线程获取数据中。。。");
                 List<String> left = pair.getLeft();
@@ -63,6 +65,7 @@ public class FutureTaskTest {
                 System.out.println("Pair右侧的值： " + JsonUtil.toJSon(right));
             }
         } catch (Exception e) {
+            e.printStackTrace();
             System.out.println("futureTask执行报错。。。");
         }
     }

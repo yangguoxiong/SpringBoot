@@ -155,7 +155,7 @@
 			<artifactId>fastjson</artifactId>
 			<version>1.2.44</version>
 		</dependency>
-		<!--下划线转驼峰工具类儿-->
+		<!--guava工具类-->
 		<dependency>
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>

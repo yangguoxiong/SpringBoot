@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.filter.CharacterEncodingFilter;
 
-@Configuration
+// @Configuration
 //这个启动类是用来将http://localhost:8085的请求重定向到:https://localhost:8086
 public class ConnectorConfig {
 

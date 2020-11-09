@@ -17,8 +17,15 @@ public class StringTest {
 
     public static void main(String[] args) {
         // test01();
-        test02();
+        // test02();
         // test03();
+        test04();
+    }
+
+    private static void test04() {
+        String content = "自觉浮想mark详细";
+        boolean contains = StringUtils.contains(content, "rk");
+        System.out.println("匹配结果: " + contains);
     }
 
     private static void test01() {

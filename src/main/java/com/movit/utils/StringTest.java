@@ -17,15 +17,9 @@ public class StringTest {
 
     public static void main(String[] args) {
         // test01();
-        // test02();
+        test02();
         // test03();
-        test04();
-    }
-
-    private static void test04() {
-        String content = "自觉浮想mark详细";
-        boolean contains = StringUtils.contains(content, "rk");
-        System.out.println("匹配结果: " + contains);
+        // test04();
     }
 
     private static void test01() {
@@ -42,7 +36,9 @@ public class StringTest {
     }
 
     private static void test02() {
-        String address = Jsoup.clean("<span style='color:red'><a href='https://www.baidu.com'>百度地址</a> -- 动态详情的世袭.</span>", Whitelist.simpleText());
+        // Whitelist.simpleText(): "b", "em", "i", "strong", "u"这几个标签不过滤.其他都过滤.
+        // Whitelist.none(): 所有标签都会过滤,只保留文本.
+        String address = Jsoup.clean("<span style='color:red'><a href='https://www.baidu.com'>百度地址</a> -- <strong>strong标签</strong> 动态详情的世袭.</span>", Whitelist.simpleText());
         System.out.println("过滤html代码后: " + address);
     }
 
@@ -66,5 +62,11 @@ public class StringTest {
         list.add("dd");
         list.add("gg");
         System.out.println(list.get(1));
+    }
+
+    private static void test04() {
+        String content = "自觉浮想mark详细";
+        boolean contains = StringUtils.contains(content, "rk");
+        System.out.println("匹配结果: " + contains);
     }
 }

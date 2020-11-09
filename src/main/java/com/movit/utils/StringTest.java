@@ -3,6 +3,8 @@ package com.movit.utils;
 import com.duizhuang.common.cache.redis.JsonUtil;
 import com.fasterxml.jackson.core.type.TypeReference;
 import org.apache.commons.lang.StringUtils;
+import org.jsoup.Jsoup;
+import org.jsoup.safety.Whitelist;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,6 +16,30 @@ import java.util.Map;
 public class StringTest {
 
     public static void main(String[] args) {
+        // test01();
+        test02();
+        // test03();
+    }
+
+    private static void test01() {
+        // 双重for循环,里面的break只是跳出里面的for循环
+        for (int i = 0; i < 3; i++) {
+            System.out.println("外面i: " + i);
+            for (int i1 = 0; i1 < 3; i1++) {
+                System.out.println("里面i: " + i1);
+                if (i1 == 1) {
+                    break;
+                }
+            }
+        }
+    }
+
+    private static void test02() {
+        String address = Jsoup.clean("<span style='color:red'><a href='https://www.baidu.com'>百度地址</a> -- 动态详情的世袭.</span>", Whitelist.simpleText());
+        System.out.println("过滤html代码后: " + address);
+    }
+
+    private static void test03() {
         String test = "/gemImg/2018-06/08/51f3855360cbc3473bd8a64118213f40.origin.jpg,800,800,532903";
         String regex = ",";
         String[] split = test.split(regex);
@@ -33,20 +59,5 @@ public class StringTest {
         list.add("dd");
         list.add("gg");
         System.out.println(list.get(1));
-
-        // test01();
-    }
-
-    private static void test01() {
-        // 双重for循环,里面的break只是跳出里面的for循环
-        for (int i = 0; i < 3; i++) {
-            System.out.println("外面i: " + i);
-            for (int i1 = 0; i1 < 3; i1++) {
-                System.out.println("里面i: " + i1);
-                if (i1 == 1) {
-                    break;
-                }
-            }
-        }
     }
 }

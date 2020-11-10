@@ -17,9 +17,10 @@ public class StringTest {
 
     public static void main(String[] args) {
         // test01();
-        test02();
+        // test02();
         // test03();
         // test04();
+        test05();
     }
 
     private static void test01() {
@@ -68,5 +69,11 @@ public class StringTest {
         String content = "自觉浮想mark详细";
         boolean contains = StringUtils.contains(content, "rk");
         System.out.println("匹配结果: " + contains);
+    }
+
+    private static void test05() {
+        String content = "#自觉浮想#详细";
+        content = StringUtils.replace(content, "#", "");
+        System.out.println("过滤后结果: " + content);
     }
 }

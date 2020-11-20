@@ -76,4 +76,10 @@ public class StringTest {
         content = StringUtils.replace(content, "#", "");
         System.out.println("过滤后结果: " + content);
     }
+
+    private static void test06() {
+        // 将"方法"替换%s
+        String format = String.format("*%s*", "方法");
+        System.out.println(format); // 输出后结果: *方法*
+    }
 }

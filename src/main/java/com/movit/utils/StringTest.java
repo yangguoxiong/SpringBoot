@@ -1,11 +1,14 @@
 package com.movit.utils;
 
+import cn.hutool.core.util.NumberUtil;
+import com.alibaba.excel.util.NumberUtils;
 import com.duizhuang.common.cache.redis.JsonUtil;
 import com.fasterxml.jackson.core.type.TypeReference;
 import org.apache.commons.lang.StringUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.safety.Whitelist;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -20,7 +23,10 @@ public class StringTest {
         // test02();
         // test03();
         // test04();
-        test05();
+        // test05();
+        // test06();
+        test07();
+        // test08();
     }
 
     private static void test01() {
@@ -81,5 +87,62 @@ public class StringTest {
         // 将"方法"替换%s
         String format = String.format("*%s*", "方法");
         System.out.println(format); // 输出后结果: *方法*
+    }
+
+    private static void test07() {
+        String color = "#E8E8E8E8";
+        StringBuilder sb = new StringBuilder();
+        sb.append("rgba(");
+
+        String color1 = color.substring(3, 5);
+        Integer color1Int = Integer.valueOf(color1, 16);
+        sb.append(color1Int).append(", ");
+
+        String color2 = color.substring(5, 7);
+        Integer color2Int = Integer.valueOf(color2, 16);
+        sb.append(color2Int).append(", ");
+
+        String color3 = color.substring(7, 9);
+        Integer color3Int = Integer.valueOf(color3, 16);
+        sb.append(color3Int).append(", ");
+
+        String alp = color.substring(1, 3);
+        Integer alpInt = Integer.valueOf(alp, 16);
+        DecimalFormat df = new DecimalFormat("0.00");
+        String str = df.format(Double.valueOf(alpInt) / 255);
+        // 透明度
+        sb.append(str).append(")");
+        System.out.println(sb);
+    }
+
+    private static void test08() {
+        String color = "rgba(231, 21, 21, 0.94)";
+        String substring = color.substring(color.indexOf("(") + 1, color.indexOf(")"));
+        String[] split = substring.split(", ");
+        if (split == null || split.length <= 0) {
+            return;
+        }
+        StringBuilder sb = new StringBuilder();
+        sb.append("#");
+        // 先处理头两位的透明度
+        String opaque = split[split.length - 1];
+        if (StringUtils.isEmpty(opaque)) {
+            return;
+        }
+        double opaDouble = Double.valueOf(opaque);
+        // 透明度 * 255 -> 四舍五入 -> 转成16进制
+        Integer opa10 = Math.toIntExact(Math.round(opaDouble * 255));
+        String opa16 = opa10.toHexString(opa10).toUpperCase();
+        sb.append(opa16);
+        for (int i = 0; i < split.length - 1; i++) {
+            String rgba = split[i];
+            if (StringUtils.isEmpty(rgba)) {
+                break;
+            }
+            Integer rgba10 = NumberUtil.parseInt(rgba);
+            String rgba16 = rgba10.toHexString(rgba10).toUpperCase();
+            sb.append(rgba16);
+        }
+        System.out.println(sb);
     }
 }

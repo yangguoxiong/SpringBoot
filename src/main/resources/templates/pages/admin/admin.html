@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="../admin/css/bootstrap.css">
+</head>
+<body>
+<script type="text/javascript" src="../admin/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../admin/js/bootstrap.js"></script>
+<script type="text/javascript" src="../admin/js/jscolor.js"></script>
+<div class="container">
+    <form id="dynamicDataForm" class="form-inline">
+        <div class="form-group">
+            <label class="sr-only" for="officialArticle">文章段落</label>
+	        <input type="text" class="form-control required official-show"
+	               id="officialArticle" readonly placeholder="点击编辑官方文章段落">
+        </div>
+        <div class="form-group">
+            <label class="sr-only" for="exampleInputPassword3">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox"> Remember me
+            </label>
+        </div>
+        <button type="submit" class="btn btn-default">Sign in</button>
+    </form>
+	<!-- 编辑文章弹窗 -->
+	<div class="modal" id="articleModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+							class="sr-only">Close</span></button>
+					<h4 class="modal-title">编辑段落</h4>
+				</div>
+				<div class="modal-body">
+					<div>
+						<button type="button" class="btn btn-info add-article">添加段落</button>
+					</div>
+					<div class="box-body table-responsive">
+						<table class="altrows-table">
+							<thead>
+							<th>序号</th>
+							<th>小标题</th>
+							<th>二级小标题</th>
+							<th>正文</th>
+							<th>图片描述</th>
+							<th>操作</th>
+							</thead>
+							<tbody id="myTbody">
+
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					<button type="button" class="btn btn-primary" onclick="updateAuditReasons()">保存</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 添加官方文章段落 -->
+	<div class="modal" id="officialArticleModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+							class="sr-only">Close</span></button>
+					<h4 class="modal-title">添加官方文章段落</h4>
+				</div>
+				<div class="modal-body">
+					<div class="form-group small-title">
+						<label class="col-sm-1 control-label title-label">小标题：</label>
+						<div class="col-sm-2">
+							<input type="text" name="content" class="form-control" placeholder="不填则不保存整行数据"/>
+						</div>
+						<label class="col-sm-1 control-label">字体：</label>
+						<div class="col-sm-1 font-width">
+							<select name="fontName" class="form-control">
+								<option value="PingFangSC-Semibold">苹方-简 中粗体</option>
+								<option value="PingFangSC-Medium" selected>苹方-简 中黑体</option>
+								<option value="PingFangSC-Regular">苹方-简 常规体</option>
+							</select>
+						</div>
+						<label class="col-sm-1 control-label">字体大小：</label>
+						<div class="col-sm-1">
+							<input type="number" name="fontSize" class="form-control" value="20"/>
+						</div>
+						<label class="col-sm-1 control-label">字体颜色：</label>
+						<div class="col-sm-1 color-width">
+							<input name="color"
+							       type="text"
+							       class="form-control required jscolor"
+							       value="#000000"
+							       placeholder="">
+						</div>
+						<label class="col-sm-1 control-label">透明度：</label>
+						<div class="col-sm-1">
+							<input type="number" name="colorAlp" class="form-control" min="0.01" max="1.0" step="0.01"
+							       value="1"/>
+						</div>
+					</div>
+					<div class="form-group small-title">
+						<label class="col-sm-1 control-label title-label align-style">对齐方式：</label>
+						<div class="col-sm-2">
+							<select name="horizontalAlign" class="form-control">
+								<option value="left">居左</option>
+								<option value="center" selected>居中</option>
+								<option value="right">居右</option>
+							</select>
+						</div>
+						<label class="col-sm-1 control-label">上边距：</label>
+						<div class="col-sm-1">
+							<input type="number" name="headSpacing" class="form-control" value="21"/>
+						</div>
+					</div>
+					<div class="form-group second-title">
+						<label class="col-sm-1 control-label title-label">二级小标题：</label>
+						<div class="col-sm-2">
+							<input type="text" name="content" class="form-control" placeholder="不填则不保存整行数据"/>
+						</div>
+						<label class="col-sm-1 control-label">字体：</label>
+						<div class="col-sm-1 font-width">
+							<select name="fontName" class="form-control">
+								<option value="PingFangSC-Semibold">苹方-简 中粗体</option>
+								<option value="PingFangSC-Medium">苹方-简 中黑体</option>
+								<option value="PingFangSC-Regular" selected>苹方-简 常规体</option>
+							</select>
+						</div>
+						<label class="col-sm-1 control-label">字体大小：</label>
+						<div class="col-sm-1">
+							<input type="number" name="fontSize" class="form-control" value="18"/>
+						</div>
+						<label class="col-sm-1 control-label">字体颜色：</label>
+						<div class="col-sm-1 color-width">
+							<input name="color"
+							       type="text"
+							       class="form-control required jscolor"
+							       value="#000000"
+							       placeholder="">
+						</div>
+						<label class="col-sm-1 control-label">透明度：</label>
+						<div class="col-sm-1">
+							<input type="number" name="colorAlp" class="form-control" min="0.01" max="1.0" step="0.01"
+							       value="1"/>
+						</div>
+					</div>
+					<div class="form-group second-title">
+						<label class="col-sm-1 control-label title-label align-style">对齐方式：</label>
+						<div class="col-sm-2">
+							<select name="horizontalAlign" class="form-control">
+								<option value="left">居左</option>
+								<option value="center" selected>居中</option>
+								<option value="right">居右</option>
+							</select>
+						</div>
+						<label class="col-sm-1 control-label">上边距：</label>
+						<div class="col-sm-1">
+							<input type="number" name="headSpacing" class="form-control" value="21"/>
+						</div>
+					</div>
+					<div class="form-group article-content">
+						<label class="col-sm-1 control-label title-label">正文：</label>
+						<div class="col-sm-2">
+							<input name="content" class="form-control" rows="4"/>
+						</div>
+						<label class="col-sm-1 control-label">图片：</label>
+						<div class="col-sm-1 font-width">
+							<div id="upload_img_show"></div>
+							<input name="textImage" type="hidden" class="form-control" placeholder="请点击上传图片"
+							       data-msg-required="请上传图片" readonly/>
+						</div>
+						<label class="col-sm-1 control-label">图片跳转链接：</label>
+						<div class="col-sm-1">
+							<input type="text" name="jumpModel" class="form-control"/>
+						</div>
+					</div>
+					<div class="form-group description-style img-description">
+						<label class="col-sm-1 control-label title-label">图片描述：</label>
+						<div class="col-sm-2">
+							<input type="text" name="content" class="form-control" placeholder="不填则不保存整行数据"/>
+						</div>
+						<label class="col-sm-1 control-label">字体：</label>
+						<div class="col-sm-1 font-width">
+							<select name="fontName" class="form-control">
+								<option value="PingFangSC-Semibold">苹方-简 中粗体</option>
+								<option value="PingFangSC-Medium">苹方-简 中黑体</option>
+								<option value="PingFangSC-Regular" selected>苹方-简 常规体</option>
+							</select>
+						</div>
+						<label class="col-sm-1 control-label">字体大小：</label>
+						<div class="col-sm-1">
+							<input type="number" name="fontSize" class="form-control" value="18"/>
+						</div>
+						<label class="col-sm-1 control-label">字体颜色：</label>
+						<div class="col-sm-1 color-width">
+							<input name="color"
+							       type="text"
+							       class="form-control required jscolor"
+							       value="#1C1B26"
+							       placeholder="">
+						</div>
+						<label class="col-sm-1 control-label">透明度：</label>
+						<div class="col-sm-1">
+							<input type="number" name="colorAlp" class="form-control" min="0.01" max="1.0" step="0.01"
+							       value="0.5"/>
+						</div>
+					</div>
+					<div class="form-group img-description">
+						<label class="col-sm-1 control-label title-label align-style">对齐方式：</label>
+						<div class="col-sm-2">
+							<select name="horizontalAlign" class="form-control">
+								<option value="left">居左</option>
+								<option value="center" selected>居中</option>
+								<option value="right">居右</option>
+							</select>
+						</div>
+						<label class="col-sm-1 control-label">上边距：</label>
+						<div class="col-sm-1">
+							<input type="number" name="headSpacing" class="form-control" value="12"/>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					<button type="button" class="btn btn-primary save-article">保存</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 修改官方文章段落 -->
+	<div class="modal" id="testModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+							class="sr-only">Close</span></button>
+					<h4 class="modal-title">添加官方文章段落</h4>
+				</div>
+				<div class="modal-body">
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					<button type="button" class="btn btn-primary" onclick="updateAuditReasons()">保存</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</div>
+
+<style type="text/css">
+	#previewModal .modal-dialog {
+		width: 320px;
+	}
+
+	#previewModal .modal-body {
+		padding: 0;
+		height: 538px;
+	}
+
+	.maxWidth {
+		max-width: 600px;
+		padding-right: 20px;
+		float: left;
+	}
+
+	.maxWidth div.form-group {
+		max-width: 600px;
+	}
+
+	.buttons {
+		position: fixed;
+		bottom: 30px;
+		z-index: 2;
+	}
+
+	.gbin1-list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.gbin1-list li {
+		min-width: 100px;
+		min-height: 100px;
+		float: left;
+		text-align: center;
+		margin: 5px;
+		padding: 4px;
+		border: 1px solid #ddd;
+		border-radius: 4px;
+	}
+
+	.col-sm-3 {
+		width: 19%;
+	}
+
+	.form-horizontal .form-group {
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+
+	#dataTable {
+		text-align: center;
+	}
+
+	#dataTable tr th {
+		text-align: center;
+		padding-right: 8px;
+	}
+
+	table.altrows-table {
+		font-family: verdana,arial,sans-serif;
+		font-size:11px;
+		color:#333333;
+		border-width: 1px;
+		border-color: #a9c6c9;
+		border-collapse: collapse;
+		width: 100%;
+	}
+	table.altrows-table th {
+		border-width: 1px;
+		padding: 8px;
+		border-style: solid;
+		border-color: #a9c6c9;
+	}
+	table.altrows-table td {
+		border-width: 1px;
+		padding: 8px;
+		border-style: solid;
+		border-color: #a9c6c9;
+	}
+	.oddrowcolor{
+		background-color:#d4e3e5;
+	}
+	.evenrowcolor{
+		background-color:#c3dde0;
+	}
+
+	#officialArticleModal .modal-dialog {
+		width: 1283px;
+	}
+
+	#officialArticleModal .control-label {
+		padding-right: 0;
+	}
+
+	#officialArticleModal .color-width {
+		width: 9%;
+	}
+
+	#officialArticleModal .font-width {
+		width: 12%;
+	}
+
+	#officialArticleModal .title-label {
+		width: 12%;
+	}
+
+	#officialArticleModal .form-group {
+		padding-top: 35px;
+	}
+
+	#officialArticleModal #upload_img_show {
+		width: 123px !important;
+		height: 120px !important;
+		border: unset !important;
+		height: 120px !important;
+	}
+
+	#officialArticleModal .description-style {
+		padding-top: 105px;
+	}
+
+	#officialArticleModal .align-style {
+		width: 8.5%;
+		margin-left: 357px;
+	}
+</style>
+
+<script>
+	// 新版发动态处理JS
+	var Page;
+	(function ($) {
+
+		Page = {
+			data: {
+				isOfficial: true,
+				dataTable: {},
+				refresh: undefined,
+				typeOptions: {
+					'1': '默认模板',
+					'2': '正常模板',
+					'3': '公告模板'
+				},
+				dynamicArticleList: [],
+				dynamicArticle: {
+					content: '',
+					images: [],
+					status: 1,
+					type: 2,
+					styleList: [
+
+					]
+				},
+				style: {
+					fontName: '',
+					fontSize: undefined,
+					color: '',
+					client: '',
+					extendParams: {
+						horizontalAlign: '',
+						headSpacing: undefined
+					}
+				},
+				image: {
+					url: ''
+				}
+			},
+			init: function () {
+				this.initClickEvent();
+				this.initTemplateTable();
+				this.initUploadImage();
+			},
+			initClickEvent: function () {
+				// 切换用户类型
+				$("#dynamicDataForm").on("click", "select[name=userSource]", function () {
+					let _source = $(this).val();
+					if (_source == "1") {
+						// 普通用户
+						$(".normal-show").show();
+						$(".official-show").hide();
+						// 普通用户查询非公告模版
+						Page.data.isOfficial = false
+					} else {
+						// 官方用户
+						$(".normal-show").hide();
+						$(".official-show").show();
+						// 官方只查询公告模版
+						Page.data.isOfficial = true
+					}
+				});
+				// 选择模版弹窗
+				$("#dynamicDataForm").on("click", "#templateSelectDom", function () {
+					$("#templateModal").modal();
+					Page.data.dataTable.page(0).search("").draw();
+				});
+				// 选择模版事件
+				$("#templateModal").on("click", ".select-template", function () {
+					// 赋值
+					console.log("选择模版id: " + $(this).data("id"));
+					$("input[name=templateId]").val($(this).data("id"));
+					$("#templateSelectDom").val($(this).data("name"));
+					// 关闭弹窗
+					$("#templateModal").modal("hide");
+				});
+				// 编辑官方文章弹窗
+				$("#dynamicDataForm").on("click", "#officialArticle", function () {
+					// 弹窗
+					if (Page.data.dynamicArticleList && Page.data.dynamicArticleList.length > 0) {
+						const tableData = Page.data.dynamicArticleList;
+						for(var i in tableData){
+							var html = $("<tr></tr>");
+							html.append("<td>" + tableData[i].content + "</td>");
+							html.append("<td>" + tableData[i].content + "</td>");
+							html.append("<td>" + tableData[i].content + "</td>");
+							html.append("<td>" + tableData[i].content + "</td>");
+							html.append("<td>" + tableData[i].content + "</td>");
+							html.append("<td>" + "<a href='javascript:void(0)' onclick='sendMsg();'>修改</a>"
+									+ "<a href='javascript:void(0)' onclick='sendMsg();'>删除</a>" + "</td>");
+							html.appendTo("#myTbody");
+						}
+					}
+					$("#articleModal").modal();
+				});
+				// 选择普通用户弹窗
+				$("#dynamicDataForm").on("click", "#normalArticle", function () {
+					// 弹窗
+					console.log("选择普通用户弹窗");
+				});
+				// 添加段落弹窗
+				$("#articleModal").on("click", ".add-article", function () {
+					// 弹窗
+					$("#officialArticleModal").modal();
+				});
+				// 保存段落
+				$("#officialArticleModal").on("click", ".save-article", function () {
+					let parents = $(this).parents(".modal-content");
+					let _small = parents.find(".small-title");
+					let _second = parents.find(".second-title");
+					let _article = parents.find(".article-content");
+					let _description = parents.find(".img-description");
+					// 小标题数据
+					if (_small.find("input[name=content]").val()) {
+						Page.addArticleData(_small);
+					}
+					// 二级标题数据
+					if (_second.find("input[name=content]").val()) {
+						Page.addArticleData(_second);
+					}
+					// 正文数据
+					if (_article.find("textarea[name=content]").val()) {
+						Page.addTextArticleData(_article);
+					}
+					// 图片描述数据
+					if (_description.find("input[name=content]").val()) {
+						Page.addArticleData(_description);
+					}
+					console.log(Page.data.dynamicArticleList)
+				});
+			},
+			addArticleData: function (_dom) {
+				Page.data.dynamicArticle.images = []
+				Page.data.dynamicArticle.styleList = []
+				Page.data.dynamicArticle.content = _dom.find("input[name=content]").val();
+				Page.data.style.fontName = _dom.find("select[name=fontName]").val();
+				Page.data.style.fontSize = _dom.find("input[name=fontSize]").val();
+				Page.data.style.color = _dom.find("input[name=color]").val();
+				// 处理图片
+				if (Page.data.style.color) {
+					let _color = "#";
+					let _alp = _dom.find("input[name=colorAlp]").val();
+					if (_alp) {
+						// 透明度 * 255 -> 取整 -> 转16进制 -> 转大写
+						let _alp16 = parseInt(_alp * 255).toString(16).toUpperCase();
+						_color += _alp16;
+					}
+					Page.data.style.color = _color + Page.data.style.color;
+				}
+				Page.data.style.client = "ios";
+				Page.data.style.extendParams.horizontalAlign = _dom.find("select[name=horizontalAlign]").val();
+				Page.data.style.extendParams.headSpacing = _dom.find("input[name=headSpacing]").val();
+				// ios
+				Page.data.dynamicArticle.styleList.push(Object.assign({}, Page.data.style));
+				// android
+				Page.data.style.client = "android";
+				Page.data.dynamicArticle.styleList.push(Object.assign({}, Page.data.style));
+				// 添加到文章list
+				Page.data.dynamicArticleList.push(Object.assign({}, Page.data.dynamicArticle));
+			},
+			addTextArticleData: function (_article) {
+				Page.data.dynamicArticle.images = []
+				Page.data.dynamicArticle.styleList = []
+				// 正文类型为1
+				Page.data.dynamicArticle.type = 1
+				Page.data.dynamicArticle.content = _article.find("textarea[name=content]").val();
+				// 处理正文图片
+				Page.data.image.url = _article.find("input[name=textImage]").val();
+				if (Page.data.image.url) {
+					Page.data.dynamicArticle.images.push(Object.assign({}, Page.data.image));
+				}
+				// 添加到文章list
+				Page.data.dynamicArticleList.push(Object.assign({}, Page.data.dynamicArticle));
+			},
+			initTemplateTable: function () {
+				this.data.dataTable = $('#dataTable').DataTable({
+					"ajax": {
+						"url": "/v2/dynamic/template/list",
+						"type": "post",
+						"beforeSend": function () {
+							showloading(true);
+						},
+						"complete": function (data) {
+							showloading(false);
+						},
+						"data": function (d) {
+							//过滤排序条件
+							var params = {
+								"offset": d.start,
+								"limit": d.length,
+								"draw": d.draw
+							};
+							var array = $("#searchForm").serializeArray();
+							$(array).each(function (i, o) {
+								if (o.value != "") {
+									params[o.name] = o.value;
+								}
+							});
+							if (Page.data.isOfficial) {
+								// 官方号只查询公告模版
+								params.type = 3
+							} else {
+								params.type = undefined
+							}
+							return params;
+						}
+					},
+					columns: [
+						{data: 'id'},
+						{data: 'name'},
+						{data: 'backgroundImg'},
+						{data: 'type'},
+						{data: 'createTime'},
+						{data: 'id'}
+					],
+					columnDefs: [
+						{
+							"targets": [2],
+							"data": "backgroundImg",
+							"render": function (data, type, full) {
+								var img = "";
+								if (data != null && data != "") {
+									img = "<img src='" + data + "' width='60px' height='60px' />";
+								}
+								return img;
+							}
+						},
+						{
+							"targets": [3],
+							"data": "type",
+							"render": function (data, type, full) {
+								return Page.data.typeOptions[data];
+							}
+						},
+						{
+							"targets": [4],
+							"data": "createTime",
+							"render": function (data, type, full) {
+								var time = "";
+								if (data != null) {
+									time = new Date(data).Format("yyyy-MM-dd hh:mm");
+								}
+								return time;
+							}
+						},
+						{
+							"targets": [5],
+							"data": "id",
+							"render": function (data, type, full) {
+								return "<button type=\"button\" class=\"btn btn-primary select-template\" data-name=" + full.name + "  data-id=" + data + ">选择</button>";
+								return pointsOrder;
+							}
+						}
+					]
+				});
+				$(".search-template").on("click", function (event) {
+					event.preventDefault();
+					Page.data.dataTable.page(0).search("").draw();
+					return false;
+				});
+				//初始化表单 提交表单使用.valid()方法判断表单有效性
+				$("#templateForm").validate();
+				//刷新当前页
+				this.data.refresh = function () {
+					Page.data.dataTable.draw(false);
+				};
+			},
+			initUploadImage: function () {
+				var imgUrlUpload = new DragImgUpload("#upload_img_show",{
+					callback: function (files) {
+						//回调函数，可以传递给后台等等
+						var formData = new FormData();
+						var file = files[0];
+						formData.append("file", file);
+						$.ajax({
+							url:"/file/uploadImg?project=ad",
+							type:"POST",
+							data: formData,
+							processData : false,
+							contentType : false,
+							dataType : 'json',
+							async : false,
+							success : function (result) {
+								//成功后的回调事件
+								$("input[name=textImage]").val("${imgUrl}" + result.url);
+							}
+						});
+					}
+				}, {
+					// 传递配置参数
+				});
+			}
+		};
+
+		Page.init();
+	})(jQuery);
+</script>
+</body>
+</html>

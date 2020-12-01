@@ -3,52 +3,55 @@ package com.movit.utils;
 import org.apache.commons.lang3.EnumUtils;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.UUID;
+import java.util.*;
 
 
 public class ListTest {
 
-	/*do while方法测试*/
-	public static void main(String[] args) {
-		/*List<String> list = new ArrayList<>();
-		list.add("1");
-		list.add("2");
-		int index = 0;
-		do {
-			System.out.println(list.get(index));
-			index ++;
-		}while (index < list.size());*/
-		PointTypeEnum[] values = PointTypeEnum.values();
-		List<PointTypeEnum> arrayList = new ArrayList<>(Arrays.asList(values));
-		boolean validEnum = arrayList.contains(2);
-		System.out.println(validEnum);
+    public static void main(String[] args) {
+	    test03();
+    }
+
+	private static void test03() {
+		List<String> list = Arrays.asList("1", "2", "999", "3");
+		int indexOf = list.indexOf("2");
+		// 将指定索引的元素排在最前面
+		Collections.swap(list, indexOf, 0);
+		list.stream().forEach(System.out::println);
 	}
 
-	/*String是null做equals会报异常的方法*/
-	public static void testNullPointException() {
-		String nu = null;
-		if (nu.equals("3")) {
-			System.out.println("test fail");
-		}
-	}
+	public static void test01() {
+        List<String> list = new ArrayList<>();
+        list.add("1");
+        list.add("2");
+        int index = 0;
+        do {
+            System.out.println(list.get(index));
+            index++;
+        } while (index < list.size());
+    }
 
-	public enum PointTypeEnum {
+    public static void test02() {
+        PointTypeEnum[] values = PointTypeEnum.values();
+        List<PointTypeEnum> arrayList = new ArrayList<>(Arrays.asList(values));
+        boolean validEnum = arrayList.contains(2);
+        System.out.println(validEnum);
+    }
 
-		全部积分操作记录(0),
-		获得积分操作记录(1),
-		支出积分操作记录(2);
+    public enum PointTypeEnum {
 
-		private int type;
+        全部积分操作记录(0),
+        获得积分操作记录(1),
+        支出积分操作记录(2);
 
-		public int getType() {
-			return this.type;
-		}
+        private int type;
 
-		private PointTypeEnum(int type) {
-			this.type = type;
-		}
-	}
+        public int getType() {
+            return this.type;
+        }
+
+        private PointTypeEnum(int type) {
+            this.type = type;
+        }
+    }
 }

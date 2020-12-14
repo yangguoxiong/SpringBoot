@@ -4,6 +4,7 @@ import cn.hutool.core.util.NumberUtil;
 import com.alibaba.excel.util.NumberUtils;
 import com.duizhuang.common.cache.redis.JsonUtil;
 import com.fasterxml.jackson.core.type.TypeReference;
+import com.google.common.collect.Lists;
 import org.apache.commons.lang.StringUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.safety.Whitelist;
@@ -12,6 +13,7 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 /**
  * Created by Mark on 2020/9/23 11:12.
@@ -25,8 +27,28 @@ public class StringTest {
         // test04();
         // test05();
         // test06();
-        test07();
+        // test07();
         // test08();
+        // test09();
+        test10();
+    }
+
+    private static void test10() {
+        StringBuilder filter = new StringBuilder();
+        List<Long> dynamicIdList = Lists.newArrayList();
+        dynamicIdList.add(10L);
+        dynamicIdList.add(20L);
+        dynamicIdList.add(30L);
+        for (Long dynamicId : dynamicIdList) {
+            filter.append(" ANDNOT dynamic_id:'").append(dynamicId).append("'");
+        }
+        System.out.println(filter);
+    }
+
+    private static void test09() {
+        String content = "在\"吗";
+        content = org.apache.commons.lang3.StringUtils.trimToEmpty(content.replace("\"", "\\" + "\""));
+        System.out.println(content);
     }
 
     private static void test01() {

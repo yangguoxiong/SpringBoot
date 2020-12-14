@@ -1,5 +1,7 @@
 package com.movit.utils;
 
+import com.google.common.collect.Lists;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -9,10 +11,23 @@ import java.util.List;
 public class ListTest {
 
     public static void main(String[] args) {
-	    test03();
+	    // test03();
+        test04();
     }
 
-	private static void test03() {
+    private static void test04() {
+        List<String> list = Arrays.asList("1", "2", "3", "4", "5", "6");
+        List<String> newList = Lists.newArrayList();
+        for (int i = ((3 - 1) * 2); i < list.size(); i++) {
+            newList.add(list.get(i));
+            if (newList.size() == 2) {
+                break;
+            }
+        }
+        newList.stream().forEach(System.out::println);
+    }
+
+    private static void test03() {
 		List<String> list = Arrays.asList("1", "2", "999", "3");
 		int indexOf = list.indexOf("2");
 		// 将指定索引的元素排在最前面

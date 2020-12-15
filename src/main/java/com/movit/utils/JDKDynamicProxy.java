@@ -39,7 +39,7 @@ class HelloWorldImpl implements HelloWorld {
 //测试
 class JDKDynamicProxyTest {
 	public static void main(String[] args) {
-		//创建动态代理类
+		//创建动态代理类, 传递接口实现类, 表示最后调用实现类实现动态代理
 		JDKDynamicProxy jdkDynamicProxy = new JDKDynamicProxy(new HelloWorldImpl());
 		//启用动态代理
 		HelloWorld proxy = (HelloWorld) Proxy.newProxyInstance(JDKDynamicProxyTest.class.getClassLoader(), new Class[]{HelloWorld.class}, jdkDynamicProxy);

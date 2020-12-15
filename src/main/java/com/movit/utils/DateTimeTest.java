@@ -33,7 +33,7 @@ public class DateTimeTest {
 
     private static SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 
-    public static void main(String args[]) {
+    public static void main(String args[]) throws ParseException {
         /*getCurrentMonday();
         getPreviousSunday();
         getMinMonthDate();
@@ -42,11 +42,12 @@ public class DateTimeTest {
         // test05();
         // 获取当前时间小时数对应的最近每三小时的时间
         // test06();
-        try {
+        /*try {
             test07();
         } catch (ParseException e) {
             e.printStackTrace();
-        }
+        }*/
+        System.out.println(getDayRemainingTime(new Date(), DateUtil.strToDate("2020-12-14 17:51:00", DateUtil.PATTERN_YMDHMS)));
     }
 
     /**
@@ -193,9 +194,22 @@ public class DateTimeTest {
         return Date.from(startOfDay.atZone(ZoneId.systemDefault()).toInstant());
     }
 
+
     /**
-     * 获取当天剩余秒数
+     * 获取一天中剩余的时间（秒数）
      */
+    public static Integer getDayRemainingTime(Date currentDate, Date midDate) {
+        LocalDateTime midnight = LocalDateTime.ofInstant(midDate.toInstant(),
+                ZoneId.systemDefault());
+        LocalDateTime currentDateTime = LocalDateTime.ofInstant(currentDate.toInstant(),
+                ZoneId.systemDefault());
+        long seconds = ChronoUnit.SECONDS.between(currentDateTime, midnight);
+        return (int) seconds;
+    }
+
+        /**
+         * 获取当天剩余秒数
+         */
     private static void test01() {
         //方法一
         long milliSecondsLeftToday = 86400000 - DateUtils.getFragmentInMilliseconds(Calendar.getInstance(), Calendar.DATE);

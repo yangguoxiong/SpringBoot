@@ -13,6 +13,7 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.StringJoiner;
 import java.util.stream.Collectors;
 
 /**
@@ -30,7 +31,13 @@ public class StringTest {
         // test07();
         // test08();
         // test09();
-        test10();
+        // test10();
+        test11();
+    }
+
+    private static void test11() {
+        StringJoiner joiner = new StringJoiner(",");
+        System.out.println(joiner.length());
     }
 
     private static void test10() {

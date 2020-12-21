@@ -4,9 +4,7 @@ import org.apache.commons.lang3.math.NumberUtils;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 
-import java.util.Iterator;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 /**
  * jedis测试类
@@ -26,8 +24,8 @@ public class JedisService {
         // string();
         // list();
         // set();
-        // hash();
-        zsort();
+        hash();
+        // zsort();
         // incrbyOrDecrby();
     }
 
@@ -395,7 +393,7 @@ public class JedisService {
             /**
              * 添加一个或多个hash hset(key, field, value) / hmset(key, Map<String, String> map)
              */
-            /*// 添加一个hash key value
+            // 添加一个hash key value
             Long hset = jedis.hset("hash", "mark", "国学");
             // 添加多个hash key value
             Map<String, String> map = new HashMap<>();
@@ -406,7 +404,7 @@ public class JedisService {
             System.out.println("hset一个的结果: " + hset);
             System.out.println("hmset多个的结果: " + hmset);
 
-            System.out.println("==========================================");*/
+            System.out.println("==========================================");
 
             /**
              * 获取key的所有hash对应k-y元素: hgetAll(key).

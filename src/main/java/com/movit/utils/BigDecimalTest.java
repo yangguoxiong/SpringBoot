@@ -19,17 +19,11 @@ public class BigDecimalTest {
         // a.compareTo(b) == 0,表示两个值相等
         // a.compareTo(b) == 1,表示a大于b
         // a.compareTo(b) == -1,表示a小于b
-        BigDecimal a = new BigDecimal(12.3);
-        BigDecimal b = new BigDecimal(12.3);
-        System.out.println(a.compareTo(b) > 0);
+        BigDecimal a = new BigDecimal(12.34);
+        BigDecimal b = new BigDecimal(12.34);
+        System.out.println(a.compareTo(b) <= 0);
 
-        System.out.println("=================");
-
-        Double d = 1.5 * 22334;
-        String format = new DecimalFormat("0").format(d);
-        System.out.println(Integer.parseInt(format));
-
-	    test1();
+	    // test1();
     }
 
     public static void test1() {

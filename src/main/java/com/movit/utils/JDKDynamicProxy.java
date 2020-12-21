@@ -36,11 +36,19 @@ class HelloWorldImpl implements HelloWorld {
 		System.out.println("您好: " + name);
 	}
 }
+//接口实现类
+class InviteImpl implements HelloWorld {
+
+	@Override
+	public void sayHi(String name) {
+		System.out.println("邀请: " + name);
+	}
+}
 //测试
 class JDKDynamicProxyTest {
 	public static void main(String[] args) {
 		//创建动态代理类, 传递接口实现类, 表示最后调用实现类实现动态代理
-		JDKDynamicProxy jdkDynamicProxy = new JDKDynamicProxy(new HelloWorldImpl());
+		JDKDynamicProxy jdkDynamicProxy = new JDKDynamicProxy(new InviteImpl());
 		//启用动态代理
 		HelloWorld proxy = (HelloWorld) Proxy.newProxyInstance(JDKDynamicProxyTest.class.getClassLoader(), new Class[]{HelloWorld.class}, jdkDynamicProxy);
 		//调用方法

@@ -1,6 +1,8 @@
 package com.movit.utils;
 
+import cn.hutool.core.util.ObjectUtil;
 import org.apache.commons.lang.time.DateUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.joda.time.DateTime;
 import org.joda.time.Duration;
 
@@ -47,7 +49,42 @@ public class DateTimeTest {
         } catch (ParseException e) {
             e.printStackTrace();
         }*/
-        System.out.println(getDayRemainingTime(new Date(), DateUtil.strToDate("2020-12-14 17:51:00", DateUtil.PATTERN_YMDHMS)));
+        // System.out.println(getDayRemainingTime(new Date(), DateUtil.strToDate("2020-12-15 16:40:00", DateUtil.PATTERN_YMDHMS)));
+        List<String> list = Arrays.asList("2020-12-14 23:00:00", "2020-12-17 11:00:00", "2020-10-10 12:00:00");
+        System.out.println(DateUtil.getYMDHMS(handlerSelectRecentTime(list, new Date())));
+    }
+
+    /**
+     * 从多个时间中.获取距离当前时间最近的时间
+     *
+     * @param noticeTime
+     * @param now
+     * @return
+     */
+    public static Date handlerSelectRecentTime(List<String> noticeTime, Date now) {
+        Date recentTime = null;
+        Integer temp = 0;
+        for (String nextTime : noticeTime) {
+            try {
+                if (StringUtils.isBlank(nextTime)) {
+                    continue;
+                }
+                // 取距当前时间最近的一个有效的预告时间
+                Date nextDate = DateUtil.strToDate(nextTime, DateUtil.PATTERN_YMDHMS);
+                if (ObjectUtil.isNotNull(nextDate)) {
+                    Integer remainingTime = getDayRemainingTime(nextDate, now);
+                    // 比较两个时间相差秒数,越小表示两个时间越接近
+                    if (ObjectUtil.isNull(recentTime) || remainingTime < temp) {
+                        recentTime = nextDate;
+                        temp = remainingTime;
+                        continue;
+                    }
+                }
+            } catch (ParseException e) {
+
+            }
+        }
+        return recentTime;
     }
 
     /**
@@ -196,7 +233,7 @@ public class DateTimeTest {
 
 
     /**
-     * 获取一天中剩余的时间（秒数）
+     * 比较两个时间相差的时间（秒数）
      */
     public static Integer getDayRemainingTime(Date currentDate, Date midDate) {
         LocalDateTime midnight = LocalDateTime.ofInstant(midDate.toInstant(),
@@ -204,12 +241,15 @@ public class DateTimeTest {
         LocalDateTime currentDateTime = LocalDateTime.ofInstant(currentDate.toInstant(),
                 ZoneId.systemDefault());
         long seconds = ChronoUnit.SECONDS.between(currentDateTime, midnight);
+        if (seconds < 0) {
+            seconds = Math.abs(seconds);
+        }
         return (int) seconds;
     }
 
-        /**
-         * 获取当天剩余秒数
-         */
+    /**
+     * 获取当天剩余秒数
+     */
     private static void test01() {
         //方法一
         long milliSecondsLeftToday = 86400000 - DateUtils.getFragmentInMilliseconds(Calendar.getInstance(), Calendar.DATE);

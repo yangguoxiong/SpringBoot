@@ -1,11 +1,13 @@
 package com.movit.utils;
 
+import cn.hutool.core.util.ObjectUtil;
 import com.google.common.collect.Lists;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.*;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 
@@ -22,17 +24,20 @@ public class ListTest {
         Topic topic1 = new Topic(0, "mark");
         Topic topic2 = new Topic(1, "mark2");
         Topic topic3 = new Topic(0, "mark3");
-        /*Topic topic4 = new Topic(0, "mark4");*/
+        Topic topic4 = new Topic(0, "mark4");
         Topic topic5 = new Topic(2, "mark5");
         Topic topic6 = new Topic(1, "mark6");
-        /*Topic topic7 = new Topic(0, "mark7");
-        Topic topic8 = new Topic(0, "mark8");*/
+        Topic topic7 = new Topic(0, "mark7");
+        Topic topic8 = new Topic(6, "mark8");
         Topic topic9 = new Topic(4, "mark9");
         list.add(topic1);
         list.add(topic2);
         list.add(topic3);
+        list.add(topic4);
         list.add(topic5);
         list.add(topic6);
+        list.add(topic7);
+        list.add(topic8);
         list.add(topic9);
         List<Topic> topics = Lists.newArrayList();
         // 升序排序
@@ -48,19 +53,15 @@ public class ListTest {
                 iterator.remove();
             }
         }
-        Map<Integer, Object> map = new HashMap<>();
+        Map<Integer, Topic> map = list.stream().filter(ObjectUtil::isNotNull).collect(Collectors.toMap(Topic::getId, Function.identity(), (k1, k2) -> k1));
+
         // 将热门话题中对应位置排序取代
         for (int i = 0; i < topics.size(); i++) {
-            Topic topic = topics.get(i);
-            for (int j = 0; j < list.size(); j++) {
-                Topic sortTopic = list.get(j);
-                int sort = sortTopic.getId() - 1;
-                if (sort == i && sort < 4 && !map.containsKey(sort)) {
-                    topics.set(i, sortTopic);
-                    map.put(sort, sortTopic);
-                    continue;
-                }
+            Topic sortTopic = map.get(i + 1);
+            if (ObjectUtil.isNull(sortTopic)) {
+                continue;
             }
+            topics.set(i, sortTopic);
         }
         topics = topics.stream().limit(4).collect(Collectors.toList());
         System.out.println(topics);

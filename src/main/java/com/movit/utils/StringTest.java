@@ -1,20 +1,16 @@
 package com.movit.utils;
 
 import cn.hutool.core.util.NumberUtil;
-import com.alibaba.excel.util.NumberUtils;
 import com.duizhuang.common.cache.redis.JsonUtil;
 import com.fasterxml.jackson.core.type.TypeReference;
+import com.google.common.base.Joiner;
 import com.google.common.collect.Lists;
 import org.apache.commons.lang.StringUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.safety.Whitelist;
 
 import java.text.DecimalFormat;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.StringJoiner;
-import java.util.stream.Collectors;
+import java.util.*;
 
 /**
  * Created by Mark on 2020/9/23 11:12.
@@ -32,10 +28,22 @@ public class StringTest {
         // test08();
         // test09();
         // test10();
-        test11();
+        // test11();
+        test12();
+    }
+
+    private static void test12() {
+        // 用guava的joiner测试
+        List<String> list = Arrays.asList("a", "b", "c");
+        StringBuilder errorMsg = new StringBuilder();
+        errorMsg.append("公告内容包含了【");
+        errorMsg.append(Joiner.on("】【").join(list));
+        errorMsg.append("】请修改后发布");
+        System.out.println(errorMsg);
     }
 
     private static void test11() {
+        // joiner测试
         StringJoiner joiner = new StringJoiner(",");
         System.out.println(joiner.length());
     }

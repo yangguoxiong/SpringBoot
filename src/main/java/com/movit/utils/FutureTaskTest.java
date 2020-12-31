@@ -16,6 +16,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * 测试异步执行任务FeatureTask
  * 另一种异步执行方法可以参考:CompletableFutureTest
+ * 原理就是从线程池中取出线程,再异步去执行线程方法.但是主线程是阻塞的.
  */
 public class FutureTaskTest {
 
@@ -56,6 +57,7 @@ public class FutureTaskTest {
 
         try {
             // 这里使用get(),是线程阻塞的.表示只有执行完futureTask的代码,也就是futureTask执行完成之后,才会走下一步.
+            // 主线程阻塞.不使用get()主线程就是非阻塞
             Pair<List<String>, Account> pair = futureTask.get(5, TimeUnit.SECONDS); // 如果3秒获取不到数据,则抛异常TimeoutException
             if (ObjectUtil.isNotNull(pair)) {
                 System.out.println("异步线程获取数据中。。。");

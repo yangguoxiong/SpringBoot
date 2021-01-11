@@ -22,9 +22,9 @@ public class JedisService {
     public static void main(String[] args) {
         // key();
         // string();
-        // list();
+        list();
         // set();
-        hash();
+        // hash();
         // zsort();
         // incrbyOrDecrby();
     }

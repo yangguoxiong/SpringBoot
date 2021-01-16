@@ -33,7 +33,6 @@ public class UserProxyFactory {
 
         // 当前线程来获得类加载器
         ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
-
         // 用匿名内部类方法
         T proxyInstance = (T) Proxy.newProxyInstance(classLoader, target.getClass().getInterfaces(), new InvocationHandler() {
             @Override

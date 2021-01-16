@@ -5,7 +5,7 @@ package com.movit.proxy;
  * @date: 2021/1/15 14:20
  * @description: 动态代理测试
  */
-public class Test {
+public class JDKProxyTest {
 
     public static void main(String[] args) {
         // 调用动态代理方法, 返回用户接口类

@@ -1,4 +1,4 @@
-package com.movit.design.proxy;
+package com.movit.design.proxy.jdk;
 
 /**
  * @author: yangguoxiong

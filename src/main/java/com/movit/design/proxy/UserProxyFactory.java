@@ -1,4 +1,4 @@
-package com.movit.proxy;
+package com.movit.design.proxy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

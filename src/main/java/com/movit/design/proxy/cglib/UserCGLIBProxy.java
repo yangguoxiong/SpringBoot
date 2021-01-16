@@ -1,4 +1,4 @@
-package com.movit.proxy.cglib;
+package com.movit.design.proxy.cglib;
 
 import cn.hutool.core.lang.Singleton;
 import net.sf.cglib.proxy.Enhancer;

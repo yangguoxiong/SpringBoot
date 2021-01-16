@@ -1,4 +1,4 @@
-package com.movit.factory;
+package com.movit.design.factory;
 
 /**
  * @author: yangguoxiong

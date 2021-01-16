@@ -1,12 +1,13 @@
-package com.movit.proxy.cglib;
+package com.movit.design.proxy;
 
 /**
  * @author: yangguoxiong
- * @date: 2021/1/16 14:09
+ * @date: 2021/1/15 14:09
  * @description: 普通用户执行类
  */
-public class UserServiceCGLIB {
+public class UserServiceImpl implements UserService {
 
+    @Override
     public String editName(String name) {
         System.out.println("执行普通方法");
         return "普通: " + name;

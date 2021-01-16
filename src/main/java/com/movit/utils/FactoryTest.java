@@ -1,7 +1,7 @@
 package com.movit.utils;
 
-import com.movit.factory.AbstractFactory;
-import com.movit.factory.CoffeeFactory;
+import com.movit.design.factory.AbstractFactory;
+import com.movit.design.factory.CoffeeFactory;
 
 /**
  * @author: yangguoxiong

@@ -1,4 +1,4 @@
-package com.movit.proxy.cglib;
+package com.movit.design.proxy.cglib;
 
 /**
  * @author: yangguoxiong

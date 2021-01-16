@@ -1,4 +1,4 @@
-package com.movit.singleton;
+package com.movit.design.singleton;
 
 import cn.hutool.core.util.ReflectUtil;
 import lombok.extern.slf4j.Slf4j;

@@ -22,10 +22,10 @@ public class JedisService {
     public static void main(String[] args) {
         // key();
         // string();
-        list();
+        // list();
         // set();
         // hash();
-        // zsort();
+        zsort();
         // incrbyOrDecrby();
     }
 
@@ -489,7 +489,7 @@ public class JedisService {
             /**
              * 添加一个或多个有序集合: zadd(key, score, value) / zadd(key, Map<String, Double> map) 返回: 插入行数. 如果已经有这个value,则更新score分数
              */
-            /*// 添加一个有序集合
+            /*// 添加一个有序集合, 如果已经存在这个value,就是更新分数
             Long zadd = jedis.zadd("zsort", 10, "mark");
             System.out.println("zadd的结果: " + zadd);
             // 添加多个有序集合

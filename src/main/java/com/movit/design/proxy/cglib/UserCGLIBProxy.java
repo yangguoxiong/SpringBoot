@@ -20,7 +20,7 @@ public class UserCGLIBProxy implements MethodInterceptor {
      * @return
      */
     public static UserCGLIBProxy getInstance() {
-        return Singleton.get(UserCGLIBProxy.class, null);
+        return Singleton.get(UserCGLIBProxy.class);
     }
 
     /**

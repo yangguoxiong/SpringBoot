@@ -22,7 +22,7 @@
 ```
 3. 实现`MethodInterceptor`重写`intercept`方法
 ```java
-@Override
+    @Override
     public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
         System.out.println("CGLIB代理方法中....");
         Object invoke = methodProxy.invokeSuper(o, objects);
@@ -31,9 +31,9 @@
 ```
 4. 调用
 ```java
-UserCGLIBProxy proxy = UserCGLIBProxy.getInstance();
-        // 传递具体实现类字节码对象,返回具体实现类
-        UserServiceCGLIB proxyObject = proxy.getProxyObject(UserServiceCGLIB.class);
-        // 实际执行的是动态生成的继承了具体实现类的子类的editName方法
-        String editName = proxyObject.editName("新名字");
+    UserCGLIBProxy proxy = UserCGLIBProxy.getInstance();
+    // 传递具体实现类字节码对象,返回具体实现类
+    UserServiceCGLIB proxyObject = proxy.getProxyObject(UserServiceCGLIB.class);
+    // 实际执行的是动态生成的继承了具体实现类的子类的editName方法
+    String editName = proxyObject.editName("新名字");
 ```

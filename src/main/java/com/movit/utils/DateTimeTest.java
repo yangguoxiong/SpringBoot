@@ -52,6 +52,9 @@ public class DateTimeTest {
         // System.out.println(getDayRemainingTime(new Date(), DateUtil.strToDate("2020-12-15 16:40:00", DateUtil.PATTERN_YMDHMS)));
         List<String> list = Arrays.asList("2020-12-14 23:00:00", "2020-12-17 11:00:00", "2020-10-10 12:00:00");
         System.out.println(DateUtil.getYMDHMS(handlerSelectRecentTime(list, new Date())));
+
+        long millis24Hour = DateTime.now().minusDays(1).getMillis();
+        System.out.println(millis24Hour);
     }
 
     /**

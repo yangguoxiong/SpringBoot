@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.TreeSet;
+import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
 import com.movit.bean.Mark;
@@ -33,7 +34,19 @@ public class LambdaTest {
         //foreachUpdate(list);
         //testSkip(list, 3, 3);
         // testUpdate(list);
-        testSorted(list);
+        // testSorted(list);
+        String result = testSupplier(() -> "这个结果");
+        System.out.println(result);
+    }
+
+    /**
+     * 操作函数式方法接口
+     *
+     * @param supplier
+     * @return
+     */
+    private static String testSupplier(Supplier<String> supplier) {
+        return supplier.get();
     }
 
     private static void testUpdate(List<Account> list) {
@@ -115,13 +128,13 @@ public class LambdaTest {
         list.forEach(System.out::println);
     }
 
-	/**
-	 * 测试stream的排序,先按sort字段排序,如果一样,再按money排序
-	 *
-	 * @param list
-	 */
-	private static void testSorted(List<Account> list) {
-		list = list.stream().sorted((Comparator.comparingInt(Account::getSort)).thenComparingInt(Account::getMoney).reversed()).collect(Collectors.toList());
-		list.forEach(System.out::println);
-	}
+    /**
+     * 测试stream的排序,先按sort字段排序,如果一样,再按money排序
+     *
+     * @param list
+     */
+    private static void testSorted(List<Account> list) {
+        list = list.stream().sorted((Comparator.comparingInt(Account::getSort)).thenComparingInt(Account::getMoney).reversed()).collect(Collectors.toList());
+        list.forEach(System.out::println);
+    }
 }

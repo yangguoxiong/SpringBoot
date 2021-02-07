@@ -1,6 +1,7 @@
 package com.movit.bean;
 
 import lombok.Data;
+import lombok.ToString;
 import org.apache.commons.beanutils.BeanUtils;
 
 import java.lang.reflect.InvocationTargetException;
@@ -12,21 +13,15 @@ import java.util.Map;
  * @Date: 2019/12/31
  */
 @Data
+@ToString
 public class Mark {
 
     private String name;
+    private String password;
     private int age;
-    
-    public static String test() {
-    	return "test";
-    }
 
-    @Override
-    public String toString() {
-        return "Mark{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                '}';
+    public static String test() {
+        return "test";
     }
 
     public static void main(String[] args) throws InvocationTargetException, IllegalAccessException {

@@ -25,8 +25,52 @@ public class JedisService {
         // list();
         // set();
         // hash();
-        zsort();
+        // zsort();
         // incrbyOrDecrby();
+        // 基数统计
+        // hyperloglogs();
+        // 位图
+        bitmap();
+    }
+
+    /**
+     * 位图
+     */
+    private static void bitmap() {
+        Jedis jedis = pool.getResource();
+        try {
+            // 1L表示第一天
+            // '1'表示签到  '0'表示未签到
+            jedis.setbit("sign_user1", 1L, "1");
+            jedis.setbit("sign_user1", 2L, "1");
+            jedis.setbit("sign_user1", 3L, "0");
+            // 签到天数, 计算value为1的总数
+            System.out.println(jedis.bitcount("sign_user1"));
+        } catch (Exception e) {
+
+        } finally {
+            pool.close();
+        }
+    }
+
+    /**
+     * 基数统计,类似set类型
+     */
+    private static void hyperloglogs() {
+        Jedis jedis = pool.getResource();
+        try {
+            // 添加元素到set集合
+            Long pf = jedis.pfadd("pf", "a", "b", "c", "c");
+            System.out.println("pf的数量: " + jedis.pfcount("pf"));
+            Long pf2 = jedis.pfadd("pf2", "c", "d", "e");
+            // 将pf和pf2的并集赋值给pf3集合,
+            jedis.pfmerge("pf3", "pf", "pf2");
+            System.out.println(jedis.pfcount("pf3"));
+        } catch (Exception e) {
+
+        } finally {
+            pool.close();
+        }
     }
 
     /**

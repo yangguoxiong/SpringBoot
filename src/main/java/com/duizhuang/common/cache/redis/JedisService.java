@@ -3,6 +3,7 @@ package com.duizhuang.common.cache.redis;
 import org.apache.commons.lang3.math.NumberUtils;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
+import redis.clients.jedis.JedisPubSub;
 
 import java.util.*;
 
@@ -30,7 +31,32 @@ public class JedisService {
         // 基数统计
         // hyperloglogs();
         // 位图
-        bitmap();
+        // bitmap();
+        // 发布订阅
+        subscribe();
+    }
+
+    private static void subscribe() {
+        Jedis jedis = pool.getResource();
+        try {
+            // 订阅
+            jedis.subscribe(new JedisPubSub() {
+                @Override
+                public void onMessage(String channel, String message) {
+                    System.out.println("监听: " + channel + " === message: " + message);
+                    super.onMessage(channel, message);
+                }
+            }, "mark");
+            // 发布
+            jedis.publish("mark", "新消息");
+        } finally {
+            try {
+                Thread.sleep(3000);
+            } catch (InterruptedException e) {
+
+            }
+            pool.close();
+        }
     }
 
     /**

@@ -35,8 +35,18 @@ public class LambdaTest {
         //testSkip(list, 3, 3);
         // testUpdate(list);
         // testSorted(list);
-        String result = testSupplier(() -> "这个结果");
-        System.out.println(result);
+        // String result = testSupplier(() -> "这个结果");
+        // System.out.println(result);
+
+        testForeach();
+    }
+
+    private static void testForeach() {
+        List<Account> list = new ArrayList<Account>();
+        list.add(new Account(1, 99));
+        list.add(new Account(2, 50));
+        list.stream().filter(a -> a.getMoney() != 1).forEach(a -> a.setSort(88));
+        System.out.println(list);
     }
 
     /**

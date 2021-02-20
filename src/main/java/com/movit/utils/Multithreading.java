@@ -24,6 +24,7 @@ public class Multithreading {
         test01();
         // 3. 线程池取出线程执行
         ListenableFuture<String> future = executorService.submit(new CouponTest(888L, "新余大礼包"));
+
         // 4. 可以通过callback方法获取异步执行线程结果
         // 如果写了此回调方法,线程就是阻塞的,也就是说.只有CouponTest的线程走完了返回结果,才会执行test02的方法
         // 如果不写此回调方法,那么主线程是非阻塞的.也就是说会执行完test01和test02后,后面才执行CouponTest线程的方法
@@ -38,6 +39,8 @@ public class Multithreading {
                 System.out.println("异步线程异常: " + t.getMessage());
             }
         });
+
+        // 5. 直接通过future.get()即可以获得callable的返回值了.
         test02();
     }
 

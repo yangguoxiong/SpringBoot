@@ -18,17 +18,19 @@ public class JedisPoolUtils {
 
     public static JedisPool getInstance() {
         if (jedisPool == null) {
-            Class var0 = JedisPoolUtils.class;
             synchronized(JedisPoolUtils.class) {
                 if (jedisPool == null) {
                     JedisPoolConfig config = new JedisPoolConfig();
-                    config.setMaxIdle(30);
-                    config.setMaxIdle(10);
+                    config.setMinIdle(3);
+                    config.setMaxIdle(50);
+                    config.setMaxTotal(100);
+                    config.setMaxWaitMillis(5000);
+                    config.setTestOnBorrow(true);
+                    config.setTestOnReturn(true);
                     jedisPool = new JedisPool(config, "127.0.0.1", 6379);
                 }
             }
         }
-
         return jedisPool;
     }
 }

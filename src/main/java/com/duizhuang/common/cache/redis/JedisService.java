@@ -18,6 +18,9 @@ import java.util.*;
  */
 public class JedisService {
 
+    /**
+     * 注意: main方法如果有流或者资源没有释放,会一直监控不停止.所以这里的测试方法是直接关闭pool连接池.实际是关闭jedis连接即可.
+     */
     private static JedisPool pool = JedisPoolUtils.getInstance();
 
     public static void main(String[] args) {

@@ -270,6 +270,13 @@
             <version>2.8.5</version>
         </dependency>
 
+        <!-- 引入自定义starter-->
+        <dependency>
+            <groupId>com.duizhuang</groupId>
+            <artifactId>duizhuang-starter</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
     </dependencies>
 
     <build>

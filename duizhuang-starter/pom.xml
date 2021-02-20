@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.duizhuang</groupId>
+    <artifactId>duizhuang-starter</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>duizhuang-starter</name>
+    <description>duizhuang starter 自定义starter</description>
+
+    <dependencies>
+        <!-- 参照官方自定义starter方式,starter包不做任何处理,只引入autoconfigure包-->
+        <dependency>
+            <groupId>com.duizhuang</groupId>
+            <artifactId>duihzuang-autoconfigure</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+</project>

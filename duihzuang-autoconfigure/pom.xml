@@ -5,18 +5,9 @@
     <groupId>com.duizhuang</groupId>
     <artifactId>duihzuang-autoconfigure</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>7</source>
-                    <target>7</target>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+
+    <packaging>jar</packaging>
+
     <name>duihzuang-autoconfigure</name>
     <description>duihzuang autoconfigure 自动配置类</description>
 

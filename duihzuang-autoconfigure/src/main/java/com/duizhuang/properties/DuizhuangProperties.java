@@ -7,7 +7,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  * @date: 2021/2/20 11:44
  * @description:
  */
-@ConfigurationProperties("duizhuang") // 属性配置项, 以duizhuang开头
+@ConfigurationProperties(prefix = "duizhuang") // 属性配置项, 以duizhuang开头
 public class DuizhuangProperties {
 
     private String companyName;

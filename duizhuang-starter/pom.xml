@@ -7,6 +7,9 @@
     <artifactId>duizhuang-starter</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>duizhuang-starter</name>
+
+    <packaging>jar</packaging>
+
     <description>duizhuang starter 自定义starter</description>
 
     <dependencies>

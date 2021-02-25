@@ -37,8 +37,8 @@ public class StringTest {
      * 测试StringBuilder和StringBuffer
      */
     private static void test13() {
-        // StringBuilder,线程不安全
-        // StringBuffer,线程安全,他的方法加了sync关键字
+        // StringBuilder,线程不安全,速度快
+        // StringBuffer,线程安全,速度慢,他的方法都加了sync关键字
         StringBuffer builder = new StringBuffer();
         for (int i = 0; i < 10; i++) {
             new Thread(() -> {

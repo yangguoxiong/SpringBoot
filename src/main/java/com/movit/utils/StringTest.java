@@ -29,7 +29,34 @@ public class StringTest {
         // test09();
         // test10();
         // test11();
-        test12();
+        // test12();
+        test13();
+    }
+
+    /**
+     * 测试StringBuilder和StringBuffer
+     */
+    private static void test13() {
+        // StringBuilder,线程不安全
+        // StringBuffer,线程安全,他的方法加了sync关键字
+        StringBuffer builder = new StringBuffer();
+        for (int i = 0; i < 10; i++) {
+            new Thread(() -> {
+                for (int j = 0; j < 1000; j++) {
+                    builder.append("a");
+                }
+            }).start();
+        }
+        try {
+            Thread.sleep(100);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        // 用StringBuilder,打印结果不会一直等于10000
+        // 用StringBuffer,打印结果始终是10000
+        System.out.print("线程是否安全:" + builder.length());
+
+
     }
 
     private static void test12() {
